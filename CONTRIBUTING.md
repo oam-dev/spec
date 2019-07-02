@@ -22,7 +22,7 @@ from "Proposal" and "Discussion" items, or can be submitted individually dependi
 ### Issue Lifecycle
 
 The issue lifecycle is mainly driven by the core maintainers, but is good information for those
-contributing to Helm. All issue types follow the same general lifecycle. Differences are noted below.
+contributing to Hydra Specification. All issue types follow the same general lifecycle. Differences are noted below.
 1. Issue creation
 2. Triage
     - The maintainer in charge of triaging will apply the proper labels for the issue. This
