@@ -166,7 +166,7 @@
                             "type": "object",
                             "properties": {
                                 "required": {
-                                    "type": "double",
+                                    "type": "number",
                                     "description": "The minimum number of logical cpus required for running this container."
                                 }
                             }
@@ -186,7 +186,7 @@
                             "type": "object",
                             "properties": {
                                 "required": {
-                                    "type": "double",
+                                    "type": "number",
                                     "description": "The minimum number of gpus required for running this container."
                                 }
                             }
