@@ -235,6 +235,7 @@
                                 "required": ["name", "mountPath"]
                             }
                         }
+                    }
                 },
                 "cmd": {
                     "type": "string",
@@ -313,7 +314,6 @@
                     "additionalProperties": {
                         "$ref": "#/definitions/healthProbe"
                     }
-                }
                 }
             },
             "required": ["name", "image", "resources"],
