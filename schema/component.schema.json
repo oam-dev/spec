@@ -314,6 +314,7 @@
                         "$ref": "#/definitions/healthProbe"
                     }
                 }
+                }
             },
             "required": ["name", "image", "resources"],
             "additionalProperties": false
@@ -408,4 +409,4 @@
         }
     }
 }
-}
+
