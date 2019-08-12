@@ -22,7 +22,7 @@ open specifications.
   6. [Operational Configuration](6.operational_configuration.md)
   7. [Workload Types](7.workload_types.md)
   8. [Practical Considerations](8.practical_considerations.md)
-
+  9. [Design Principles](8.design_principles.md)
 
 ## Contributing
 
