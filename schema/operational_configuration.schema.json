@@ -1,0 +1,195 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://microsoft.com/v1/hydra.operational_configuration.schema.json",
+    "title": "Hydra Operational Configuration JSON Schema",
+    "type": "object",
+    "properties": {
+        "apiVersion": {
+            "type": "string",
+            "description": "The specific version of the Hydra specification in use. This version of the specification covers apiVersions in core.hydra.io/v1alpha1."
+        },
+        "kind": {
+            "type": "string",
+            "description": "For an operational configuration schematic, must be OperationalConfiguration.",
+            "enum": ["OperationalConfiguration"]
+        },
+        "metadata": {
+            "type": "object",
+            "description": "Operational configuration metadata.",
+            "properties": {
+                "name": {
+                    "type":"string"
+                },
+                "description": {
+                    "type":"string",
+                    "description": "A short description of the operational configuration."
+                },
+                "version": {
+                    "type":"string",
+                    "description": "A string defining the semantic version of the operational configuration."
+                },
+                "labels": {
+                    "type":"array",
+                    "description": "A set of string key/value pairs used as arbitrary labels on this operational configuration.",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "spec": {
+            "type": "object",
+            "description": "A container for exposing operational configuration attributes.",
+            "additionalProperties": {
+                "$ref": "#/definitions/operationalConfigurationSpec"
+            }
+        }
+    },
+    "required": ["apiVersion", "kind", "metadata", "spec"],
+    "additionalProperties": false,
+    "definitions": {
+        "operationalConfigurationSpec": {
+            "variables":{
+                "type": "array",
+                "description": "Variables that can be referenced in parameter values and properties.",
+                "items": {
+                    "$ref": "#/definitions/opconfigVariable"
+                }
+            },
+            "scopes":{
+                "type": "array",
+                "description": "Application scope definitions.",
+                "items": {
+                    "$ref": "#/definitions/applicationScope"
+                }
+            },
+            "components":{
+                "type": "array",
+                "description": "Component instance definitions.",
+                "items": {
+                    "$ref": "#/definitions/componentInstance"
+                }
+            },
+            "required": [],
+            "additionalProperties": false
+        },
+        "opconfigVariable": {
+            "type": "object",
+            "description": "The Variables section defines variables that may be used elsewhere in the operational configuration. The variable section provides a way for an application operator to specify common values that can be substituted into multiple other locations in this configuration (using the [fromVariable(VARNAME)] syntax).",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "The parameter's name. Must be unique per configuration.",
+                    "$comment": "Some systems have upper bounds for name length. Do we limit here?",
+                    "maxLength": 128
+                },
+                "value": {
+                    "type": "string",
+                    "description": "The scalar value."
+                }
+            },
+            "required": ["name", "value"],
+            "additionalProperties": false
+        },
+        "applicationScope": {
+            "type": "object",
+            "description": "The scope section defines application scopes that will be created with this operational configuration.",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "The name of the application scope. Must be unique to the deployment environment."
+                },
+                "type": {
+                    "type": "string",
+                    "description": "The fully-qualified GROUP/VERSION.KIND name of the application scope."
+                },
+                "properties": {
+                    "type": "object",
+                    "description": "The properties attached to this scope.",
+                    "additionalProperties": {
+                        "$ref": "#/definitions/propertiesObject"
+                    }
+                }
+            },
+            "required": ["name", "type"],
+            "additionalProperties": false
+        },
+        "componentInstance": {
+            "type": "object",
+            "description": "This section defines the instances of components to create with this operational configuration.",
+            "properties": {
+                "componentName": {
+                    "type": "string",
+                    "description": "The name of the component to create an instance of."
+                },
+                "instanceName": {
+                    "type": "string",
+                    "description": "The name of the instance of this component."
+                },
+                "parameterValues":{
+                    "type": "array",
+                    "description": "Overrides of parameters that are exposed by the application scope type defined in 'type'.",
+                    "items": {
+                        "$ref": "#/definitions/parameterValue"
+                    }
+                },
+                "traits":{
+                    "type": "array",
+                    "description": "Specifies the traits to attach to this component instance.",
+                    "items": {
+                        "$ref": "#/definitions/trait"
+                    }
+                }
+            },
+            "required": ["componentName", "instanceName"],
+            "additionalProperties": false
+        },
+        "parameterValue": {
+            "type": "object",
+            "description": "Values supplied to parameters that are used to override the parameters exposed by other types.",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "The name of the component parameter to provide a value for.",
+                    "$comment": "Some systems have upper bounds for name length. Do we limit here?",
+                    "maxLength": 128
+                },
+                "value": {
+                    "type": "string",
+                    "description": "The value of this parameter."
+                }
+            },
+            "required": ["name"],
+            "additionalProperties": false
+        },
+        "trait": {
+            "type": "object",
+            "description": "The trait section defines traits that will be used in a component instance.",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "The name of the trait instance. Must be unique to the deployment environment."
+                },
+                "type": {
+                    "type": "string",
+                    "description": "The fully-qualified GROUP/VERSION.KIND name of the trait."
+                },
+                "properties": {
+                    "type": "object",
+                    "description": "Overrides of parameters that are exposed by the trait type defined in 'type'.",
+                    "additionalProperties": {
+                        "$ref": "#/definitions/propertiesObject"
+                    }
+                }
+            },
+            "required": ["name", "type"],
+            "additionalProperties": false
+        },
+        "propertiesObject": {
+            "type": "object",
+            "description": "A properties object (for trait and scope configuration) is an object whose structure is determined by the trait or scope property schema. It may be a simple value, or it may be a complex object.",
+            "properties": {},
+            "additionalProperties": true
+        }
+    }
+}
