@@ -23,6 +23,7 @@ open specifications.
   7. [Workload Types](7.workload_types.md)
   8. [Practical Considerations](8.practical_considerations.md)
   9. [Design Principles](9.design_principles.md)
+  10. [Appendix A: Extended Workload Types](10.appendix-extended-workload-types.md)
 
 ## Contributing
 
