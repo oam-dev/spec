@@ -3,7 +3,7 @@
 This repository holds the specifications for Hydra-compliant runtimes.
 
 Hydra is the code name for a broad initiative to define open
-specifications for an _ops-centric_ "serverless" compute platform as well as an
+specifications for composing and managing cloud native applications as well as an
 open source reference implementation thereof.
 
 The Hydra Specifications project is the definitive source for the
