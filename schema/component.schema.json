@@ -276,6 +276,34 @@
                         "additionalProperties": false
                     }
                 },
+                "config": {
+                    "description": "Configuration files",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "description": "a path and the value to be written into a file at that location",
+                        "properties": {
+                            "name": {
+                                "description": "The file name as an absolute path. Must be unique per container.",
+                                "type": "string",
+                                "$comment": "format of this value is operating system dependent.",
+                                "maxLength": 256
+                            },
+                            "value": {
+                                "description": "The value to be written into the file. If this is not supplied, fromParam must be supplied",
+                                "type": "string"
+                            },
+                            "fromParam": {
+                                "description": "The parameter whose value should be written into this file as a value",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "name"
+                        ],
+                        "additionalProperties": false
+                    }
+                },
                 "ports": {
                     "description": "Ports exposed by the container.",
                     "type": "array",
