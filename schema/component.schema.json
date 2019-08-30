@@ -20,17 +20,16 @@
                 "name": {
                     "type":"string"
                 },
-                "description": {
-                    "type":"string",
-                    "description": "A short description of the component."
-                },
-                "version": {
-                    "type":"string",
-                    "description": "A string defining the semantic version of the component."
-                },
                 "labels": {
                     "type":"array",
                     "description": "A set of string key/value pairs used as arbitrary labels on this component.",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "annotations": {
+                    "type": "array",
+                    "description": "A set of string key/value pairs used as arbitrary annotations on this component.",
                     "items": {
                         "type": "string"
                     }
