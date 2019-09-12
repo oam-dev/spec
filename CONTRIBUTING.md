@@ -40,7 +40,7 @@ contributing to Hydra Specification. All issue types follow the same general lif
 ## How to Contribute a Patch
 
 1. Fork the repo, modify the specification to address the issue.
-1. Submit a pull request.
+2. Submit a pull request.
 
 The next section contains more information on the workflow followed for Pull Requests.
 
@@ -64,9 +64,8 @@ Like any good open source project, we use Pull Requests (PRs) to track code chan
 3. Assigning reviews
     - All PRs require 1 review approval from at least two teams before it can be merged. 
     - The teams currently are: 
-      - Service Fabric Mesh (SFM)
-      - Office of the CTO (OCTO)
-      - Steelthread (ST)
+      - Microsoft
+      - Alibaba
 4. Reviewing/Discussion
     - All reviews will be completed using Github review tool.
     - A "Comment" review should be used when there are questions about the spec that should be
@@ -85,7 +84,7 @@ Like any good open source project, we use Pull Requests (PRs) to track code chan
 
 ## The Triager
 
-Each day, someone from a Hydra related team should act as the triager. This person will be in charge triaging new PRs and issues throughout the day. Anyone can volunteer as the traiger. If no one has volunteered by 10:00 AM PST, someone from Steelthread will triage. 
+Each day, someone from a Hydra related team should act as the triager. This person will be in charge triaging new PRs and issues throughout the day. Anyone can volunteer as the traiger. If no one has volunteered by 10:00 AM PST, someone from Microsoft will triage. 
 
 ## Labels
 
@@ -113,7 +112,7 @@ The following tables define all label types used for Hydra Specification. It is 
 | ----- | ----------- |
 | `awaiting review` | The PR has been triaged and is ready for someone to review |
 | `needs rebase` | A helper label used to indicate that the PR needs to be rebased before it can be merged. Used for easy filtering |
-| `lgtm <teamname>` | A label to indicate that a team (sfmesh, steelthread, octo) approves. |
+| `lgtm <teamname>` | A label to indicate that a team (msft, alibaba) approves. |
 
 #### Size labels
 
