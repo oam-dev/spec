@@ -8,7 +8,7 @@ Issues are used as the primary method for tracking anything to do with the Hydra
 
 ### Issue Types
 
-There are 4 types of issues (each with their own corresponding [label](#labels)):
+There are 3 types of issues (each with their own corresponding [label](#labels)):
 - Discussion: These are support or functionality inquiries that we want to have a record of for
 future reference. Depending on the discussion, these can turn into "Spec Change" issues.
 - Proposal: Used for items that propose a new ideas or functionality that require
