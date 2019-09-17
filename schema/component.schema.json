@@ -21,18 +21,14 @@
                     "type":"string"
                 },
                 "labels": {
-                    "type":"array",
+                    "type":"object",
                     "description": "A set of string key/value pairs used as arbitrary labels on this component.",
-                    "items": {
-                        "type": "string"
-                    }
+                    "additionalProperties": { "type": "string" }
                 },
                 "annotations": {
-                    "type": "array",
+                    "type":"object",
                     "description": "A set of string key/value pairs used as arbitrary annotations on this component.",
-                    "items": {
-                        "type": "string"
-                    }
+                    "additionalProperties": { "type": "string" }
                 }
             }
         },
