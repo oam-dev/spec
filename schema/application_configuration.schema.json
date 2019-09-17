@@ -24,14 +24,14 @@
                 },
                 "labels": {
                     "type": "object",
-                    "description": "A set of string key/value pairs used as arbitrary labels on this operational configuration.",
+                    "description": "A set of string key/value pairs used as arbitrary labels on this application configuration.",
                     "additionalProperties": {
                         "type": "string"
                     }
                 },
                 "annotations": {
                     "type": "object",
-                    "description": "A set of string key/value pairs used as arbitrary annotations on this operational configuration.",
+                    "description": "A set of string key/value pairs used as arbitrary annotations on this application configuration.",
                     "additionalProperties": {
                         "type": "string"
                     }
