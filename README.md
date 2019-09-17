@@ -19,7 +19,7 @@ open specifications.
   3. [The Component Model](3.component_model.md)
   4. [Application Scopes](4.application_scopes.md)
   5. [Traits](5.traits.md)
-  6. [Operational Configuration](6.operational_configuration.md)
+  6. [Application Configuration](6.application_configuration.md)
   7. [Workload Types](7.workload_types.md)
   8. [Practical Considerations](8.practical_considerations.md)
   9. [Design Principles](9.design_principles.md)
