@@ -150,7 +150,11 @@
                 },
                 "image": {
                     "type": "string",
-                    "description": "A path-like or URI-like representation of the location of an OCI image. Where applicable, this MAY be prefixed with a registry address, SHOULD be suffixed with a tag, and MUST be suffixed with a digest in OCI format. The digest may be used to compute the integrity of the image."
+                    "description": "A path-like or URI-like representation of the location of an OCI image. Where applicable, this MAY be prefixed with a registry address, and MUST be suffixed with a digest in OCI format. The digest may be used to compute the integrity of the image."
+                },
+                "tag": {
+                    "type": "string",
+                    "description": "A string representing the tag of the OCI image."
                 },
                 "resources": {
                     "type": "object",
