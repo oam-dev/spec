@@ -20,20 +20,15 @@
                 "name": {
                     "type":"string"
                 },
-                "description": {
-                    "type":"string",
-                    "description": "A short description of the component."
-                },
-                "version": {
-                    "type":"string",
-                    "description": "A string defining the semantic version of the component."
-                },
                 "labels": {
-                    "type":"array",
+                    "type":"object",
                     "description": "A set of string key/value pairs used as arbitrary labels on this component.",
-                    "items": {
-                        "type": "string"
-                    }
+                    "additionalProperties": { "type": "string" }
+                },
+                "annotations": {
+                    "type":"object",
+                    "description": "A set of string key/value pairs used as arbitrary annotations on this component.",
+                    "additionalProperties": { "type": "string" }
                 }
             }
         },
@@ -273,6 +268,34 @@
                             }
                         },
                         "required": ["name"],
+                        "additionalProperties": false
+                    }
+                },
+                "config": {
+                    "description": "Configuration files",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "description": "a path and the value to be written into a file at that location",
+                        "properties": {
+                            "name": {
+                                "description": "The file name as an absolute path. Must be unique per container.",
+                                "type": "string",
+                                "$comment": "format of this value is operating system dependent.",
+                                "maxLength": 256
+                            },
+                            "value": {
+                                "description": "The value to be written into the file. If this is not supplied, fromParam must be supplied",
+                                "type": "string"
+                            },
+                            "fromParam": {
+                                "description": "The parameter whose value should be written into this file as a value",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "name"
+                        ],
                         "additionalProperties": false
                     }
                 },
