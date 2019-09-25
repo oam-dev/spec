@@ -25,9 +25,34 @@ open specifications.
   9. [Design Principles](9.design_principles.md)
   10. [Appendix A: Extended Workload Types](10.appendix-extended-workload-types.md)
 
+## Triaging and Milestones 
+
+### Milestones
+
+Currently, the specification project is tracking two milestones. 
+
+| Milestone        | Description  |
+|---------------------|---|
+| 1.0.0-a1 | Milestone tracking items for the first alpha release of the spec. Currently, this milestone will be the first release of the specification. |
+| 1.0.0-a2 | Milestone tracking items for the second alpha release of the spec.  |
+
+### Triaging 
+
+Triaging of items into milestones will occur during the bi-weekly community call. During this call, issues might be brought into milestones, removed from milestones or moved between milestones. 
+
 ## Contributing
 
 Hydra Specifications follow the [CNCF Code of Conduct][cncf-coc]. See the [CONTRIBUTING](contributing.md) guide for more information about submitting changes to the spec.
+
+Below are links to join the bi-weekly community meetings and our meeting notes. Community Slack channels & mailing lists will be added shortly (~ 10/1). 
+
+| Item        | Value  |
+|---------------------|---|
+| Mailing List | TBD |
+| Meeting Information | Bi-weekly (Starting Sept 24th), Tuesdays 10:30AM PST  |
+| Meeting Link | https://zoom.us/j/623691799?pwd=ZWc4SHFNdWpRUVVNYkdJWE9zVHpjZz09   |
+| Slack Channel       | TBD  |
+| Meeting Notes       | https://hackmd.io/T1Y9XvjVS8awcNwZQ1TH2Q |
 
 ## Notational Conventions
 
