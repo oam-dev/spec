@@ -29,12 +29,7 @@ open specifications.
 
 ### Milestones
 
-Currently, the specification project is tracking two milestones. 
-
-| Milestone        | Description  |
-|---------------------|---|
-| 1.0.0-a1 | Milestone tracking items for the first alpha release of the spec. Currently, this milestone will be the first release of the specification. |
-| 1.0.0-a2 | Milestone tracking items for the second alpha release of the spec.  |
+To get an overview of the milestones and their description please visit the [Milestones](https://github.com/microsoft/hydra-spec/milestones) page. 
 
 ### Triaging 
 
@@ -52,7 +47,7 @@ Below are links to join the bi-weekly community meetings and our meeting notes. 
 | Meeting Information | Bi-weekly (Starting Sept 24th), Tuesdays 10:30AM PST  |
 | Meeting Link | https://zoom.us/j/623691799?pwd=ZWc4SHFNdWpRUVVNYkdJWE9zVHpjZz09   |
 | Slack Channel       | TBD  |
-| Meeting Notes       | https://hackmd.io/T1Y9XvjVS8awcNwZQ1TH2Q |
+| Meeting Notes       | https://docs.google.com/document/d/1nqdFEyULekyksFHtFvgvFAYE-0AMHKoS3RMnaKsarjs/edit?usp=sharing |
 
 ## Notational Conventions
 
