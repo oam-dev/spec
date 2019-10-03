@@ -54,7 +54,7 @@
             "workloadType":{
                 "type": "string",
                 "description": "A succinct, semantically meaningful descriptor of the component's runtime profile.",
-                "enum": ["Service", "SingletonService", "Worker", "Singleton Worker", "Task", "Singleton Task"]
+                "enum": ["Server", "SingletonServer", "Worker", "SingletonWorker", "Task", "SingletonTask"]
             },
             "osType":{
                 "type": "string",

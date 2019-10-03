@@ -1,5 +1,53 @@
 # Hydra Specifications
 
+From the creators of 
+[Helm](https://helm.sh),
+[OpenKruise](https://openkruise.io/en-us/),
+and [Service Fabric](https://github.com/Microsoft/service-fabric),
+Hydra is a specification for building cloud native applications.
+
+Focused on the separation of development concerns from operational considerations,
+Hydra provides a set of tools for building high-grade containerized applications
+on systems like Kubernetes.
+
+*This repository is unstable, and open to contributions.*
+The specification is under development, and breaking changes are made regularly.
+Interested in contributing? Take a look at the issue queue! We're looking for more
+great ideas on how to model cloud native applications.
+
+## The Main Idea
+
+When it comes to the practice of software development and deployment, we think it is
+important to distinguish between the parts of the software that developers are
+responsible for, and the parts that operations is responsible for. Too often,
+these roles get muddled, resulting in communications mishaps, bugs, or even
+service outages.
+
+Hydra attempts to solve this problem by modeling the application according to the
+roles responsible for building and running apps and infrastructure.
+
+* _Developers_ are responsible for describing what a microservice or component does,
+  and _how_ it can be configured. They are the domain experts on the code.
+* _Application Operators_ are responsible for configuring the runtime aspects of
+  one or more of these microservices. They are the domain experts on the
+  platform.
+* _Infrastructure Operators_ are responsible for setting up and maintaining the
+  infrastructure within which applications run. They are the domain
+  experts on the low-level details.
+
+Hydra describes a model where developers are responsible for defining _components_,
+application operators are responsible for creating instances of those components and
+assigning them _application configurations_. And infrastructure operators are
+responsible for declaring, installing, and maintaining the underlying services that
+are available on the platform.
+
+For example, a _developer_ creates web application. The _application operator_ creates
+an instance of that application, and configures it to autoscale with load. The
+_infrastructure operator_ decides which underlying autoscaling technology is
+used to do the scaling.
+
+## About This Repository
+
 This repository holds the specifications for Hydra-compliant runtimes.
 
 Hydra is the code name for a broad initiative to define open
@@ -8,8 +56,6 @@ open source reference implementation thereof.
 
 The Hydra Specifications project is the definitive source for the
 open specifications.
-
-*This repository is unstable.* The specification is under development, and breaking changes are made regularly.
 
 ## Table of Contents
 
@@ -25,9 +71,29 @@ open specifications.
   9. [Design Principles](9.design_principles.md)
   10. [Appendix A: Extended Workload Types](10.appendix-extended-workload-types.md)
 
+## Triaging and Milestones 
+
+### Milestones
+
+To get an overview of the milestones and their description please visit the [Milestones](https://github.com/microsoft/hydra-spec/milestones) page. 
+
+### Triaging 
+
+Triaging of items into milestones will occur during the bi-weekly community call. During this call, issues might be brought into milestones, removed from milestones or moved between milestones. 
+
 ## Contributing
 
 Hydra Specifications follow the [CNCF Code of Conduct][cncf-coc]. See the [CONTRIBUTING](contributing.md) guide for more information about submitting changes to the spec.
+
+Below are links to join the bi-weekly community meetings and our meeting notes. Community Slack channels & mailing lists will be added shortly (~ 10/1). 
+
+| Item        | Value  |
+|---------------------|---|
+| Mailing List | TBD |
+| Meeting Information | Bi-weekly (Starting Sept 24th), Tuesdays 10:30AM PST  |
+| Meeting Link | https://zoom.us/j/623691799?pwd=ZWc4SHFNdWpRUVVNYkdJWE9zVHpjZz09   |
+| Slack Channel       | TBD  |
+| Meeting Notes       | https://docs.google.com/document/d/1nqdFEyULekyksFHtFvgvFAYE-0AMHKoS3RMnaKsarjs/edit?usp=sharing |
 
 ## Notational Conventions
 
