@@ -35,11 +35,15 @@ roles responsible for building and running apps and infrastructure.
   infrastructure within which applications run. They are the domain
   experts on the low-level details.
 
+## How it works
+
 Hydra describes a model where developers are responsible for defining _components_,
 application operators are responsible for creating instances of those components and
 assigning them _application configurations_. And infrastructure operators are
 responsible for declaring, installing, and maintaining the underlying services that
 are available on the platform.
+
+![How it works][how-it-works]
 
 For example, a _developer_ creates web application. The _application operator_ creates
 an instance of that application, and configures it to autoscale with load. The
@@ -48,8 +52,6 @@ used to do the scaling.
 
 ## About This Repository
 
-This repository holds the specifications for Hydra-compliant runtimes.
-=======
 
 This repository contains the Open Application Model specification.
 
@@ -114,3 +116,5 @@ MUST, REQUIRED, or SHALL requirements.
 ## See it in action
 
 []() is a reference implementation of the Open Application Model specification for Kubernetes. To get started with an example on the Open Application Model, go to the []() repo getting started guide.
+
+[how-it-works]: assets/how-it-works.png
