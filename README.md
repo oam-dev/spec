@@ -50,8 +50,11 @@ an instance of that application, and configures it to autoscale with load. The
 _infrastructure operator_ decides which underlying autoscaling technology is
 used to do the scaling.
 
-## About This Repository
+## See it in action
 
+[Scylla](https://github.com/microsoft/scylla) is a reference implementation of the Open Application Model specification for Kubernetes. To get started with an example on the Open Application Model, go to the [Scylla](https://github.com/microsoft/scylla) repo getting started guide.
+
+## About This Repository
 
 This repository contains the Open Application Model specification.
 
@@ -113,8 +116,5 @@ MUST, REQUIRED, or SHALL requirements.
 [rfc2119]: http://tools.ietf.org/html/rfc2119
 [c99-unspecified]: http://www.open-std.org/jtc1/sc22/wg14/www/C99RationaleV5.10.pdf#page=18
 
-## See it in action
-
-[]() is a reference implementation of the Open Application Model specification for Kubernetes. To get started with an example on the Open Application Model, go to the []() repo getting started guide.
 
 [how-it-works]: assets/how-it-works.png
