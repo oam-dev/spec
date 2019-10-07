@@ -1,13 +1,13 @@
-# Hydra Specifications
+# Open Application Model Specification
+
 
 From the creators of 
 [Helm](https://helm.sh),
 [OpenKruise](https://openkruise.io/en-us/),
 and [Service Fabric](https://github.com/Microsoft/service-fabric),
-Hydra is a specification for building cloud native applications.
+the Open Application Model is a specification for building cloud native applications.
 
-Focused on the separation of development concerns from operational considerations,
-Hydra provides a set of tools for building high-grade containerized applications
+Focused on the separation of development concerns from operational considerations through a platform-agnostic application model, OAM provides a set of tools for building high-grade containerized applications
 on systems like Kubernetes.
 
 *This repository is unstable, and open to contributions.*
@@ -35,27 +35,28 @@ roles responsible for building and running apps and infrastructure.
   infrastructure within which applications run. They are the domain
   experts on the low-level details.
 
+## How it works
+
 Hydra describes a model where developers are responsible for defining _components_,
 application operators are responsible for creating instances of those components and
 assigning them _application configurations_. And infrastructure operators are
 responsible for declaring, installing, and maintaining the underlying services that
 are available on the platform.
 
+![How it works][how-it-works]
+
 For example, a _developer_ creates web application. The _application operator_ creates
 an instance of that application, and configures it to autoscale with load. The
 _infrastructure operator_ decides which underlying autoscaling technology is
 used to do the scaling.
 
+## See it in action
+
+[Scylla](https://github.com/microsoft/scylla) is a reference implementation of the Open Application Model specification for Kubernetes. To get started with an example on the Open Application Model, go to the [Scylla](https://github.com/microsoft/scylla) repo getting started guide.
+
 ## About This Repository
 
-This repository holds the specifications for Hydra-compliant runtimes.
-
-Hydra is the code name for a broad initiative to define open
-specifications for composing and managing cloud native applications as well as an
-open source reference implementation thereof.
-
-The Hydra Specifications project is the definitive source for the
-open specifications.
+This repository contains the Open Application Model specification.
 
 ## Table of Contents
 
@@ -114,3 +115,6 @@ MUST, REQUIRED, or SHALL requirements.
 [cncf-coc]: https://github.com/cncf/foundation/blob/master/code-of-conduct.md
 [rfc2119]: http://tools.ietf.org/html/rfc2119
 [c99-unspecified]: http://www.open-std.org/jtc1/sc22/wg14/www/C99RationaleV5.10.pdf#page=18
+
+
+[how-it-works]: assets/how-it-works.png
