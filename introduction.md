@@ -28,7 +28,9 @@ Now that the app operator deploys a _ComponentSchematic_ yaml. How does it happe
 
 Each platform provides a group of application deployment and operational capabilities. Infrastructure operators are responsible for declaring, installing, and maintaining the underlying services that are available on the platform. For example, infra operator might choose the Load Balancer technology of a specific cloud provider to expose the service.
 
-TODO: Platform architecture diagram
+The below diagram demonstrates the platform architecture:
+
+![alt](./assets/platform_arch.png)
 
 [Scylla](https://github.com/microsoft/scylla) is a reference implementation of the platform based on Kubernetes. Give it a try to gain hands-on experience.
 
