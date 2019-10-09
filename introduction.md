@@ -8,9 +8,9 @@ In the following, we are going through a story of application delivery lifecycle
 2. The _application operator_ deploys instances of that application, and configures it with operation traits, e.g. autoscaling;
 3. The _infrastructure operator_ decides which underlying technology is used to handle the deployment and operations.
 
-## App Developer: Develop an App
+## App Developer: Develop Apps
 
-First of all, we have developers who create an online shopping app. They knows how to write and test the code. The program takes a few parameters: log level, http port, metrics port. To let the developers focus on development, application operators (either human or automated operation platforms) takes care of the operational tasks. This provides a "serverless" experience to the developers. But, the developers still need to develop and package the application, and deliver it to the application operators.
+First of all, we have developers who create an online shopping app. They know how to write and test the code. The program takes a few parameters: log level, http port, metrics port. To let the developers focus on development, application operators (either human or automated operation platforms) takes care of the operational tasks. This provides a "serverless" experience to the developers. But, the developers still need to develop and package the application, and deliver it to the application operators.
 
 How app developers deliver it? The answer is that they will define a _ComponentSchematic_ yaml. In _Open Application Model_, each piece of program is described as a _ComponentSchematic_ yaml by app developer. Any information that app operator needs to know about the program will be defined within. For example, the container image packaging the program and the program parameters will be written in a _ComponentSchematic_ yaml. 
 
@@ -18,7 +18,7 @@ The below diagram demonstrates the workflow:
 
 ![alt](./assets/dev2ops.png)
 
-## App Operator: Deploy an App
+## App Operator: Deploy and Maintain Apps
 
 Deploying an application requires runtime traits configuration and live instances deployment. The app operator applies runtime configuration like replica size, autoscaling policy, which cluster to deploy in a _ApplicationConfiguration_ yaml. Writing and deploying a _ApplicationConfiguration_ yaml is equivalent to deploying an app. The underlying platform will create live instances of _ComponentSchematic_ and attach operational traits to them according to the _ApplicationConfiguration_ spec.
 
@@ -38,7 +38,7 @@ The below diagram demonstrates the platform architecture:
 
 [Scylla](https://github.com/microsoft/scylla) is a reference implementation based on Kubernetes. Give it a try to gain hands-on experience.
 
-## The Benefits? Portable Application!
+## The Benefits? Portable Apps!
 
 Focused on the separation of development concerns from operational considerations through a platform-agnostic application model, Open Application Model provides a set of tools for building portable containerized applications on systems like Kubernetes.
 
