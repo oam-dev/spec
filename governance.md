@@ -12,5 +12,4 @@ A maintainer may step down by submitting an [issue](https://github.com/deislabs/
 Changes to this governance document require a pull request with approval from a [super-majority](https://en.wikipedia.org/wiki/Supermajority#Two-thirds_vote) of the current maintainers.
 
 ## Code of Conduct
-This project has adopted the [Microsoft Open Source Code of conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+This project has adopted the [Contributor Covenant code of conduct](code-of-conduct.md/).
