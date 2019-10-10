@@ -6,6 +6,9 @@ From the creators of
 and [Service Fabric](https://github.com/Microsoft/service-fabric),
 the Open Application Model is a specification for building cloud native applications.
 
+Focused on the separation of development concerns from operational considerations through a platform-agnostic application model, OAM provides a set of tools for building high-grade containerized applications
+on systems like Kubernetes.
+
 *This repository is unstable, and open to contributions.*
 The specification is under development, and breaking changes could be made.
 Interested in contributing? Take a look at the issue queue! We're looking for more
@@ -62,18 +65,15 @@ Triaging of items into milestones will occur during the bi-weekly community call
 
 ### Contributing
 
-Hydra Specifications follow the [CNCF Code of Conduct][cncf-coc]. See the [CONTRIBUTING](contributing.md) guide for more information about submitting changes to the spec.
+See the [CONTRIBUTING](contributing.md) guide for more information about submitting changes to the spec.
 
-Below are links to join the bi-weekly community meetings and our meeting notes. Community Slack channels & mailing lists will be added shortly (~ 10/1). 
+One of the easiest ways to contribute is to participate in discussions. There are several ways to get involved.
 
 | Item        | Value  |
 |---------------------|---|
-| Mailing List | TBD |
-| Meeting Information | Bi-weekly (Starting Sept 24th), Tuesdays 10:30AM PST  |
-| Meeting Link | https://zoom.us/j/623691799?pwd=ZWc4SHFNdWpRUVVNYkdJWE9zVHpjZz09   |
-| Slack Channel       | TBD  |
+| Mailing List | Coming soon! |
+| Slack Channel       | Coming soon! |
+| Community meeting | Every other Tuesday at 10:30AM PST. Zoom meeting link: https://zoom.us/j/623691799?pwd=ZWc4SHFNdWpRUVVNYkdJWE9zVHpjZz09  |
 | Meeting Notes       | https://docs.google.com/document/d/1nqdFEyULekyksFHtFvgvFAYE-0AMHKoS3RMnaKsarjs/edit?usp=sharing |
-
-[cncf-coc]: https://github.com/cncf/foundation/blob/master/code-of-conduct.md
 
 [how-it-works]: assets/how-it-works.png
