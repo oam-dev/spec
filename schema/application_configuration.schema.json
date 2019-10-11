@@ -6,7 +6,7 @@
     "properties": {
         "apiVersion": {
             "type": "string",
-            "description": "The specific version of the Hydra specification in use. This version of the specification covers apiVersions in core.hydra.io/v1alpha1."
+            "description": "The specific version of the Hydra specification in use. This version of the specification covers apiVersions in core.oam.dev/v1alpha1."
         },
         "kind": {
             "type": "string",
