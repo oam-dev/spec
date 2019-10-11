@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://microsoft.com/v1/oam.application_configuration.schema.json",
-    "title": "Open Application Model Configuration JSON Schema",
+    "$id": "http:/oam.dev/v1/oam.application_configuration.schema.json",
+    "title": "Open Application Model Application Configuration JSON Schema",
     "type": "object",
     "properties": {
         "apiVersion": {
