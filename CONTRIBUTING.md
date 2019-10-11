@@ -1,19 +1,11 @@
 # Contributing
 
-<<<<<<< HEAD
 ## Proposing Changes and LGTM Policy
 To propose a change or ask a question, please open an issue in the issue queue before submitting a pull request (PR). All PRs must be reviewed and approved (LGTMed) by 2 maintainers before being merged. Maintainers are specified in the [OWNERS](OWNERS) file. Refer to [Contribution guidelines] for more details on the process for issues and PRs.
-=======
-The Open Application Model Specification project accepts contributions via GitHub pull requests. This document outlines the process for merging contributions to the spec.
->>>>>>> Replacing Hydra with Open Application Model
 
 
-<<<<<<< HEAD
 ## CLA Requirement
 This project welcomes contributions and suggestions. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. 
-=======
-Issues are used as the primary method for tracking anything to do with the Open Application Model Specification project.
->>>>>>> Replacing Hydra with Open Application Model
 
 ## Specification subject to the Open Web Foundation Agreements
 In addition, by making a contribution to specifications in this repository, you, on behalf of yourself, your employer, and its affiliates, are making those contributions subject to the obligations set forth in the [OWF Contributor License Agreement 1.0 - Copyright and Patent](http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owf-contributor-license-agreement-1-0---copyright-and-patent).  
@@ -50,11 +42,7 @@ from "Proposal" and "Discussion" items, or can be submitted individually dependi
 #### Issue Lifecycle
 
 The issue lifecycle is mainly driven by the core maintainers, but is good information for those
-<<<<<<< HEAD
 contributing to the Open Application Model specification. All issue types follow the same general lifecycle. Differences are noted below.
-=======
-contributing to Open Application Model Specification. All issue types follow the same general lifecycle. Differences are noted below.
->>>>>>> Replacing Hydra with Open Application Model
 1. Issue creation
 2. Triage
     - The maintainer in charge of triaging will apply the proper labels for the issue. This
@@ -107,51 +95,3 @@ The next section contains more information on the workflow followed for Pull Req
     - PRs can be closed by the author without merging
     - PRs may be closed by a Final Approver if the decision is made that the PR is not going to be merged 
 
-<<<<<<< HEAD
-=======
-## The Triager
-
-Each day, someone from a Open Application Model related team should act as the triager. This person will be in charge triaging new PRs and issues throughout the day. Anyone can volunteer as the traiger. If no one has volunteered by 10:00 AM PST, someone from Steelthread will triage. 
-
-## Labels
-
-The following tables define all label types used for Hydra Specification. It is split up by category.
-
-### Common
-
-| Label | Description |
-| ----- | ----------- |
-| `high priority` | Marks an issue or PR as critical. This means that addressing the PR or issue is top priority and will be handled first |
-| `duplicate` | Indicates that the issue or PR is a duplicate of another |
-| `spec change` | Marks the issue or a PR as an agreed upon change to the spec |
-| `wip` | Identifies an issue or PR as a work in progress | 
-
-### Issue Specific
-
-| Label | Description |
-| ----- | ----------- |
-| `proposal` | This issue is a proposal |
-| `discussion` | This issue is a question or discussion point to capture feedback |
-
-### PR Specific
-
-| Label | Description |
-| ----- | ----------- |
-| `awaiting review` | The PR has been triaged and is ready for someone to review |
-| `needs rebase` | A helper label used to indicate that the PR needs to be rebased before it can be merged. Used for easy filtering |
-| `lgtm <teamname>` | A label to indicate that a team (sfmesh, steelthread, octo) approves. |
-
-#### Size labels
-
-Size labels are used to indicate how much change is in a given PR. This is helpful for estimating review time. 
-
-| Label | Description |
-| ----- | ----------- |
-| `size/small` | Anything less than or equal to 4 files and 150 lines. |
-| `size/medium` | Anything greater than `size/small` and less than or equal to 8 files and 300 lines. |
-| `size/large` | Anything greater than `size/medium`. This also should be applied to anything that is a significant specification change. |
-
-### Milestones
-
-The Hydra Specification will work toward a set of milestones. PRs and issues can have milestones associated with them. The triager should assign milestones as appropriate. The milestones will be created per working group agreement. 
->>>>>>> Replacing Hydra with Open Application Model
