@@ -40,7 +40,7 @@ The below diagram demonstrates the platform architecture:
 
 ## The Benefits? Serverless Experience and Portable Apps
 
-Focused on the separation of development concerns from operational considerations through a platform-agnostic specification, _Open Application Model_ brings modular, extensible, and portable design to building and delivering applications on systems like Kubernetes.
+Focused on the separation of development concerns from operational considerations through a platform-agnostic specification, _Open Application Model_ brings modular, extensible, and portable design to building and delivering applications on platforms like Kubernetes.
 
 With OAM, platform builders can provide reusable modules in the format of _Component_, _Trait_ etc. and even package them in predefined application profiles. Users choose how to run their applications by selecting profiles, for example, microservice apps with high SLO requirements, stateful apps with persistent volumes, event driven functions with horizontally autoscaling. This brings serverless experience to end users in a cloud native way, all due to the modular design.
 
