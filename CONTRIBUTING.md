@@ -1,11 +1,10 @@
 # Contributing
 
 ## Proposing Changes and LGTM Policy
-To propose a change or ask a question, please open an issue in the issue queue before submitting a pull request (PR). All PRs must be reviewed and approved (LGTMed) by 2 maintainers before being merged. Maintainers are specified in the [OWNERS](OWNERS) file. Refer to [Contribution guidelines] for more details on the process for issues and PRs.
-
+To propose a change or ask a question, please open an issue in the issue queue before submitting a pull request (PR). All PRs must be reviewed and approved (LGTMed) by 2 maintainers before being merged. Maintainers are specified in the [OWNERS](OWNERS) file. Refer to to the contribution guidelines in this document for more details on the process for issues and PRs.
 
 ## CLA Requirement
-This project welcomes contributions and suggestions. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. 
+This project welcomes contributions and suggestions. All contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant the community the rights to use your contribution. 
 
 ## Specification subject to the Open Web Foundation Agreements
 In addition, by making a contribution to specifications in this repository, you, on behalf of yourself, your employer, and its affiliates, are making those contributions subject to the obligations set forth in the [OWF Contributor License Agreement 1.0 - Copyright and Patent](http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owf-contributor-license-agreement-1-0---copyright-and-patent).  
