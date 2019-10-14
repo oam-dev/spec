@@ -6,8 +6,7 @@ From the creators of
 and [Service Fabric](https://github.com/Microsoft/service-fabric),
 the Open Application Model is a specification for building cloud native applications.
 
-Focused on the separation of development concerns from operational considerations through a platform-agnostic application model, OAM provides a set of tools for building high-grade containerized applications
-on systems like Kubernetes.
+Focused on separating concerns of development and operation needs, _Open Application Model_ brings modular, extensible, and portable design to building and delivering applications on platforms like Kubernetes.
 
 *This repository is unstable, and open to contributions.*
 The specification is under development, and breaking changes could be made.
