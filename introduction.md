@@ -36,7 +36,7 @@ The below diagram demonstrates the platform architecture:
 
 ![alt](./assets/platform_arch.png)
 
-[Scylla](https://github.com/microsoft/scylla) is a reference implementation based on Kubernetes. Give it a try to gain hands-on experience.
+[Rudr](https://github.com/oam-dev/rudr) is a reference implementation based on Kubernetes. Give it a try to gain hands-on experience.
 
 ## The Benefits? Serverless Experience and Portable Apps
 
