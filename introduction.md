@@ -37,7 +37,7 @@ The following diagram demonstrates the platform architecture:
 ![alt](./assets/platform_arch.png)
 
 
-## For platform developers
+## For platform builders
 
 Focused on the separation of development concerns from operational considerations through a platform-agnostic specification, the _Open Application Model_ brings modular, extensible, and portable design to building and delivering applications on platforms like Kubernetes.
 
