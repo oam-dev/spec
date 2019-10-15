@@ -71,8 +71,9 @@ One of the easiest ways to contribute is to participate in discussions. There ar
 | Item        | Value  |
 |---------------------|---|
 | Mailing List | https://groups.google.com/forum/#!forum/oam-dev |
-| Meeting Information | Bi-weekly (Starting October 23rd), Tuesdays 10:30AM PST  |
+| Meeting Information | Bi-weekly (Starting Oct 23, 2019), Tuesdays 10:30AM PST  |
 | Meeting Link | https://zoom.us/j/271516061  |
 | IM Channel       | https://gitter.im/oam-dev/ |
+| Meeting Notes | https://docs.google.com/document/d/1nqdFEyULekyksFHtFvgvFAYE-0AMHKoS3RMnaKsarjs/edit?usp=sharing |
 
 [how-it-works]: assets/how-it-works.png
