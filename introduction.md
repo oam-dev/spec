@@ -1,47 +1,46 @@
 # Introduction
 
-This doc gives an introduction of the specification in a story-based format. It help end users and developers to quickly understand and implement the protocol.
+This doc gives an introduction of the Open Application Model in a story-based format. Its goal is to help end users and developers quickly understand and implement the specification.
 
-In the following, we are going through a story of application delivery lifecycle. The storyline goes as:
+In the following, we go through a story that describes an application delivery lifecycle. The storyline looks like this:
 
 1. The _developer_ creates a web application;
-2. The _application operator_ deploys instances of that application, and configures it with operation traits, e.g. autoscaling;
+2. The _application operator_ deploys instances of that application, and configures it with operational traits, such as autoscaling;
 3. The _infrastructure operator_ decides which underlying technology is used to handle the deployment and operations.
 
-## App Developer: Develop Apps
+## Application developer: Write and test code
 
-First of all, we have developers who create an online shopping app. They know how to write and test the code. The program takes a few parameters: log level, http port, metrics port. To let the developers focus on development, application operators (either human or automated operation platforms) takes care of the operational tasks. This provides a "serverless" experience to the developers. But, the developers still need to develop and package the application, and deliver it to the application operators.
+The story begins with the application developers who create an application, such as an online shopping application. They know how to write and test the code. The program takes a few parameters such as log level and HTTP port. To let the developers focus on implementing the application's business logic, application operators (either human or automated operation platforms) take care of operational tasks. This provides a "serverless" experience to the developers. The developers only need to develop and package the application, and then deliver it to the application operators.
 
-How app developers deliver it? The answer is that they will define a _ComponentSchematic_ yaml. In _Open Application Model_, each piece of program is described as a _ComponentSchematic_ yaml by app developer. Any information that app operator needs to know about the program will be defined within. For example, the container image packaging the program and the program parameters will be written in a _ComponentSchematic_ yaml. 
+To deliver their application, the developers define _ComponentSchematic_ YAML files. In the _Open Application Model_, each individual component of a program is described as a _ComponentSchematic_ YAML by the application developer. This file encapsulates a workload and the information needed to run it. For example, it can contain the container image packaging the program, whether it needs an endpoint, if its designed to run as a task to completion or as a server, environment variables, and any parameters the developers want to expose to an operator to override at deployment time. 
 
-The below diagram demonstrates the workflow:
+The following diagram demonstrates this workflow:
 
 ![alt](./assets/dev2ops.png)
 
-## App Operator: Deploy and Maintain Apps
+## Application operator: Deploy and operate applications
 
-Deploying an application requires runtime traits configuration and live instances deployment. The app operator applies runtime configuration like replica size, autoscaling policy, which cluster to deploy in a _ApplicationConfiguration_ yaml. Writing and deploying a _ApplicationConfiguration_ yaml is equivalent to deploying an app. The underlying platform will create live instances of _ComponentSchematic_ and attach operational traits to them according to the _ApplicationConfiguration_ spec.
+To run and operate an application, the application operator sets parameter values for the developers' components and applies operational characteristics, such as replica size, autoscaling policy, ingress points, and traffic routing rules in an _ApplicationConfiguration_ yaml. In OAM, these operational characteristics are called _traits_. Writing and deploying a _ApplicationConfiguration_ yaml is equivalent to deploying an application. The underlying platform will create live instances of _ComponentSchematic_ and attach operational traits to them according to the _ApplicationConfiguration_ spec.
 
-The below diagram demonstrates the workflow:
+The following diagram demonstrates the workflow:
 
 ![alt](./assets/ops-deploy-app.png)
 
-## Infra Operator: Configure Platform Capabilities
+## Infrastructure operator: configure platform capabilities
 
-Now that the app operator deploys a _ComponentSchematic_ yaml. How does it happen in real? The power comes from the underlying platforms.
+The application developer and application operator have so far described an application and its operational characteristics in platform-neutral terms. The power of the Open Application Model comes from the underlying platforms that implements the model, which can surface the capabilities that make the underlying platforms unique and useful through OAM in a way that is consistent across any platform that supports the model.
 
-Each platform provides a group of application deployment and operational capabilities. Infrastructure operators are responsible for declaring, installing, and maintaining the underlying services that are available on the platform. For example, infra operator might choose the Load Balancer technology of a specific cloud provider to expose the service.
+Infrastructure operators are responsible for declaring, installing, and maintaining the underlying services that are available on the platform. For example, an infrastructure operator might choose a specific load balancer technology when deploying to a cloud provider to expose the service.
 
-The below diagram demonstrates the platform architecture:
+The following diagram demonstrates the platform architecture:
 
 ![alt](./assets/platform_arch.png)
 
-[Rudr](https://github.com/oam-dev/rudr) is a reference implementation based on Kubernetes. Give it a try to gain hands-on experience.
 
-## The Benefits? Serverless Experience and Portable Apps
+## For platform builders
 
-Focused on the separation of development concerns from operational considerations through a platform-agnostic specification, _Open Application Model_ brings modular, extensible, and portable design to building and delivering applications on platforms like Kubernetes.
+Focused on the separation of development concerns from operational considerations through a platform-agnostic specification, the _Open Application Model_ brings modular, extensible, and portable design to building and delivering applications on platforms like Kubernetes.
 
-With OAM, platform builders can provide reusable modules in the format of _Components_, _Traits_ etc. and even package them in predefined application profiles. Users choose how to run their applications by selecting profiles, for example, microservice apps with high SLO requirements, stateful apps with persistent volumes, event driven functions with horizontally autoscaling. This brings a serverless experience to end users in a cloud native way, all due to the modular design.
+With OAM, platform builders can provide reusable modules in the format of _Components_, _Traits_, and _Scopes_. This allows platforms to do things like package them in predefined application profiles. Users choose how to run their applications by selecting profiles, for example, microservice apps with high SLO requirements, stateful apps with persistent volumes, or event driven functions with horizontally autoscaling. This brings a serverless experience to end users in a cloud native way, all due to the modular design.
 
 Another benefit for end users is having portable apps across platforms. If an app can be deployed and used on one provider, it should be able to run on any other providers. We define must-implement, recommended, and candidate types in _core_, _standard_, and _extended_ APIs. This will ensure portability and provide extensibility in the same spec. Of course, not everything is portable and the primary concern of such an interface is that it is a "lowest-common denominator". Our aspiration is to build a vendor-neutral, community-owned spec and the most popular APIs will be embraced and added to the specification over time. In this way, the evolution will ensure that most users will be successful in building cloud native applications via the Open Application Model.
