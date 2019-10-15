@@ -38,7 +38,9 @@ For more details and user stories, see [introduction.md](./introduction.md).
 
 [Rudr](https://github.com/oam-dev/rudr) is a reference implementation of the Open Application Model specification for Kubernetes. To get started with an example on the Open Application Model, go to the [Rudr Quickstart Guide](https://github.com/oam-dev/rudr/blob/master/docs/quickstart/quickstart.md) guide.
 
-## Specification
+## The Specification
+
+[Notational Conventions](notational_convention.md)
 
   1. [Purpose and Goals](1.purpose_and_goals.md)
   2. [Overview and Terminology](2.overview_and_terminology.md)
@@ -49,7 +51,6 @@ For more details and user stories, see [introduction.md](./introduction.md).
   7. [Workload Types](7.workload_types.md)
   8. [Practical Considerations](8.practical_considerations.md)
   9. [Design Principles](9.design_principles.md)
-  10. [Appendix A: Extended Workload Types](10.appendix-extended-workload-types.md)
 
 
 ## Community
@@ -70,9 +71,9 @@ One of the easiest ways to contribute is to participate in discussions. There ar
 
 | Item        | Value  |
 |---------------------|---|
-| Mailing List | Coming soon! |
-| Slack Channel       | Coming soon! |
-| Community meeting | Every other Tuesday at 10:30AM PST. Zoom meeting link: https://zoom.us/j/623691799?pwd=ZWc4SHFNdWpRUVVNYkdJWE9zVHpjZz09  |
-| Meeting Notes       | https://docs.google.com/document/d/1nqdFEyULekyksFHtFvgvFAYE-0AMHKoS3RMnaKsarjs/edit?usp=sharing |
+| Mailing List | https://groups.google.com/forum/#!forum/oam-dev |
+| Community meeting info | Bi-weekly (Starting Oct 22, 2019), Tuesdays 10:30AM PST  |
+| Community meeting link | https://zoom.us/j/271516061 |
+| IM Channel      | https://gitter.im/oam-dev/ |
 
 [how-it-works]: assets/how-it-works.png
