@@ -36,7 +36,7 @@ For more details and user stories, see [introduction.md](./introduction.md).
 
 ## See it in action
 
-[Rudr](https://github.com/oam-dev/rudr) is a reference implementation of the Open Application Model specification for Kubernetes. To get started with an example on the Open Application Model, go to the [Rudr Quickstart Guide](https://github.com/oam-dev/rudr/blob/master/docs/quickstart/quickstart.md) guide.
+[Rudr](https://github.com/oam-dev/rudr) is a reference implementation of the Open Application Model specification for Kubernetes. To get started with an example on the Open Application Model, go to the [Rudr Tutorial](https://github.com/oam-dev/rudr/blob/master/docs/tutorials/deploy_and_update.md) guide.
 
 ## Specification
 
