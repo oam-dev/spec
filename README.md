@@ -71,5 +71,6 @@ One of the easiest ways to contribute is to participate in discussions. There ar
 | Community meeting info | Bi-weekly (Starting Oct 22, 2019), Tuesdays 10:30AM PST  |
 | Community meeting link | https://zoom.us/j/271516061 |
 | IM Channel      | https://gitter.im/oam-dev/ |
+| Twitter      | [@oam_dev](https://twitter.com/oam_dev) |
 
 [how-it-works]: assets/how-it-works.png
