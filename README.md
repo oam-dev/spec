@@ -1,9 +1,6 @@
 # Open Application Model Specification
 
-From the creators of 
-[Helm](https://helm.sh),
-[OpenKruise](https://openkruise.io/en-us/),
-the Open Application Model is a specification for building cloud native applications.
+Open Application Model is a specification for building cloud native applications.
 
 Focused on separating concerns of development and operation needs, _Open Application Model_ brings modular, extensible, and portable design to building and delivering applications on platforms like Kubernetes.
 
@@ -74,5 +71,8 @@ One of the easiest ways to contribute is to participate in discussions. There ar
 | Community meeting info | Bi-weekly (Starting Oct 22, 2019), Tuesdays 10:30AM PST  |
 | Community meeting link | https://zoom.us/j/271516061 |
 | IM Channel      | https://gitter.im/oam-dev/ |
+
+Join the creators of [Helm](https://helm.sh),
+[OpenKruise](https://openkruise.io/en-us/), and [Service Fabric](https://github.com/Microsoft/service-fabric). 
 
 [how-it-works]: assets/how-it-works.png
