@@ -61,7 +61,7 @@ Triaging of items into milestones will occur during the bi-weekly community call
 
 ### Contributing
 
-See the [CONTRIBUTING](contributing.md) guide for more information about submitting changes to the spec.
+See the [CONTRIBUTING](CONTRIBUTING.md) guide for more information about submitting changes to the spec.
 
 One of the easiest ways to contribute is to participate in discussions. There are several ways to get involved.
 
