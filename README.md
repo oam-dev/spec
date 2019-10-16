@@ -72,7 +72,4 @@ One of the easiest ways to contribute is to participate in discussions. There ar
 | Community meeting link | https://zoom.us/j/271516061 |
 | IM Channel      | https://gitter.im/oam-dev/ |
 
-Join the creators of [Helm](https://helm.sh),
-[OpenKruise](https://openkruise.io/en-us/), and [Service Fabric](https://github.com/Microsoft/service-fabric). 
-
 [how-it-works]: assets/how-it-works.png
