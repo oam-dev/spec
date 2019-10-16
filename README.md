@@ -3,7 +3,6 @@
 From the creators of 
 [Helm](https://helm.sh),
 [OpenKruise](https://openkruise.io/en-us/),
-and [Service Fabric](https://github.com/Microsoft/service-fabric),
 the Open Application Model is a specification for building cloud native applications.
 
 Focused on separating concerns of development and operation needs, _Open Application Model_ brings modular, extensible, and portable design to building and delivering applications on platforms like Kubernetes.
@@ -11,7 +10,7 @@ Focused on separating concerns of development and operation needs, _Open Applica
 *This repository is unstable, and open to contributions.*
 The specification is under development, and breaking changes could be made.
 Interested in contributing? Take a look at the issue queue! We're looking for more
-great ideas on how to model cloud native applications.
+ ideas on how to model cloud native applications.
 
 ## Introduction
 
