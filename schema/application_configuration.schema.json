@@ -187,10 +187,6 @@
                     "type": "string",
                     "description": "The name of the trait instance. Must be unique to the deployment environment."
                 },
-                "type": {
-                    "type": "string",
-                    "description": "The fully-qualified GROUP/VERSION.KIND name of the trait."
-                },
                 "properties": {
                     "type": "object",
                     "description": "Overrides of parameters that are exposed by the trait type defined in 'type'.",
@@ -200,8 +196,7 @@
                 }
             },
             "required": [
-                "name",
-                "type"
+                "name"
             ],
             "additionalProperties": false
         },
