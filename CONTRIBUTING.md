@@ -1,19 +1,24 @@
 # Contributing
 
 ## Proposing Changes and LGTM Policy
-To propose a change or ask a question, please open an issue in the issue queue before submitting a pull request (PR). All PRs must be reviewed and approved (LGTMed) by 2 maintainers before being merged. Maintainers are specified in the [OWNERS](OWNERS) file. Refer to to the contribution guidelines in this document for more details on the process for issues and PRs.
+
+To propose a change or ask a question, please open an issue in the issue queue before submitting a pull request (PR). All PRs must be reviewed and approved (LGTMed) by 2 maintainers before being merged. Maintainers are specified in the [OWNERS](OWNERS.md) file. Refer to to the contribution guidelines in this document for more details on the process for issues and PRs.
 
 ## CLA Requirement
+
 This project welcomes contributions and suggestions. All contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant the community the rights to use your contribution. 
 
 ## Specification subject to the Open Web Foundation Agreements
+
 In addition, by making a contribution to specifications in this repository, you, on behalf of yourself, your employer, and its affiliates, are making those contributions subject to the obligations set forth in the [OWF Contributor License Agreement 1.0 - Copyright and Patent](http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owf-contributor-license-agreement-1-0---copyright-and-patent).  
 Final specifications developed in this repository will be subject to the [Open Web Foundation Final Specification Agreement (“OWFa 1.0”)](http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0).  OWFa 1.0 will be applied as follows:
+
 -	The maintainer will notify all contributors to a designated specification in writing via provided contact information of the start of a 30 day review period, after which the specification will be subject to the OWFa 1.0.
 -	During that 30 day period, contributors may provide written notice to the maintainer that the contributor is not making the forgoing commitment under OWFa 1.0 for the designated specification (“Exclusion”).
 -	Upon the end of that 30 day notice period, those contributors who have not issued an Exclusion, on behalf of themselves, their employer, and its affiliates, will, without further action, be subject to the obligations set forth in the OWFa 1.0 for the designated specification.
 
 ## Code of Conduct
+
 This project has adopted the [Contributor Covenant code of conduct](code-of-conduct.md/).
 Please maintain respectful communication in the issue queue, PR queue, and all other communication channels.
 
@@ -28,6 +33,7 @@ Issues are used as the primary method for tracking anything to do with the Open 
 #### Issue Types
 
 There are three types of issues (each with their own corresponding [label](#labels)):
+
 - **Discussion**: These are support or functionality inquiries that we want to have a record of for
 future reference. Depending on the discussion, these can turn into "Spec Change" issues.
 - **Proposal**: Used for items that propose a new ideas or functionality that require
@@ -42,6 +48,7 @@ from "Proposal" and "Discussion" items, or can be submitted individually dependi
 
 The issue lifecycle is mainly driven by the core maintainers, but is good information for those
 contributing to the Open Application Model specification. All issue types follow the same general lifecycle. Differences are noted below.
+
 1. Issue creation
 2. Triage
     - The maintainer in charge of triaging will apply the proper labels for the issue. This
@@ -87,9 +94,9 @@ The next section contains more information on the workflow followed for Pull Req
     - Reviewers should update labels as needed (such as `needs rebase`).
     - When a review is approved, the reviewer should add `LGTM` as a comment. 
     - Final approval is required by a designated owner (see `.github/CODEOWNERS` file). Merging is blocked without this final approval. Approvers will factor reviews from all other reviewers into their approval process.
-5. PR owner should try to be responsive to comments by answering questions or changing text. Once all comments have been addressed,
+4. PR owner should try to be responsive to comments by answering questions or changing text. Once all comments have been addressed,
    the PR is ready to be merged.
-6. Merge or close
+5. Merge or close
     - A PR should stay open until a Final Approver (see above) has marked the PR approved. 
     - PRs can be closed by the author without merging
     - PRs may be closed by a Final Approver if the decision is made that the PR is not going to be merged 
