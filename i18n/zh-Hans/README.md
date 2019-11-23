@@ -1,10 +1,10 @@
-# 开放云原生应用模型
+# 开放应用模型
 
-开放云原生应用模型（OAM）是一个用于构造云原生应用的规范。
+开放应用模型（OAM）是一个用于构造云原生应用的规范。
 
 _Open Application Model_ 聚焦于将开发与运维角色的关注点分离，秉持模块化、可拓展、可移植的设计原则，帮助用户在K8S等平台上构造并交付应用。
 
-本项目正处于快速迭代阶段，可能衍生出重大修改版本（Breaking Changes）。本项目对社区公众完全开放，如果您对社区贡献感兴趣，那么您可以从浏览项目的问题队列（Issue Queue）开始。我们正在**云原生应用建模领域**不断探索，期待您的积极参与！
+本项目正处于快速迭代阶段，可能会出现不兼容的修改。本项目对社区公众完全开放，如果您对社区贡献感兴趣，那么您可以从浏览项目的问题队列（Issue Queue）开始。我们正在**云原生应用建模领域**不断探索，期待您的积极参与！
 
 ## 导读
 
@@ -36,7 +36,7 @@ _Open Application Model_ 将【构造应用（开发）】、【部署&运维应
   2. [概述与术语](2.overview_and_terminology.md)
   3. [组件模型 The Component Model](3.component_model.md)
   4. [应用边界 Application Scopes](4.application_scopes.md)
-  5. [运维特征 Traits](5.traits.md)
+  5. [运维能力 Traits](5.traits.md)
   6. [应用配置 Application Configuration](6.application_configuration.md)
   7. [工作负载类型 Workload Types](7.workload_types.md)
   8. [实践考虑因素](8.practical_considerations.md)
@@ -61,7 +61,7 @@ _Open Application Model_ 将【构造应用（开发）】、【部署&运维应
 | 参与方式        | 链接  |
 |---------------------|---|
 | 社区邮件 | https://groups.google.com/forum/#!forum/oam-dev |
-| 社区会议时间 | [自2019年10月22日 周二 10:30AM（PST时间）起每个双周](https://calendar.google.com/calendar?cid=dDk5YThyNGIwOWJyYTJxajNlbWI0a2FvdGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)  |
+| 社区会议时间 | [自2019年10月22日起 每个双周 周三 02:30AM（北京时间）](https://calendar.google.com/calendar?cid=dDk5YThyNGIwOWJyYTJxajNlbWI0a2FvdGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)  |
 | 社区会议Zoom | https://zoom.us/j/271516061 |
 | 即时通讯频道      | https://gitter.im/oam-dev/ |
 | Twitter      | [@oam_dev](https://twitter.com/oam_dev) 
