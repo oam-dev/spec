@@ -74,3 +74,10 @@ One of the easiest ways to contribute is to participate in discussions. There ar
 | Twitter      | [@oam_dev](https://twitter.com/oam_dev) |
 
 [how-it-works]: assets/how-it-works.png
+
+## Translations
+
+
+* [简体中文](i18n/zh-Hans/README.md)
+
+Now i18n of the OAM spec is under construction, welcome to contribue.
