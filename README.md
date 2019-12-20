@@ -75,3 +75,7 @@ One of the easiest ways to contribute is to participate in discussions. There ar
 | Twitter      | [@oam_dev](https://twitter.com/oam_dev) |
 
 [how-it-works]: assets/how-it-works.png
+
+### Resources
+
+Come find community blogs and conference talks about OAM in [community/talks_and_blogs.md](./community/talks_and_blogs.md).
