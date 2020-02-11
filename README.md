@@ -40,11 +40,11 @@ For more details and user stories, see [introduction.md](./introduction.md).
 
   1. [Purpose and Goals](1.purpose_and_goals.md)
   2. [Overview and Terminology](2.overview_and_terminology.md)
-  3. [The Component Model](3.component_model.md)
-  4. [Application Scopes](4.application_scopes.md)
-  5. [Traits](5.traits.md)
-  6. [Application Configuration](6.application_configuration.md)
-  7. [Workload Types](7.workload_types.md)
+  3. [The Component Model](4.component.md)
+  4. [Application Scopes](5.application_scopes.md)
+  5. [Traits](6.traits.md)
+  6. [Application Configuration](7.application_configuration.md)
+  7. [Workload Types](3.workload_types.md)
   8. [Practical Considerations](8.practical_considerations.md)
   9. [Design Principles](9.design_principles.md)
 
