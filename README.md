@@ -40,7 +40,7 @@ For more details and user stories, see [introduction.md](./introduction.md).
 
   1. [Purpose and Goals](1.purpose_and_goals.md)
   2. [Overview and Terminology](2.overview_and_terminology.md)
-  3. [Workload Types](3.workload_types.md)
+  3. [Workload Types](3.workload.md)
   4. [The Component Model](4.component.md)
   5. [Application Scopes](5.application_scopes.md)
   6. [Traits](6.traits.md)
