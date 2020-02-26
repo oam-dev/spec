@@ -8,10 +8,10 @@ metadata:
   name: containerizedworkload.core.oam.dev
 spec:
   definitionRef:
-    schemaName: containerizedworkload.core.oam.dev
+    name: containerizedworkload.core.oam.dev
 ```
 
-Here is the schematics of the containerized workload. 
+Here is the schematic of a containerized workload. 
 
 ### Top-Level Attributes of a containerized workload 
 
@@ -20,7 +20,7 @@ These attributes provide top-level information about the containerized workload.
 | Attribute | Type | Required | Default Value | Description |
 |-----------|------|----------|---------------|-------------|
 | `apiVersion` | `string` | Y ||  `core.oam.dev/v1alpha2` |
-| `kind` | `string` | Y ||  `containerWorkload` |
+| `kind` | `string` | Y ||  `containerizedWorkload` |
 | `metadata` | [`Metadata`](#metadata) | Y | | containerized workload metadata. |
 | `spec`| [`Spec`](#spec-1) | Y | | A container for the containerized workload spec. |
 
