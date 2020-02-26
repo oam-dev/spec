@@ -5,10 +5,10 @@ A containerized workload is used for long-running workloads in containers. Here 
 apiVersion: core.oam.dev/v1alpha2
 kind: WorkloadDefinition
 metadata:
-  name: containerizedworkload.core.oam.dev
+  name: containerizedworkloads.core.oam.dev
 spec:
   definitionRef:
-    name: containerizedworkload.core.oam.dev
+    name: containerizedworkloads.core.oam.dev
 ```
 
 Here is the schematic of a containerized workload. 
@@ -20,7 +20,7 @@ These attributes provide top-level information about the containerized workload.
 | Attribute | Type | Required | Default Value | Description |
 |-----------|------|----------|---------------|-------------|
 | `apiVersion` | `string` | Y ||  `core.oam.dev/v1alpha2` |
-| `kind` | `string` | Y ||  `containerizedWorkload` |
+| `kind` | `string` | Y ||  `ContainerizedWorkload` |
 | `metadata` | [`Metadata`](#metadata) | Y | | containerized workload metadata. |
 | `spec`| [`Spec`](#spec-1) | Y | | A container for the containerized workload spec. |
 
