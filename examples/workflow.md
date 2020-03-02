@@ -191,7 +191,6 @@ spec:
         apiVersion: core.oam.dev/v1alpha2
         kind: NetworkScope
         name: my-vpc-network
-
   components:
     - componentName: frontend
       parameterValues:
