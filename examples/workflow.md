@@ -205,7 +205,6 @@ spec:
               path: "/"
       scopes:
         - my-vpc-network
-
     - componentName: backend
       scopes:
         - my-vpc-network
