@@ -4,7 +4,8 @@ This section is non-normative. OAM compliant tooling need not implement this sec
 
 This section uses a fictional tool called `oamctl` to illustrate a workflow pattern for OAM app operations.
 
-### Deploying two components with parameter overrides
+## Deploying two components with parameter overrides
+
 The following example shows two separate components:
  - a front-end web app in a container, run as a core containerized workload.
  - a back-end Cassandra database, represented by an extended workload.
@@ -101,11 +102,12 @@ In this example, the ops config allows a user to override only one of the parame
 
 The operator can now deploy the components together with this configuration to create running instances of the components:
 
-```
+```output
 $ oamctl install -c ./config.yaml ./frontend.yaml ./backend.yaml -p "message=overridden message!"
 ```
 
-### Adding traits to the components
+## Adding traits to the components
+
 Traits are attached by application operators. In the next part of this example, traits are added to the two components defined previously.
 
 Our system supports a few different traits:
@@ -139,7 +141,7 @@ spec:
           value: "Well hello there"
       traits:
         - trait:
-            apiVersion: standard.oam.dev/v1alpha1
+            apiVersion: standard.oam.dev/v1alpha2
             kind: Ingress
             spec:
               host: "www.example.com"
@@ -152,9 +154,7 @@ An implementation of this would then direct inbound traffic bound for `www.examp
 
 ### Placing components into application scopes
 
-Up to this point, the frontend component is deployed into the default "root" network and health scopes, as all core workload types are required to be in all core application scope types.
-
-The backend component is an extended workload type and is therefore not automatically deployed into the default "root' application scopes.
+Up to this point, no application scopes group the frontend component and backend component.
 
 In this example, a [network scope](5.application_scopes.md#network-scope) is defined and attached to an SDN. Application Scope instance is created following it's [`ScopeDefinition`](5.application_scopes.md):
 
@@ -186,11 +186,6 @@ metadata:
     version: v1.0.0
     description: "Customized version of single-app"
 spec:
-  scopes:
-    - scopeRef:
-        apiVersion: core.oam.dev/v1alpha2
-        kind: NetworkScope
-        name: my-vpc-network
   components:
     - componentName: frontend
       parameterValues:
@@ -198,16 +193,22 @@ spec:
           value: "Well hello there"
       traits:
         - trait:
-            apiVersion: standard.oam.dev/v1alpha1
+            apiVersion: standard.oam.dev/v1alpha2
             kind: Ingress
             spec:
               host: "www.example.com"
               path: "/"
       scopes:
-        - my-vpc-network
+        - scopeRef:
+            apiVersion: core.oam.dev/v1alpha2
+            kind: NetworkScope
+            name: my-vpc-network
     - componentName: backend
       scopes:
-        - my-vpc-network
+        - scopeRef:
+            apiVersion: core.oam.dev/v1alpha2
+            kind: NetworkScope
+            name: my-vpc-network
 ```
 
 This example now shows a complete installation of the application configuration composed of two components, an ingress trait, and a network scope with parameters exposed to an application operator to customize the domain name, the network to deploy it to, and a custom message for the web front end to display.
