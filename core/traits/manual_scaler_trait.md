@@ -14,7 +14,9 @@ This trait definition allows operators to manually scale the number of replicas 
 
 ## Spec
 
-As a core trait, we don't need any trait definition here. But we could give this as an example.
+As a core trait, the Manual Scaler trait should be part of OAM implementation, so we don't need trait definition for it.
+
+But assuming manual scaler trait is not a core trait, we could define as the following workflow.
 
 Firstly, we need register trait definition like below:
 
@@ -30,36 +32,71 @@ spec:
     name: manualscalertrait.core.oam.dev
 ```
 
-Then OAM runtime should have a version of this schema, the schema SHOULD be able to validate. For example using JSON Schema like this:
-
-```json
-{
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "type": "object",
-    "required": [
-        "replicaCount"
-    ],
-    "properties": {
-       "replicaCount": {
-        "type": "integer",
-        "description": "the target number of replicas to scale a component to.",
-        "minimum": 0
-       }
-    }
-}
-```
-
-Or using OpenAPI V3 Schema:
+Then OAM runtime should have a version of this schema, the schema SHOULD be able to validate. For example using OpenAPIv3 schema like this:
 
 ```yaml
 openAPIV3Schema:
   type: object
-  properties:
-    replicaCount:
-      description: the target number of replicas to scale a component to.
-      type: integer
+  description: Open Application Model ManualScaler Trait OpenAPIv3 schema.
   required:
-    - replicaCount
+    - apiVersion
+    - kind
+    - spec
+  properties:
+    apiVersion:
+      description: APIVersion defines the versioned schema of this representation of an object.
+      type: string
+      enmu:
+        - core.oam.dev/v1alpha2
+    kind:
+      description: Must be ManualScalerTrait.
+      type: string
+      enum:
+        - ManualScalerTrait
+    spec:
+      description: Defines the desired state of the ManualScaler trait.
+      type: object
+      required:
+        - replicaCount
+      properties:
+        replicaCount:
+          description: the target number of replicas to scale a component to.
+          type: integer
+```
+
+Or using JSON Schema:
+
+```json
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Open Application Model ManualScaler Trait JSON Schema",
+    "type": "object",
+    "properties": {
+        "apiVersion": {
+            "type": "string",
+            "description": "APIVersion defines the versioned schema of this representation of an object.",
+            "enum": ["core.oam.dev/v1alpha2"]
+        },
+        "kind": {
+            "type": "string",
+            "description": "must be ManualScalerTrait.",
+            "enum": ["ManualScalerTrait"]
+        },
+        "spec": {
+            "type": "object",
+            "description": "Defines the desired state of the ManualScaler trait.",
+            "required": ["replicaCount"],
+            "properties": {
+              "replicaCount": {
+                "type": "integer",
+                "description": "the target number of replicas to scale a component to.",
+                "minimum": 0
+              }
+            }
+        }
+    },
+    "required": ["apiVersion", "kind", "spec"]
+}
 ```
 
 ## Usage examples
@@ -75,7 +112,6 @@ metadata:
     version: v1.0.0
     description: "Customized version of single-app"
 spec:
-  variables:
   components:
     - componentName: frontend
       traits:
