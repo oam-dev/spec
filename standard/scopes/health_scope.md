@@ -32,4 +32,7 @@ metadata:
 spec:
   probe-method: GET
   probe-endpoint: /health
+  probe-timeout: 15
+  probe-interval: 30
+  failure-rate: 0.01
 ```
