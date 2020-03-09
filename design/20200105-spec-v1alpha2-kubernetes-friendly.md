@@ -1,6 +1,6 @@
 # Kubernetes Friendly OAM
 
-* Author: Nic Cope ([@negz], [negz@upbound.io])
+* Authors: Nic Cope ([@negz], [negz@upbound.io]), Hongchao Deng ([@hongchaodeng], [hongchao.deng@alibaba-inc.com])
 * Reviewers: [OAM Maintainers]
 
 ## Background
@@ -463,6 +463,8 @@ The following related proposals preceded this document:
 
 [@negz]: https://github.com/negz
 [negz@upbound.io]: mailto:negz@upbound.io
+[@hongchaodeng]: https://github.com/hongchaodeng
+[hongchao.deng@alibaba-inc.com]: mailto:hongchao.deng@alibaba-inc.com
 [OAM Maintainers]: https://github.com/oam-dev/spec/blob/d16d5add5a725d28c587ba5d624350feb6713218/OWNERS.md
 [Open Application Model]: https://oam.dev/
 [separation of concerns]: https://github.com/oam-dev/spec/blob/d16d5add/introduction.md
