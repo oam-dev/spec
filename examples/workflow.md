@@ -43,7 +43,7 @@ spec:
     required: true
     type: string
     fieldPaths:
-    - "spec.containers[0].env[0].value"
+    - ".spec.containers[0].env[0].value"
 ```
 
 ```yaml
@@ -66,12 +66,12 @@ spec:
       description: Max stale requests.
       type: int
       fieldPaths:
-      - "spec.maxStalenessPrefix"
+      - ".spec.maxStalenessPrefix"
     - name: defaultConsistencyLevel
       description: The default consistency level
       type: string
       fieldPaths:
-      - "spec.defaultConsistencyLevel"
+      - ".spec.defaultConsistencyLevel"
 ```
 
 Note that each component allows certain parameters to be overridden. For example, the `message` parameter is exposed for configuration in the frontend component. Within the component config, the parameter is piped to an environment variable where the component code can read the value.
