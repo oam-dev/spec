@@ -1,0 +1,361 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://oam.dev/v1/oam.workload.schema.json",
+    "title": "Open Application Model Containerized Workload JSON Schema",
+    "type": "object",
+    "properties": {
+        "apiVersion": {
+            "type": "string",
+            "description": "The specific version of the Open Application Model specification in use. This version of the specification covers apiVersions in core.oam.dev/v1alpha2."
+        },
+        "kind": {
+            "type": "string",
+            "description": "must be ContainerizedWorkload.",
+            "enum": ["ContainerizedWorkload"]
+        },
+        "metadata": {
+            "type": "object",
+            "description": "ContainerizedWorkload metadata.",
+            "properties": {
+                "name": {
+                    "type":"string"
+                },
+                "labels": {
+                    "type":"object",
+                    "description": "A set of string key/value pairs used as arbitrary labels on this workload.",
+                    "additionalProperties": { "type": "string" }
+                },
+                "annotations": {
+                    "type":"object",
+                    "description": "A set of string key/value pairs used as arbitrary annotations on this workload.",
+                    "additionalProperties": { "type": "string" }
+                }
+            }
+        },
+        "spec": {
+            "type": "object",
+            "description": "A container for all remaining attributes.",
+            "additionalProperties": {
+                "$ref": "#/definitions/containerSpec"
+            }
+        }
+    },
+    "required": ["apiVersion", "kind", "metadata", "spec"],
+    "additionalProperties": false,
+    "definitions": {
+        "containerSpec": {
+            "osType":{
+                "type": "string",
+                "default": "linux",
+                "description": "The OS required to host (all of) the component's containers (since containers share a kernel with the underlying host).",
+                "enum": ["linux", "windows"]
+            },
+            "arch": {
+                "type": "string",
+                "default": "amd64",
+                "description": "The CPU architecture required to host (all of) the component's containers (since containers share physical hardware with the underlying host).",
+                "enum": ["i386", "amd64", "arm", "arm64"]
+            },
+            "containers":{
+                "type": "array",
+                "description": "The OCI container(s) that implement the component.",
+                "items": {
+                    "$ref": "#/definitions/container"
+                }
+            },
+            "required": ["containers"],
+            "additionalProperties": false
+        },
+        "container": {
+            "type": "object",
+            "description": "The runtime configuration necessary to run a containerized workload for this component.",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "The container's name. Must be unique per component."
+                },
+                "image": {
+                    "type": "string",
+                    "description": "A path-like or URI-like representation of the location of an OCI image. Where applicable, this MAY be prefixed with a registry address, SHOULD be suffixed with a tag, and MUST be suffixed with a digest in OCI format. The digest may be used to compute the integrity of the image."
+                },
+                "resources": {
+                    "type": "object",
+                    "description": "Resources required by the container.",
+                    "properties": {
+                        "cpu": {
+                            "description": "Specifies the attributes of the cpu resource required for the container.",
+                            "type": "object",
+                            "properties": {
+                                "required": {
+                                    "type": "number",
+                                    "description": "The minimum number of logical cpus required for running this container."
+                                }
+                            }
+                        },
+                        "memory": {
+                            "description": "Specifies the attributes of the memory resource required for the container.",
+                            "type": "object",
+                            "properties": {
+                                "required": {
+                                    "type": "string",
+                                    "description": "The minimum amount of memory in MB required for running this container. The value should be a positive integer, greater than zero."
+                                }
+                            }
+                        },
+                        "gpu": {
+                            "description": "Specifies the attributes of the gpu resources required for the container.",
+                            "type": "object",
+                            "properties": {
+                                "required": {
+                                    "type": "number",
+                                    "description": "The minimum number of gpus required for running this container."
+                                }
+                            }
+                        },
+                        "volumes": {
+                            "description": "Specifies the attributes of the volumes that the container uses.",
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "description": "Specifies the name used to reference the path.",
+                                        "type": "string"
+                                    },
+                                    "mountPath": {
+                                        "description": "Specifies the actual mount path in the filesystem.",
+                                        "type": "string"
+                                    },
+                                    "accessMode": {
+                                        "description": "Specifies the access mode.",
+                                        "type": "string",
+                                        "default": "RW",
+                                        "enum": ["RW", "RO"]
+                                    },
+                                    "sharingPolicy": {
+                                        "description": "The sharing policy for the mount, indicating if it is expected to be shared or not.",
+                                        "type": "string",
+                                        "default": "Exclusive",
+                                        "enum": ["Exclusive", "Shared"]
+                                    },
+                                    "disk": {
+                                        "description": "Specifies the actual mount path in the filesystem.",
+                                        "type": "object",
+                                        "properties": {
+                                            "required": {
+                                                "type": "string",
+                                                "description": "The minimum disk size required for running this container. The value should be a positive integer, greater than zero."
+                                            },
+                                            "ephemeral": {
+                                                "type": "boolean",
+                                                "description": "Specifies whether external disk needs to be mounted or not."
+                                            }
+                                        }
+                                    }
+                                },
+                                "required": ["name", "mountPath"]
+                            }
+                        }
+                    }
+                },
+                "cmd": {
+                    "type": "string",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "args": {
+                    "type": "string",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "env": {
+                    "description": "Environment variables",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "description": "a name/value pair",
+                        "properties": {
+                            "name": {
+                                "description": "The environment variable name. Must be unique per container.",
+                                "type": "string",
+                                "maxLength": 256
+                            },
+                            "value": {
+                                "description": "The environment variable value. If this is not supplied, fromParam must be supplied",
+                                "type": "string",
+                                "$comment": "POSIX may dictate a max length on this",
+                                "maxLength": 2048
+                            },
+                            "fromParam": {
+                                "description": "The parameter whose value should be substituted into this variable as a value",
+                                "type": "string"
+                            }
+                        },
+                        "required": ["name"],
+                        "additionalProperties": false
+                    }
+                },
+                "config": {
+                    "description": "Configuration files",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "description": "a path and the value to be written into a file at that location",
+                        "properties": {
+                            "name": {
+                                "description": "The file name as an absolute path. Must be unique per container.",
+                                "type": "string",
+                                "$comment": "format of this value is operating system dependent.",
+                                "maxLength": 256
+                            },
+                            "value": {
+                                "description": "The value to be written into the file. If this is not supplied, fromParam must be supplied",
+                                "type": "string"
+                            },
+                            "fromParam": {
+                                "description": "The parameter whose value should be written into this file as a value",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "name"
+                        ],
+                        "additionalProperties": false
+                    }
+                },
+                "ports": {
+                    "description": "Ports exposed by the container.",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "description": "A descriptive name for the port. Must be unique per container.",
+                                "type": "string"
+                            },
+                            "containerPort": {
+                                "description": "The port number. Must be unique per container.",
+                                "type": "integer"
+                            },
+                            "protocol": {
+                                "description": "Indicates the transport layer protocol used by the server listening on the port.",
+                                "type": "string",
+                                "default": "TCP",
+                                "enum": ["TCP", "UDP"]
+                            }
+                        },
+                        "required": ["name", "containerPort"],
+                        "additionalProperties": false
+                    }
+                },
+                "livenessProbe": {
+                    "description": "Instructions for assessing whether the container is alive.",
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "#/definitions/healthProbe"
+                    }
+                },
+                "readinessProbe": {
+                    "description": "Instructions for assessing whether the container is in a suitable state to serve traffic.",
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "#/definitions/healthProbe"
+                    }
+                }
+            },
+            "required": ["name", "image", "resources"],
+            "additionalProperties": false
+        },
+        "healthProbe": {
+            "description": "Health Probe describes how a probing operation is to be executed as a way of determining the health of a component.",
+            "type": "object",
+            "properties": {
+                "exec": {
+                    "description": "Instructions for assessing container health by executing a command. Either this attribute or the httpGet attribute or the tcpSocket attribute MUST be specified. This attribute is mutually exclusive with both the httpGet attribute and the tcpSocket attribute.",
+                    "type": "object",
+                    "properties": {
+                        "command": {
+                            "description": "A command to be executed inside the container to assess its health. Each space delimited token of the command is a separate array element. Commands exiting 0 are considered to be successful probes, whilst all other exit codes are considered failures.",
+                            "type": "string",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "httpGet": {
+                    "description": "Instructions for assessing container health by executing an HTTP GET request. Either this attribute or the exec attribute or the tcpSocket attribute MUST be specified. This attribute is mutually exclusive with both the exec attribute and the tcpSocket attribute.",
+                    "type": "object",
+                    "properties": {
+                        "path":{
+                            "description": "The endpoint, relative to the port, to which the HTTP GET request should be directed.",
+                            "type": "string"
+                        },
+                        "port": {
+                            "description": "The TCP socket within the container to which the HTTP GET request should be directed.",
+                            "type":"integer"
+                        },
+                        "httpHeaders":{
+                            "type": "object",
+                            "description": "Optional HTTP headers.",
+                            "properties": {
+                                "name": {
+                                    "description": "An HTTP header name. This must be unique per HTTP GET-based probe.",
+                                    "type": "string"
+                                },
+                                "value": {
+                                    "description": "An HTTP header value.",
+                                    "type": "string"
+                                }
+                            },
+                            "required": ["value", "name"],
+                            "additionalProperties": false
+                        }
+                    },
+                    "required": ["path", "port"],
+                    "additionalProperties": false
+                },
+                "tcpSocket": {
+                    "description": "Instructions for assessing container health by probing a TCP socket. Either this attribute or the exec attribute or the httpGet attribute MUST be specified. This attribute is mutually exclusive with both the exec attribute and the httpGet attribute.",
+                    "type": "object",
+                    "properties": {
+                        "port": {
+                            "description": "The TCP socket within the container that should be probed to assess container health.",
+                            "type": "integer"
+                        }
+                    },
+                    "required": ["port"],
+                    "additionalProperties": false
+                },
+                "initialDelaySeconds": {
+                    "description": "Number of seconds after the container is started before the first probe is initiated.",
+                    "type": "integer",
+                    "default": 0
+                },
+                "periodSeconds": {
+                    "description": "How often, in seconds, to execute the probe.",
+                    "type": "integer",
+                    "default": 10
+                },
+                "timeoutSeconds": {
+                    "description": "Number of seconds after which the probe times out.",
+                    "type":"integer",
+                    "default": 1
+                },
+                "successThreshold": {
+                    "description": "Minimum consecutive successes for the probe to be considered successful after having failed.",
+                    "type": "integer",
+                    "default": 1
+                },
+                "failureThreshold": {
+                    "description": "Number of consecutive failures required to determine the container is not alive (liveness probe) or not ready (readiness probe).",
+                    "type": "integer",
+                    "default": 3
+                }
+            }
+        }
+    }
+}
+
