@@ -120,7 +120,7 @@ This document proposes:
 1. An ApplicationConfiguration _references_ distinct Component resources,
    grouping them into one logical application and providing inputs to their
    parameters.
-1. Each Component embed an OAM “workload” under the `.spec.workload` key.
+1. Each Component embed an OAM “workload” under the `spec.workload` key.
    Available workloads are defined by WorkloadDefinitions. In Kubernetes
    runtimes any existing custom resource with a corresponding WorkloadDefinition
    can be used in a Component.
@@ -195,19 +195,19 @@ spec:
   - name: instanceName
     required: true
     fieldPaths:
-    - ".metadata.name"
+    - "metadata.name"
   - name: cacheSecret
     required: true
     fieldPaths:
-    - ".spec.containers[0].env[0].value"
+    - "spec.containers[0].env[0].value"
 ```
 
 Components would most frequently be defined by application developers. A
 Component has two responsibilities:
 
-1. Embed a valid OAM workload kind under its `.spec.workload` field.
-2. Publish a set of parameters under its `.spec.parameters` field. Parameters
-   may be set by an ApplicationConfig. Their values overlay onto fields in the
+1. Embed a valid OAM workload kind under its `spec.workload` field.
+2. Publish a set of parameters under its `spec.parameters` field. Parameters may
+   be set by an ApplicationConfig. Their values overlay onto fields in the
    embedded OAM workload.
 
 The embedded OAM workload is a template of a sorts - though it is important to
@@ -257,11 +257,11 @@ spec:
   - name: secret
     required: true
     fieldPaths:
-    - ".spec.writeConnectionSecretToRef.name"
+    - "spec.writeConnectionSecretToRef.name"
   - name: engineVersion
     required: false
     fieldPaths:
-    - ".spec.engineVersion"
+    - "spec.engineVersion"
 ```
 
 The above WorkloadDefinition and Component leverages the existing Crossplane
