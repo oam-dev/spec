@@ -1,5 +1,12 @@
 # Open Application Model Specification
 
+[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+
+|![notification](assets/bell-outline-badge.svg) What is NEW!|
+|------------------|
+|Mar 27th, 2020. OAM v1.0.0-alpha.2 is **RELEASED**! The new spec is highly extensible and native to Kubernetes runtime. Check the spec and [What's new in OAM v1alpha2](https://speakerdeck.com/resouer/whats-new-in-oam-v1alpha2-spec) for more detail!|
+|Mar 26th, 2020. A proof-of-concept project named AWS ECS for OAM is published! Check [the AWS Labs repo ](https://github.com/awslabs/amazon-ecs-for-open-application-model) and have fun with developer centric experience with OAM + Fargate!|
+
 Open Application Model is a specification for building cloud native applications.
 
 Focused on separating concerns of development and operation needs, _Open Application Model_ brings modular, extensible, and portable design to building and delivering applications on platforms like Kubernetes.
