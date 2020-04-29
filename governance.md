@@ -1,6 +1,6 @@
 # Governance
 
-This document defines project governance for the project.
+This document defines project governance for the projects under oam-dev GitHub organization.
 
 
 ## Steering Committee
@@ -25,6 +25,7 @@ Steering committee is **organization** based.
 - Each organization can have multiple members in the steering committee but only **one** vote.
 - If a steering committee member changes company, his/her membership can not carry on and must be replaced by someone else.
 - All steering committee members must meet following requirements.
+- The organization affiliation of each steering committee member will be recored in OWNERS.md
 
 Requirements:
 
@@ -72,7 +73,7 @@ To become a maintainer of [OAM specification](https://github.com/oam-dev/spec):
 To become a maintainer of other projects under `oam-dev` organization:
 
 - Active contributions for at least 1 month.
-- Get at least 10 non-trivial pull requests merged to the codebase.
+- Get at least 5 non-trivial pull requests merged to the codebase.
 - Primary reviewer for at least 3 non-trivial pull requests from others.
 - Done through PR to update the project’s OWNERS file.
 - Self-nominate or be nominated by existing maintainers in the project.
@@ -85,11 +86,11 @@ If a maintainer is no longer interested or cannot perform the maintainer duties 
 
 ### Github Project Administration
 
-Maintainers will be added to the OAM GitHub organization (if they are not already) and added to the GitHub Maintainers team.
+Maintainers will be added to the OAM GitHub organization (if they are not already) and added to corresponding GitHub maintainers team. The maintainers team is per project.
 
 ## Voting
 
-In general, we prefer that technical issues be resolved at project level by project maintainers. But if a dispute cannot be decided, the steering committee can be called in to decide an issue. If the steering committee members themselves cannot decide an issue, the issue will be resolved by voting. 
+In general, we prefer that technical issues be resolved at project level by project maintainers with "non-objection and negotiation" approach. But if a essential dispute cannot be decided, the steering committee can be called in to decide an issue. If the steering committee members themselves cannot decide an issue, the issue will be resolved by voting. 
 
 - All changes in governance, additions and removals of steering committee members require a **2/3 majority**, while other decisions and changes require only a simple majority.
 - Only steering committee members can vote.
