@@ -1,7 +1,5 @@
 # Open Application Model Specification
 
-[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
-
 |![notification](assets/bell-outline-badge.svg) What is NEW!|
 |------------------|
 |Mar 27th, 2020. OAM v1.0.0-alpha.2 is **RELEASED**! The new spec is highly extensible and native to Kubernetes runtime. Check the spec and [What's new in OAM v1alpha2](https://speakerdeck.com/resouer/whats-new-in-oam-v1alpha2-spec) for more detail!|
@@ -39,7 +37,7 @@ For more details and user stories, see [introduction.md](./introduction.md).
 
 ## See it in action
 
-[Rudr](https://github.com/oam-dev/rudr) is a reference implementation of the Open Application Model specification for Kubernetes. To get started with an example on the Open Application Model, go to the [Rudr Tutorial](https://github.com/oam-dev/rudr/blob/master/docs/tutorials/deploy_and_update.md) guide.
+[Crossplane](https://github.com/crossplane/crossplane) is the implementation of the Open Application Model specification for Kubernetes. To get started with an example of the Open Application Model, follow the guide to run applications on [Crossplane](https://crossplane.io/docs/v0.11/getting-started/run-applications.html).
 
 ## The Specification
 
@@ -60,7 +58,7 @@ For more details and user stories, see [introduction.md](./introduction.md).
 
 ### Milestones
 
-To get an overview of the milestones and their description please visit the [Milestones](https://github.com/microsoft/hydra-spec/milestones) page. 
+To get an overview of the milestones and their description please visit the [Milestones](https://github.com/oam-dev/spec/milestones) page. 
 
 ### Triaging 
 
