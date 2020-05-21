@@ -2,17 +2,15 @@
 
 |![notification](assets/bell-outline-badge.svg) What is NEW!|
 |------------------|
+|May 18th, 2020. [Crossplane](https://github.com/crossplane/crossplane) becomes the standard Kubernetes implementation of OAM spec!|
 |Mar 27th, 2020. OAM v1.0.0-alpha.2 is **RELEASED**! The new spec is highly extensible and native to Kubernetes runtime. Check the spec and [What's new in OAM v1alpha2](https://speakerdeck.com/resouer/whats-new-in-oam-v1alpha2-spec) for more detail!|
 |Mar 26th, 2020. A proof-of-concept project named AWS ECS for OAM is published! Check [the AWS Labs repo ](https://github.com/awslabs/amazon-ecs-for-open-application-model) and have fun with developer centric experience with OAM + Fargate!|
 
-Open Application Model is a specification for building cloud native applications.
+Open Application Model is a platform-agnostic specification for building cloud native applications.
 
-Focused on separating concerns of development and operation needs, _Open Application Model_ brings modular, extensible, and portable design to building and delivering applications on platforms like Kubernetes.
+Focused on separating concerns of development and operation needs, _Open Application Model_ brings modular, extensible, and portable design to building and delivering applications on different platforms.
 
-*This repository is unstable, and open to contributions.*
-The specification is under development, and breaking changes could be made.
-Interested in contributing? Take a look at the issue queue! We're looking for more
-great ideas on how to model cloud native applications.
+> **NOTICE:** *This repository is unstable and open to contributions.* The specification is under development and could adopt breaking changes in the future. Interested in contributing? Take a look at the issues! We're looking for more great ideas on how to model cloud native applications.
 
 ## Introduction
 
@@ -40,6 +38,8 @@ For more details and user stories, see [introduction.md](./introduction.md).
 [Crossplane](https://github.com/crossplane/crossplane) is the implementation of the Open Application Model specification for Kubernetes. To get started with an example of the Open Application Model, follow the guide to run applications on [Crossplane](https://crossplane.io/docs/v0.11/getting-started/run-applications.html).
 
 ## The Specification
+
+The specification convention adopts [Kubernetes Resource Model](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/architecture/resource-management.md) which we believe will become the standard interface for the majority of platforms in the future.
 
 [Notational Conventions](notational_convention.md)
 
