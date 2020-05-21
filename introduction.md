@@ -10,21 +10,21 @@ In the following, we go through a story that describes an application delivery l
 
 ## Application developer: Write and test code
 
-The story begins with the application developers who create an application, such as an online shopping application. They know how to write and test the code. The program takes a few parameters such as log level and HTTP port. To let the developers focus on implementing the application's business logic, application operators (either human or automated operation platforms) take care of operational tasks. This provides a "serverless" experience to the developers. The developers only need to develop and package the application, and then deliver it to the application operators.
+The story begins with the application developers who create an application, such as an online shopping application. They know how to write and test the code. The application program takes a few parameters such as log level and HTTP port. To let the developers focus on implementing the application's business logic, we have application operators (either human or automated operation platforms) take care of operational tasks. This provides a "serverless" experience to application developers: they only need to develop and package the application, and then deliver it to application operators to operate
 
-To deliver their application, the developers define _ComponentSchematic_ YAML files. In the _Open Application Model_, each individual component of a program is described as a _ComponentSchematic_ YAML by the application developer. This file encapsulates a workload and the information needed to run it. For example, it can contain the container image packaging the program, whether it needs an endpoint, if its designed to run as a task to completion or as a server, environment variables, and any parameters the developers want to expose to an operator to override at deployment time. 
+To deliver their applications, developers need to define _Component_ YAML files. In the _Open Application Model_, each individual component of a program is described as a _Component_ YAML by the application developer. This file encapsulates a workload and the information needed to run it. For example, it can contain the container image packaging the program, whether it needs an endpoint, if its designed to run as a task to completion or as a server, environment variables, and any parameters the developers want to expose to an operator to override at deployment time. 
 
 The following diagram demonstrates this workflow:
 
-![alt](./assets/dev2ops.png)
+![alt](./assets/dev2ops.jpg)
 
 ## Application operator: Deploy and operate applications
 
-To run and operate an application, the application operator sets parameter values for the developers' components and applies operational characteristics, such as replica size, autoscaling policy, ingress points, and traffic routing rules in an _ApplicationConfiguration_ yaml. In OAM, these operational characteristics are called _traits_. Writing and deploying a _ApplicationConfiguration_ yaml is equivalent to deploying an application. The underlying platform will create live instances of _ComponentSchematic_ and attach operational traits to them according to the _ApplicationConfiguration_ spec.
+To run and operate an application, the application operator sets parameter values for the developers' components and applies operational characteristics, such as replica size, autoscaling policy, ingress points, and traffic routing rules in an _ApplicationConfiguration_ yaml. In OAM, these operational characteristics are called _traits_. Writing and deploying a _ApplicationConfiguration_ yaml is equivalent to deploying an application. The underlying platform will create live instances of defined workloads and attach operational traits to workloads according to the _ApplicationConfiguration_ spec.
 
 The following diagram demonstrates the workflow:
 
-![alt](./assets/ops-deploy-app.png)
+![alt](./assets/ops-deploy-app.jpg)
 
 ## Infrastructure operator: configure platform capabilities
 
