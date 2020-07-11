@@ -137,7 +137,7 @@ This will give you an exact copy of the current remote, make sure you don't have
 ### Contributing and developing a feature
 
 1. Make sure you are in the develop branch `git checkout master`.<br />
-2. Sync your copy `git pull --rebase upstream master`.<br />
+2. Sync your copy with the upstream.<br />
 3. Create a new branch with a meaningful name `git checkout -b branch_name`.<br />
 4. Add the files you changed `git add file_name` (avoid using `git add .`).<br />
 5. Commit your changes `git commit -m "Message briefly explaining the feature"`.<br />
