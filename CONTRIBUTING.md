@@ -107,11 +107,11 @@ The next section contains more information on the workflow followed for Pull Req
 ### Avoid the following mistakes!
 
 -  Fix a new issue and submit a PR without reporting and getting it approved at first.
--   Fix an issue assigned to someone else and submit a PR before the assignee does.
--   Report issues which are previously reported by others. (Please check the both open and closed issues before you report an issue).
--   Suggest completely new features in the issue list. (Please use the mailing list/gitter channel for these kinds of suggestions. Use issue list to suggest bugs/features in the already implemented sections.)
+-  Fix an issue assigned to someone else and submit a PR before the assignee does.
+-  Report issues which are previously reported by others. (Please check the both open and closed issues before you report an issue).
+-  Suggest completely new features in the issue list. (Please use the mailing list/gitter channel for these kinds of suggestions. Use issue list to suggest bugs/features in the already implemented sections.)
 
-## Git & Github
+## Git Setup
 
 ### Configure remotes
 
