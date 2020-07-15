@@ -68,7 +68,10 @@ contributing to the Open Application Model specification. All issue types follow
 Like any good open source project, we use Pull Requests (PRs) to track code changes. To submit a change to the specification:
 
 1. Fork the repo, modify the specification to address the issue.
-1. Submit a pull request.
+2. Pick an open issue from the [issue list](https://github.com/oam-dev/spec/issues) and claim it in the comments. After approval fix the issue and send us a pull request (PR).
+3. Or you can create a new issue. A community member will get back to you and, if approved, you can fix the issue and send a pull request.
+4. Please go through our issue list first (open as well as closed) and make sure the issue you are reporting does not replicate an issue already reported. If you have issues on multiple pages, report them separately. Do not combine them into a single issue.
+5. Submit a pull request to the appropriate branch. 
 
 The next section contains more information on the workflow followed for Pull Requests.
 
@@ -101,3 +104,49 @@ The next section contains more information on the workflow followed for Pull Req
     - PRs can be closed by the author without merging
     - PRs may be closed by a Final Approver if the decision is made that the PR is not going to be merged 
 
+### Avoid the following mistakes!
+
+-  Fix a new issue and submit a PR without reporting and getting it approved at first.
+-  Fix an issue assigned to someone else and submit a PR before the assignee does.
+-  Report issues which are previously reported by others. (Please check the both open and closed issues before you report an issue).
+-  Suggest completely new features in the issue list. (Please use the mailing list/gitter channel for these kinds of suggestions. Use issue list to suggest bugs/features in the already implemented sections.)
+
+## Git Setup
+
+### Configure remotes
+
+When a repository is cloned, it has a default remote called `origin` that points to your fork on GitHub, not the original repository it was forked from. To keep track of the original repository, you should add another remote named `upstream`:<br />
+1. Get the path where you have your git repository on your machine. Go to that path in Terminal using cd. Alternatively, Right click on project in Github Desktop and hit ‘Open in Terminal’.<br />
+2. Run `git remote -v`  to check the status you should see something like the following:<br />
+> origin    https://github.com/YOUR_USERNAME/spec.git (fetch)<br />
+> origin    https://github.com/YOUR_USERNAME/spec.git (push)<br />
+3. Set the `upstream`:<br />
+ `git remote add upstream https://github.com/oam-dev/spec.git`<br />
+4. Run `git remote -v`  again to check the status, you should see something like the following:<br />
+> origin    https://github.com/YOUR_USERNAME/spec.git (fetch)<br />
+> origin    https://github.com/YOUR_USERNAME/spec.git (push)<br />
+> upstream https://github.com/oam-dev/spec.git  (fetch)<br />
+> upstream  https://github.com/oam-dev/spec.git (push)<br />
+5. To update your local copy with remote changes, run the following:<br />
+`git fetch upstream master`<br />
+ `git rebase  upstream/master`<br />
+This will give you an exact copy of the current remote, make sure you don't have any local changes.<br />
+6. Project set-up is complete.
+
+
+### Contributing and developing a feature
+
+1. Make sure you are in the develop branch `git checkout master`.<br />
+2. Sync your copy with the upstream.<br />
+3. Create a new branch with a meaningful name `git checkout -b branch_name`.<br />
+4. Add the files you changed `git add file_name` (avoid using `git add .`).<br />
+5. Commit your changes `git commit -m "Message briefly explaining the feature"`.<br />
+6. Keep one commit per feature. If you forgot to add changes, you can edit the previous commit `git commit --amend`.<br />
+7. Push to your repo `git push origin branch-name`.<br />
+9. Go into [the Github repo](https://github.com/oam-dev/spec.git) and create a pull request explaining your changes.<br />
+10. If you are requested to make changes, edit your commit using `git commit --amend`, push again and the pull request will edit automatically.<br />
+11. If you have more than one commit try squashing them into single commit by following command:<br />
+ `git rebase -i origin/master~n master`(having n number of commits).<br />
+12. Once you've run a git rebase -i command, text editor will open with a file that lists all the commits in current branch, and in front of each commit is the word "pick". For every line except the first, replace the word "pick" with the word "squash".<br />
+13. Save and close the file, and a moment later a new file should pop up in  editor, combining all the commit messages of all the commits. Reword this commit message into meaningful one briefly explaining all the features, and then save and close that file as well. This commit message will be the commit message for the one, big commit that you are squashing all of your larger commits into. Once you've saved and closed that file, your commits of current branch have been squashed together.<br />
+14. Force push to update your pull request with command `git push origin branchname --force`.<br/>
