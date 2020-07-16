@@ -14,15 +14,15 @@ Focused on separating concerns of development and operation needs, _Open Applica
 
 ## Introduction
 
-The motivation behind Open Application Model is to provide a standard but flexible framework for platform builders to create application centric platforms based on lower level orchestration systems like Kubernetes, in approach with discoverability, manageability and interoperability. 
+Open Application Model provides a standard and extensible framework for platform builders to create application centric platforms on top of lower level runtime systems such as Kubernetes with additions of discoverability, manageability and interoperability. 
 
 ![How it works][how-it-works]
 
-Open Application Model enables the platforms expose standardized application centric primitives (e.g. Workloads and Traits) instead of leaking infrastructure details to end user, and at the same time, keeps the extensibility of the underlying orchestration system. Though with the idea of making creating upper layer platforms easier, the model itself won't lock you in arbitrary abstractions, on the contrary, its primitives allow you to define the right level of abstractions by yourself.
+Open Application Model empowers application platforms to provide standardized application centric primitives (e.g. Workloads and Traits) instead of exposing infrastructure details to end users, while retaining the extensibility of the underlying runtime system. With the idea of simplify creating upper layer platforms, the model won't lock you into specific abstractions -- on the contrary, its primitives allow you to define the right level of abstraction depend on your own use case.
 
 ### A team-centric model
 
-When it comes to the application centric primitives, we think it is important to distinguish between the parts that developers are responsible for, and the parts that operations is responsible for. Otherwise, if these roles get muddled, it would result in communications mishaps, bugs, or even service outages.
+When it comes to the application centric primitives, we think it is important to distinguish between the parts that developers are responsible for, and the parts that operators (or the platform itself) is responsible for. Otherwise, if these roles get muddled, it would result in communications mishaps, bugs, or even service outages.
 
 _Open Application Model_ attempts to solve this problem by modeling the application according to the
 roles responsible for building and running apps and operating infrastructure.
@@ -42,7 +42,7 @@ For more details and user stories, see [introduction.md](./introduction.md).
 
 [OAM Kubernetes Runtime](https://github.com/crossplane/oam-kubernetes-runtime) is the officially maintained OAM plugin for Kubernetes. 
 
-OAM Kubernetes Runtime is a [joint effort](https://cloudblogs.microsoft.com/opensource/2020/05/27/open-application-model-oam-v1alpha2-crossplane/) with [the Crossplane community](https://github.com/crossplane/crossplane). Furthermore, to get started with an example of using OAM to deliver both applications and cloud resources in unified approach, please follow the end-to-end [getting started doc in Crossplane](https://crossplane.io/docs/v0.11/getting-started/run-applications.html).
+OAM Kubernetes Runtime is a [joint effort](https://cloudblogs.microsoft.com/opensource/2020/05/27/open-application-model-oam-v1alpha2-crossplane/) with [the Crossplane community](https://github.com/crossplane/crossplane). Furthermore, to get started with an example of using OAM to deliver both applications and cloud resources in unified approach, please follow the end-to-end [getting started doc in Crossplane](https://crossplane.io/docs/v0.12/getting-started/run-applications.html).
 
 ## The Specification
 
@@ -68,9 +68,9 @@ The specification convention adopts [Kubernetes Resource Model](https://github.c
 
 ### Versioning
 
-Since July 2020, changes to the specification are versioned according to [Semantic Versioning 2.0](https://semver.org/spec/v2.0.0.html) and described in [its release page](https://github.com/oam-dev/spec/releases). Layout changes are not versioned. Specific implementations of the specification (e.g. OAM Kubernetes Runtime ) should specify which version they implement.
+Since July 2020, changes to the specification are versioned according to [Semantic Versioning 2.0](https://semver.org/spec/v2.0.0.html) and described in [its release page](https://github.com/oam-dev/spec/releases). Layout (e.g. repo structure, doc format etc) changes are not versioned. Specific implementations of the specification (e.g. OAM Kubernetes Runtime ) should specify which version they implement.
 
-Changes to the change process itself are not currently versioned but may be independently versioned in the future.
+Changes to the change process (e.g. governance model, review/approve process etc) itself are not currently versioned but may be independently versioned in the future.
 
 ### Milestones
 
