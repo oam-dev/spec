@@ -1,4 +1,4 @@
-# Open Application Model Specification
+# Open Animal Model Specification
 
 |![notification](assets/bell-outline-badge.svg) What is NEW!|
 |------------------|
