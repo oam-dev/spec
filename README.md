@@ -1,9 +1,14 @@
 # Open Application Model Specification
 
+[![Gitter](https://badges.gitter.im/oam-dev/community.svg)](https://gitter.im/oam-devcommunity?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![License: MIT](https://img.shields.io/badge/License-OWF-yellow)](https://github.com/oam-dev/spec/blob/master/LICENSE)
+[![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/oam-dev/spec)](https://www.tickgit.com/browse?repo=github.com/oam-dev/spec)
+[![Follow on Twitter](https://img.shields.io/twitter/follow/oam_dev.svg?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=oam_dev)
+
 |![notification](assets/bell-outline-badge.svg) What is NEW!|
 |------------------|
 |May 18th, 2020. [Crossplane](https://github.com/crossplane/crossplane) becomes the standard Kubernetes implementation of OAM spec!|
-|Mar 27th, 2020. OAM v1.0.0-alpha.2 is **RELEASED**! The new spec is highly extensible and native to Kubernetes runtime. Check the spec and [What's new in OAM v1alpha2](https://speakerdeck.com/resouer/whats-new-in-oam-v1alpha2-spec) for more detail!|
+|Mar 27th, 2020. OAM v0.2.0 is **RELEASED**! The new spec is highly extensible and native to Kubernetes runtime. Check the spec and [What's new in OAM v0.2.0](https://speakerdeck.com/resouer/whats-new-in-oam-v1alpha2-spec) for more detail!|
 |Mar 26th, 2020. A proof-of-concept project named AWS ECS for OAM is published! Check [the AWS Labs repo ](https://github.com/awslabs/amazon-ecs-for-open-application-model) and have fun with developer centric experience with OAM + Fargate!|
 
 Open Application Model is a platform-agnostic specification for building cloud native applications.
@@ -63,14 +68,18 @@ The specification convention adopts [Kubernetes Resource Model](https://github.c
   - [Practical Considerations](8.practical_considerations.md)
   - [Design Principles](9.design_principles.md)
 
+## Versioning
 
-## Community
+Releases of the specification are versioned according to [Semantic Versioning 2.0](https://semver.org/spec/v2.0.0.html) and described in [OAM release page](https://github.com/oam-dev/spec/releases). Implementations of the specification are required to specify which version they implement.
 
-### Versioning
+### Changes to the API objects
 
-Since July 2020, changes to the specification are versioned according to [Semantic Versioning 2.0](https://semver.org/spec/v2.0.0.html) and described in [its release page](https://github.com/oam-dev/spec/releases). Layout (e.g. repo structure, doc format etc) changes are not versioned. Specific implementations of the specification (e.g. OAM Kubernetes Runtime ) should specify which version they implement.
+Changes to the API objects in this specification follows [on compatibility](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api_changes.md#on-compatibility) and [incompatible api changes](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api_changes.md#incompatible-api-changes) defined in Kubernetes API convention. It doesn't couple with release version of the specification.
 
 Changes to the change process (e.g. governance model, review/approve process etc) itself are not currently versioned but may be independently versioned in the future.
+
+
+## Community
 
 ### Milestones
 
