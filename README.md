@@ -33,6 +33,8 @@ roles responsible for building and running apps and operating infrastructure.
 
 For more details and user stories, see [introduction.md](./introduction.md).
 
+[Relations between various OAM resources](./assets/relations_between_various_OAM_resources.png) 
+
 ## See it in action
 
 [Crossplane](https://github.com/crossplane/crossplane) is the implementation of the Open Application Model specification for Kubernetes. To get started with an example of the Open Application Model, follow the guide to run applications on [Crossplane](https://crossplane.io/docs/v0.11/getting-started/run-applications.html).
