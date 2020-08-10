@@ -43,6 +43,8 @@ roles responsible for building and running apps and operating infrastructure.
 
 For more details and user stories, see [introduction.md](./introduction.md).
 
+[Relations between various OAM resources](./assets/relations_between_various_OAM_resources.png) 
+
 ## See it in action
 
 [OAM Kubernetes Runtime](https://github.com/crossplane/oam-kubernetes-runtime) is the officially maintained OAM plugin for Kubernetes. 
