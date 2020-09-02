@@ -5,80 +5,65 @@
 [![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/oam-dev/spec)](https://www.tickgit.com/browse?repo=github.com/oam-dev/spec)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/oam_dev.svg?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=oam_dev)
 
-|![notification](assets/bell-outline-badge.svg) What is NEW!|
-|------------------|
-|May 18th, 2020. [Crossplane](https://github.com/crossplane/crossplane) becomes the standard Kubernetes implementation of OAM spec!|
-|Mar 27th, 2020. OAM v0.2.0 is **RELEASED**! The new spec is highly extensible and native to Kubernetes runtime. Check the spec and [What's new in OAM v0.2.0](https://speakerdeck.com/resouer/whats-new-in-oam-v1alpha2-spec) for more detail!|
-|Mar 26th, 2020. A proof-of-concept project named AWS ECS for OAM is published! Check [the AWS Labs repo ](https://github.com/awslabs/amazon-ecs-for-open-application-model) and have fun with developer centric experience with OAM + Fargate!|
+Open Application Model is a runtime-agnostic specification for modeling cloud native applications and building app-centric platforms.
 
-Open Application Model is a platform-agnostic specification for building cloud native applications.
+Focused on application development and operation, _Open Application Model_ brings modular, extensible, and portable design for creating application-first platforms on any infrastructures such as Kubernetes, cloud, or IoT devices.
 
-Focused on separating concerns of development and operation needs, _Open Application Model_ brings modular, extensible, and portable design to building and delivering applications on different platforms.
-
-> **NOTICE:** *This repository is unstable and open to contributions.* The specification is under development and could adopt breaking changes in the future. Interested in contributing? Take a look at the issues! We're looking for more great ideas on how to model cloud native applications.
+> **NOTICE:** The current working draft of OAM specification (0.2.x release) is under pre-beta release, which means the specification is still under development but will keep backward compatibility for any further change.
 
 ## Introduction
 
-Open Application Model provides a standard and extensible framework for platform builders to create application centric platforms on top of lower level runtime systems such as Kubernetes with additions of discoverability, manageability and interoperability. 
+Developers think in terms of application architecture, not of infrastructure.
+
+In a nutshell, Open Application Model defines standard but extensible abstractions to model applications in a "self-contained" approach, i.e. both runnable components and corresponding operational capabilities (named "traits") are considered as parts of the given application. This enables platform builders to create platforms around this unified model, with app-centric mindset by natural, and essentially changes building platforms into developing modularized components and traits for the application. 
 
 ![How it works][how-it-works]
 
-Open Application Model empowers application platforms to provide standardized application centric primitives (e.g. Workloads and Traits) instead of exposing infrastructure details to end users, while retaining the extensibility of the underlying runtime system. With the idea of simplify creating upper layer platforms, the model won't lock you into specific abstractions -- on the contrary, its primitives allow you to define the right level of abstraction depend on your own use case.
+In addition, Open Application Model won't lock you into any specific abstractions -- on the contrary, its primitives are designed to allow you to define the right level of abstraction depend on your own use case.
 
 ### A team-centric model
 
-When it comes to the application centric primitives, we think it is important to distinguish between the parts that developers are responsible for, and the parts that operators (or the platform itself) is responsible for. Otherwise, if these roles get muddled, it would result in communications mishaps, bugs, or even service outages.
+When it comes to the application centric primitives, we think it is important to separate concerns between the parts that developers are responsible for, and the parts that operators and platform engineers are responsible for. 
 
-_Open Application Model_ attempts to solve this problem by modeling the application according to the
-roles responsible for building and running apps and operating infrastructure.
+This is because in practice different levels of abstraction would apply to different personas. Also, if these primitives get muddled in the platform, a simple operational modification on wrong primitive would easily result in bugs, mishaps or even service outages.
 
-* _Developers_ are responsible for describing what a microservice or component does,
+Thus _Open Application Model_ defines different personas from building and operating apps to maintaining infrastructure.
+
+* _Developers_ are responsible for writing business logic, describing what a microservice or component does,
   and _how_ it can be configured. They are the domain experts on the code.
 * _Application Operators_ are responsible for configuring the runtime aspects of
   one or more of these microservices. They are the domain experts on the
-  platform.
+  platform. In some use cases (e.g. Serverless), application operator could be the platform itself.
 * _Infrastructure Operators_ also known as _Platform Builders_, are responsible for setting up and maintaining the
   infrastructure within which applications run. They are the domain
-  experts on the low-level details.
+  experts on developing platform capabilities and infrastructure-level details.
 
 For more details and user stories, see [introduction.md](./introduction.md).
 
-[Relations between various OAM resources](./assets/relations_between_various_OAM_resources.png) 
+## Read the specification
+
+The following documents are available:
+
+|                               |         Latest Release             |    Working Draft                           |
+| :---------------------------- | :--------------------------------: | :----------------------------------------: |
+| **Core Specification:**       |
+| OAM Specification             |  [v0.2.1](https://github.com/oam-dev/spec/blob/v0.2.1/SPEC_LATEST_STABLE.md) |  [v0.2.2-WD](https://github.com/oam-dev/spec/blob/master/SPEC_WORKING_DRAFT.md)  |
+|                               |
+| **Workloads**  |
+| Containerized Workload  |  [v1alpha2](https://github.com/oam-dev/spec/blob/v0.2.1/core/workloads/containerized_workload/containerized_workload.md)  |  [v1alpha2-WD](https://github.com/oam-dev/spec/blob/master/core/workloads/containerized_workload/containerized_workload.md)          |
+|                               |
+| **Traits**  |
+| Manual Scaler  |  [v1alpha2](https://github.com/oam-dev/spec/blob/v0.2.1/core/traits/manual_scaler_trait.md)  |  [v1alpha2-WD](https://github.com/oam-dev/spec/blob/master/core/traits/manual_scaler_trait.md)          |
+|                               |
+| **Scopes**  |
+| Network Scope  |  [v1alpha2](https://github.com/oam-dev/spec/blob/v0.2.1/standard/scopes/network_scope.md)  |  [v1alpha2-WD](https://github.com/oam-dev/spec/blob/master/standard/scopes/network_scope.md)          |
+| Health Scope  |  [v1alpha2](https://github.com/oam-dev/spec/blob/v0.2.1/standard/scopes/health_scope.md)  |  [v1alpha2-WD](https://github.com/oam-dev/spec/blob/master/standard/scopes/health_scope.md)          |
+
+
 
 ## See it in action
 
-[OAM Kubernetes Runtime](https://github.com/crossplane/oam-kubernetes-runtime) is the officially maintained OAM plugin for Kubernetes. 
-
-OAM Kubernetes Runtime is a [joint effort](https://cloudblogs.microsoft.com/opensource/2020/05/27/open-application-model-oam-v1alpha2-crossplane/) with [the Crossplane community](https://github.com/crossplane/crossplane). Furthermore, to get started with an example of using OAM to deliver both applications and cloud resources in unified approach, please follow the end-to-end [getting started doc in Crossplane](https://crossplane.io/docs/v0.12/getting-started/run-applications.html).
-
-## The Specification
-
-The specification convention adopts [Kubernetes Resource Model](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/architecture/resource-management.md) which we believe will become the standard interface for the majority of platforms in the future.
-
-  - [Notational Conventions](notational_convention.md)
-  - [Purpose and Goals](1.purpose_and_goals.md)
-  - [Overview and Terminology](2.overview_and_terminology.md)
-  - API Resource Specification
-    - Application Developers
-      - [Components](4.component.md)
-    - Application Operators
-      - [Application Scopes](5.application_scopes.md)
-      - [Traits](6.traits.md)
-      - [Application Configuration](7.application_configuration.md)
-    - Infrastructure Operators/Platform Builders
-      - [Workload Definition](3.workload.md)
-  - [Practical Considerations](8.practical_considerations.md)
-  - [Design Principles](9.design_principles.md)
-
-## Versioning
-
-Releases of the specification are versioned according to [Semantic Versioning 2.0](https://semver.org/spec/v2.0.0.html) and described in [OAM release page](https://github.com/oam-dev/spec/releases). Implementations of the specification are required to specify which version they implement.
-
-### Changes to the API objects
-
-Changes to the API objects in this specification follows [on compatibility](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api_changes.md#on-compatibility) and [incompatible api changes](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api_changes.md#incompatible-api-changes) defined in Kubernetes API convention. It doesn't couple with release version of the specification.
-
-Changes to the change process (e.g. governance model, review/approve process etc) itself are not currently versioned but may be independently versioned in the future.
+[OAM Kubernetes Runtime](https://github.com/crossplane/oam-kubernetes-runtime) is the officially maintained OAM plugin for Kubernetes. This is a [joint effort](https://cloudblogs.microsoft.com/opensource/2020/05/27/open-application-model-oam-v1alpha2-crossplane/) with [Crossplane](https://github.com/crossplane/crossplane) community. 
 
 
 ## Community
