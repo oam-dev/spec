@@ -5,9 +5,9 @@
 [![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/oam-dev/spec)](https://www.tickgit.com/browse?repo=github.com/oam-dev/spec)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/oam_dev.svg?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=oam_dev)
 
-Open Application Model is a runtime-agnostic specification for modeling cloud native applications and building app-centric platforms.
+Open Application Model is a runtime-agnostic specification for building app-centric platforms.
 
-Focused on application development and operation, _Open Application Model_ brings modular, extensible, and portable design for creating application-first platforms on any infrastructures such as Kubernetes, cloud, or IoT devices.
+Focused on application development and operation, _Open Application Model_ brings modular, extensible, and portable design for modeling cloud native applications regardless of underlying infrastructure (e.g. Kubernetes, cloud, or IoT devices).
 
 > **NOTICE:** The current working draft of OAM specification (0.2.x release) is under pre-beta release, which means the specification is still under development but will keep backward compatibility for any further change.
 
@@ -15,28 +15,29 @@ Focused on application development and operation, _Open Application Model_ bring
 
 Developers think in terms of application architecture, not of infrastructure.
 
-In a nutshell, Open Application Model defines standard but extensible abstractions to model applications in a "self-contained" approach, i.e. both runnable components and corresponding operational capabilities (named "traits") are considered as parts of the given application. This enables platform builders to create platforms around this unified model, with app-centric mindset by natural, and essentially changes building platforms into developing modularized components and traits for the application. 
+Open Application Model defines a number of standard but extensible abstractions to model micro-service applications by natural, with operation as part of the application lifecycle. This enables platform builders to create platforms around a unified model, with app-centric mindset by default, and essentially changes building platforms into developing modularized components and traits for the application. 
 
 ![How it works][how-it-works]
 
-In addition, Open Application Model won't lock you into any specific abstractions -- on the contrary, its primitives are designed to allow you to define the right level of abstraction depend on your own use case.
+### Why Open Application Model?
+- Define modern application by default.
+- Build application-first platform - developer centric.
+- Build standard platforms across organizations - no silos.
+- Create modularized and re-usable components and traits - better discoverability, manageability and interoperability.
+- Bring your own components and traits - no abstraction and capability lock-in.
 
-### A team-centric model
+### Team-centric and separation of concerns
 
-When it comes to the application centric primitives, we think it is important to separate concerns between the parts that developers are responsible for, and the parts that operators and platform engineers are responsible for. 
+Open Application Model proposed a clear separation of concerns between the parts that developers are responsible for, and the parts that operators and platform engineers are responsible for.
 
-This is because in practice different levels of abstraction would apply to different personas. Also, if these primitives get muddled in the platform, a simple operational modification on wrong primitive would easily result in bugs, mishaps or even service outages.
-
-Thus _Open Application Model_ defines different personas from building and operating apps to maintaining infrastructure.
-
-* _Developers_ are responsible for writing business logic, describing what a microservice or component does,
+* _Developers_ are responsible for describing what a microservice or component does,
   and _how_ it can be configured. They are the domain experts on the code.
 * _Application Operators_ are responsible for configuring the runtime aspects of
   one or more of these microservices. They are the domain experts on the
-  platform. In some use cases (e.g. Serverless), application operator could be the platform itself.
-* _Infrastructure Operators_ also known as _Platform Builders_, are responsible for setting up and maintaining the
+  platform. In many use cases, application operator could be the platform itself.
+* _Infrastructure Operators_ also known as _Platform Builders/Engineers_, are responsible for setting up and maintaining the
   infrastructure within which applications run. They are the domain
-  experts on developing platform capabilities and infrastructure-level details.
+  experts on platform capabilities and infrastructure-level details.
 
 For more details and user stories, see [introduction.md](./introduction.md).
 
@@ -63,7 +64,8 @@ The following documents are available:
 
 ## See it in action
 
-[OAM Kubernetes Runtime](https://github.com/crossplane/oam-kubernetes-runtime) is the officially maintained OAM plugin for Kubernetes. This is a [joint effort](https://cloudblogs.microsoft.com/opensource/2020/05/27/open-application-model-oam-v1alpha2-crossplane/) with [Crossplane](https://github.com/crossplane/crossplane) community. 
+- [OAM Kubernetes Runtime](https://github.com/crossplane/oam-kubernetes-runtime) is the officially maintained OAM plugin for Kubernetes. This is a [joint effort](https://cloudblogs.microsoft.com/opensource/2020/05/27/open-application-model-oam-v1alpha2-crossplane/) with [Crossplane](https://github.com/crossplane/crossplane) community. 
+- The OAM community is actively working on an open application platform as its full implementation (stay tuned!).
 
 
 ## Community
