@@ -24,6 +24,7 @@ Open Application Model defines a number of standard but extensible abstractions 
 - Build application-first platform - developer centric.
 - Build standard platforms across organizations - no silos.
 - Create modularized and re-usable components and traits - better discoverability, manageability and interoperability.
+- Decouple abstraction and implementation - runtime agnostic and polyglot.
 - Bring your own components and traits - no abstraction and capability lock-in.
 
 ### Team-centric and separation of concerns
