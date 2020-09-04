@@ -5,9 +5,9 @@
 [![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/oam-dev/spec)](https://www.tickgit.com/browse?repo=github.com/oam-dev/spec)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/oam_dev.svg?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=oam_dev)
 
-Open Application Model is a runtime-agnostic specification for building app-centric platforms.
+Open Application Model is a runtime-agnostic specification for modeling cloud native applications.
 
-Focused on application development and operation, _Open Application Model_ brings modular, extensible, and portable design for modeling cloud native applications regardless of underlying infrastructure (e.g. Kubernetes, cloud, or IoT devices).
+Focused on **application** as first-class citizen, _Open Application Model_ brings modular, extensible, and portable standard for building app-centric platforms on any runtime system like Kubernetes, cloud, or IoT devices.
 
 > **NOTICE:** The current working draft of OAM specification (0.2.x release) is under pre-beta release, which means the specification is still under development but will keep backward compatibility for any further change.
 
@@ -20,12 +20,11 @@ Open Application Model defines a number of standard but extensible abstractions 
 ![How it works][how-it-works]
 
 ### Why Open Application Model?
-- Define modern application by default.
-- Build application-first platform - developer centric.
-- Build standard platforms across organizations - no silos.
-- Create modularized and re-usable components and traits - better discoverability, manageability and interoperability.
-- Decouple abstraction and implementation - runtime agnostic and polyglot.
-- Bring your own components and traits - no abstraction and capability lock-in.
+- Define modern application by default and build developer-first platform at ease.
+- Build standard platforms across organizations, no silos.
+- Platform is assembled with modularized and re-usable components and traits, highly customizable.
+- Decouple abstraction and implementation, enable runtime-agnostic and polyglot.
+- No abstraction and capability lock-in.
 
 ### Team-centric and separation of concerns
 
@@ -46,28 +45,36 @@ For more details and user stories, see [introduction.md](./introduction.md).
 
 The following documents are available:
 
-|                               |         Latest Release             |    Working Draft                           |
-| :---------------------------- | :--------------------------------: | :----------------------------------------: |
+|                               | Category                          |         Latest Release             |    Working Draft                           |
+| :---------------------------- | :-----------:|:--------------------------------: | :----------------------------------------: |
 | **Core Specification:**       |
-| OAM Specification             |  [v0.2.1](https://github.com/oam-dev/spec/blob/v0.2.1/SPEC_LATEST_STABLE.md) |  [v0.2.2-WD](https://github.com/oam-dev/spec/blob/master/SPEC_WORKING_DRAFT.md)  |
+| OAM Specification             |  --          | [v0.2.1](https://github.com/oam-dev/spec/blob/v0.2.1/SPEC_LATEST_STABLE.md) |  [v0.2.2-WD](https://github.com/oam-dev/spec/blob/master/SPEC_WORKING_DRAFT.md)  |
 |                               |
-| **Workloads**  |
-| Containerized Workload  |  [v1alpha2](https://github.com/oam-dev/spec/blob/v0.2.1/core/workloads/containerized_workload/containerized_workload.md)  |  [v1alpha2-WD](https://github.com/oam-dev/spec/blob/master/core/workloads/containerized_workload/containerized_workload.md)          |
+| **Workload Types**  |
+| Server | core | [v1alpha2](https://github.com/oam-dev/spec/blob/v0.2.1/core/workloads/containerized_workload/containerized_workload.md) |  --          |
+| WebService | standard | -- |  v1alpha1-WD |
+| Task  | core | --  |  v1alpha1-WD      |
+| CronJob  | core | --  |  v1alpha1-WD      |
 |                               |
 | **Traits**  |
-| Manual Scaler  |  [v1alpha2](https://github.com/oam-dev/spec/blob/v0.2.1/core/traits/manual_scaler_trait.md)  |  [v1alpha2-WD](https://github.com/oam-dev/spec/blob/master/core/traits/manual_scaler_trait.md)          |
+| Manual Scaler  | core |  [v1alpha2](https://github.com/oam-dev/spec/blob/v0.2.1/core/traits/manual_scaler_trait.md)  |  [v1alpha2-WD](https://github.com/oam-dev/spec/blob/master/core/traits/manual_scaler_trait.md)          |
+| Route  | standard |  --  |  v1alpha1-WD      |
+| Domain  | standard |  --  |  v1alpha1-WD       |
+| Rollout  | standard |  --  |  v1alpha1-WD        |
+| Auto Scaler  | standard |  --  |  v1alpha1-WD        |
+| Monitoring | standard |  --  |  v1alpha1-WD        |
+| Logging | standard |  --  |  v1alpha1-WD        |
+| Cert | standard |  --  |  v1alpha1-WD        |
 |                               |
 | **Scopes**  |
-| Network Scope  |  [v1alpha2](https://github.com/oam-dev/spec/blob/v0.2.1/standard/scopes/network_scope.md)  |  [v1alpha2-WD](https://github.com/oam-dev/spec/blob/master/standard/scopes/network_scope.md)          |
-| Health Scope  |  [v1alpha2](https://github.com/oam-dev/spec/blob/v0.2.1/standard/scopes/health_scope.md)  |  [v1alpha2-WD](https://github.com/oam-dev/spec/blob/master/standard/scopes/health_scope.md)          |
+| Network Scope  | core |  [v1alpha2](https://github.com/oam-dev/spec/blob/v0.2.1/standard/scopes/network_scope.md)  |  [v1alpha2-WD](https://github.com/oam-dev/spec/blob/master/standard/scopes/network_scope.md)          |
+| Health Scope  | core |  [v1alpha2](https://github.com/oam-dev/spec/blob/v0.2.1/standard/scopes/health_scope.md)  |  [v1alpha2-WD](https://github.com/oam-dev/spec/blob/master/standard/scopes/health_scope.md)          |
 
 
 
 ## See it in action
 
-- [OAM Kubernetes Runtime](https://github.com/crossplane/oam-kubernetes-runtime) is the officially maintained OAM plugin for Kubernetes. This is a [joint effort](https://cloudblogs.microsoft.com/opensource/2020/05/27/open-application-model-oam-v1alpha2-crossplane/) with [Crossplane](https://github.com/crossplane/crossplane) community. 
-- The OAM community is actively working on an open application platform as its full implementation (stay tuned!).
-
+- [OAM Kubernetes Runtime](https://github.com/crossplane/oam-kubernetes-runtime) is the officially maintained OAM plugin for Kubernetes.
 
 ## Community
 
