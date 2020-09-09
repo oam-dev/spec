@@ -1,17 +1,17 @@
 # Containerized Workload
-A containerized workload is used for long-running workloads in containers. Here is the definition of the containerized workload.
+The `ContainerizedWorkload` could be referenced as schema for long-running workload types in containers (e.g. `Server` or `WebService`). Here is the example definition of the `Server` workload type.
 
 ```yaml
 apiVersion: core.oam.dev/v1alpha2
 kind: WorkloadDefinition
 metadata:
-  name: containerizedworkloads.core.oam.dev
+  name: Server # the workload type
 spec:
   definitionRef:
-    name: containerizedworkloads.core.oam.dev
+    name: containerizedworkloads.core.oam.dev # the reference of this workload type's schema
 ```
 
-Here is the schematic of a containerized workload. 
+Below is the schematic of a containerized workload (defined in Kubernetes resource model). 
 
 ### Top-Level Attributes of a containerized workload 
 

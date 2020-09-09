@@ -13,13 +13,13 @@ Learn more about versioning [below](#versioning).
   - [Overview and Terminology](2.overview_and_terminology.md)
   - API Resource Specification
     - Application Developers
-      - [Components](4.component.md)
+      - [Components](3.component.md)
     - Application Operators
-      - [Application Scopes](5.application_scopes.md)
       - [Traits](6.traits.md)
+      - [Application Scopes](5.application_scopes.md)
       - [Application Configuration](7.application_configuration.md)
     - Infrastructure Operators/Platform Builders
-      - [Workload Definition](3.workload.md)
+      - [Workload Definition](4.workload_definitions.md)
   - [Practical Considerations](8.practical_considerations.md)
   - [Design Principles](9.design_principles.md)
 
