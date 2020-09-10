@@ -15,31 +15,20 @@ Focused on **application** as first-class citizen, _Open Application Model_ brin
 
 Developers think in terms of application architecture, not of infrastructure.
 
-Open Application Model defines a number of standard but extensible abstractions to model micro-service applications by natural, with operation as part of the application lifecycle. This enables platform builders to create platforms around a unified model, with app-centric mindset by default, and essentially changes building platforms into developing modularized components and traits for the application. 
+Open Application Model defines a number of standard but extensible abstractions to model micro-service applications by natural, with operation configurations as part of the application definition. This enables platform builders to create platforms around a unified model, with app-centric mindset by default, and essentially changes building platforms into developing modularized components and traits for the application. 
 
 ![How it works][how-it-works]
 
 ### Why Open Application Model?
-- Define modern application by default and build developer-first platform at ease.
-- Build standard platforms across organizations, no silos.
-- Platform is assembled with modularized and re-usable components and traits, highly customizable.
-- Decouple abstraction and implementation, enable runtime-agnostic and polyglot.
-- No abstraction and capability lock-in.
+- Define modern application by default.
+- Configure operational configurations driven by intention.
+- Build standard application platforms across organizations, no silos.
+- Assemble platforms with modularized and re-usable components and traits, highly customizable.
+- Decouple abstraction and implementation, enable runtime-agnostic and polyglot, no capability lock-in.
 
 ### Team-centric and separation of concerns
 
-Open Application Model proposed a clear separation of concerns between the parts that developers are responsible for, and the parts that operators and platform engineers are responsible for.
-
-* _Developers_ are responsible for describing what a microservice or component does,
-  and _how_ it can be configured. They are the domain experts on the code.
-* _Application Operators_ are responsible for configuring the runtime aspects of
-  one or more of these microservices. They are the domain experts on the
-  platform. In many use cases, application operator could be the platform itself.
-* _Infrastructure Operators_ also known as _Platform Builders/Engineers_, are responsible for setting up and maintaining the
-  infrastructure within which applications run. They are the domain
-  experts on platform capabilities and infrastructure-level details.
-
-For more details and user stories, see [introduction.md](./introduction.md).
+Open Application Model proposed a clear separation of concerns between the parts that developers are responsible for, and the parts that operators and platform engineers are responsible for. For more details, see [introduction.md](./introduction.md).
 
 ## Read the specification
 
@@ -52,9 +41,9 @@ The following documents are available:
 |                               |
 | **Workload Types**  |
 | Server | core | [v1alpha2](https://github.com/oam-dev/spec/blob/v0.2.1/core/workloads/containerized_workload/containerized_workload.md) |  --          |
-| WebService | standard | -- |  v1alpha1-WD |
 | Task  | core | --  |  v1alpha1-WD      |
 | CronJob  | core | --  |  v1alpha1-WD      |
+| WebService | standard | -- |  v1alpha1-WD |
 |                               |
 | **Traits**  |
 | Manual Scaler  | core |  [v1alpha2](https://github.com/oam-dev/spec/blob/v0.2.1/core/traits/manual_scaler_trait.md)  |  [v1alpha2-WD](https://github.com/oam-dev/spec/blob/master/core/traits/manual_scaler_trait.md)          |
