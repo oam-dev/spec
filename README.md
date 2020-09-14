@@ -5,9 +5,9 @@
 [![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/oam-dev/spec)](https://www.tickgit.com/browse?repo=github.com/oam-dev/spec)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/oam_dev.svg?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=oam_dev)
 
-Open Application Model is a runtime-agnostic specification for modeling cloud native applications.
+Open Application Model is a runtime-agnostic specification for building cloud native application platforms.
 
-Focused on **application** as first-class citizen, _Open Application Model_ brings modular, extensible, and portable standard for building app-centric platforms on any runtime system like Kubernetes, cloud, or IoT devices.
+Focused on **application** rather than container or orchestrator, _Open Application Model_ brings modular, extensible, and portable design for building application centric platforms on any runtime systems like Kubernetes, cloud, or IoT devices.
 
 > **NOTICE:** The current working draft of OAM specification (0.2.x release) is under pre-beta release, which means the specification is still under development but will keep backward compatibility for any further change.
 
@@ -20,11 +20,17 @@ Open Application Model defines a number of standard but extensible abstractions 
 ![How it works][how-it-works]
 
 ### Why Open Application Model?
-- Define modern application by default.
-- Configure operational configurations driven by intention.
-- Build standard application platforms across organizations, no silos.
-- Assemble platforms with modularized and re-usable components and traits, highly customizable.
-- Decouple abstraction and implementation, enable runtime-agnostic and polyglot, no capability lock-in.
+
+For application developers, operators or DevOps:
+- Build modern applications by default.
+- Think applications, not containers or orchestrators.
+- Operation is part of the application lifecycle.
+
+For platform builders:
+- Build developer facing platforms by default.
+- Clarity and manageability for operational capabilities.
+- Create modularized and re-usable components - no silos, highly extensible.
+- Decouple abstractions and implementation - no capability lock-in.
 
 ### Team-centric and separation of concerns
 
