@@ -17,7 +17,7 @@ Developers think in terms of application architecture, not of infrastructure.
 
 Open Application Model defines a number of standard but extensible abstractions to model micro-service applications by natural, with operation configurations as part of the application definition. This enables platform builders to create platforms around a unified model, with app-centric mindset by default, and essentially changes building platforms into developing modularized components and traits for the application. 
 
-![How it works][how-it-works]
+![How it works](assets/how-it-works.png)
 
 ### Why Open Application Model?
 
@@ -38,38 +38,14 @@ Open Application Model proposed a clear separation of concerns between the parts
 
 ## Read the specification
 
-The following documents are available:
-
-|                               | Category                          |         Latest Release             |    Working Draft                           |
-| :---------------------------- | :-----------:|:--------------------------------: | :----------------------------------------: |
-| **Core Specification:**       |
-| OAM Specification             |  --          | [v0.2.1](https://github.com/oam-dev/spec/blob/v0.2.1/SPEC_LATEST_STABLE.md) |  [v0.2.2-WD](https://github.com/oam-dev/spec/blob/master/SPEC_WORKING_DRAFT.md)  |
-|                               |
-| **Workload Types**  |
-| Server | core | [v1alpha2](https://github.com/oam-dev/spec/blob/v0.2.1/core/workloads/containerized_workload/containerized_workload.md) |  --          |
-| Task  | core | --  |  v1alpha1-WD      |
-| CronJob  | core | --  |  v1alpha1-WD      |
-| WebService | standard | -- |  v1alpha1-WD |
-|                               |
-| **Traits**  |
-| Manual Scaler  | core |  [v1alpha2](https://github.com/oam-dev/spec/blob/v0.2.1/core/traits/manual_scaler_trait.md)  |  [v1alpha2-WD](https://github.com/oam-dev/spec/blob/master/core/traits/manual_scaler_trait.md)          |
-| Route  | standard |  --  |  v1alpha1-WD      |
-| Domain  | standard |  --  |  v1alpha1-WD       |
-| Rollout  | standard |  --  |  v1alpha1-WD        |
-| Auto Scaler  | standard |  --  |  v1alpha1-WD        |
-| Monitoring | standard |  --  |  v1alpha1-WD        |
-| Logging | standard |  --  |  v1alpha1-WD        |
-| Cert | standard |  --  |  v1alpha1-WD        |
-|                               |
-| **Scopes**  |
-| Network Scope  | core |  [v1alpha2](https://github.com/oam-dev/spec/blob/v0.2.1/standard/scopes/network_scope.md)  |  [v1alpha2-WD](https://github.com/oam-dev/spec/blob/master/standard/scopes/network_scope.md)          |
-| Health Scope  | core |  [v1alpha2](https://github.com/oam-dev/spec/blob/v0.2.1/standard/scopes/health_scope.md)  |  [v1alpha2-WD](https://github.com/oam-dev/spec/blob/master/standard/scopes/health_scope.md)          |
-
-
+|                                | Latest Release |    Working Draft                  |
+| :----------------------------: | :------------: |:--------------------------------: |
+| **Core Specification:**        |
+| OAM Specification              | [v0.2.1](https://github.com/oam-dev/spec/blob/v0.2.1/SPEC_LATEST_STABLE.md) |  [v0.2.2-WD](SPEC.md)  |
 
 ## See it in action
 
-- [OAM Kubernetes Runtime](https://github.com/crossplane/oam-kubernetes-runtime) is the officially maintained OAM plugin for Kubernetes.
+[OAM Kubernetes Runtime](https://github.com/crossplane/oam-kubernetes-runtime) is the officially maintained OAM plugin for Kubernetes.
 
 ## Community
 
@@ -99,8 +75,6 @@ One of the easiest ways to contribute is to participate in discussions. There ar
 | IM Channel      | https://gitter.im/oam-dev/ |
 | Twitter      | [@oam_dev](https://twitter.com/oam_dev) |
 
-[how-it-works]: assets/how-it-works.png
-
 ### Resources
 
-Come find community blogs and conference talks about OAM in [community/talks_and_blogs.md](./community/talks_and_blogs.md).
+Come find community blogs and conference talks about OAM in [community talks and blogs](./community/talks_and_blogs.md).
