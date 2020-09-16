@@ -1,17 +1,11 @@
 # Containerized Workload
-The `ContainerizedWorkload` could be referenced as schema for long-running workload types in containers (e.g. `Server` or `WebService`). Here is the example definition of the `Server` workload type.
 
-```yaml
-apiVersion: core.oam.dev/v1alpha2
-kind: WorkloadDefinition
-metadata:
-  name: Server # the workload type
-spec:
-  definitionRef:
-    name: containerizedworkloads.core.oam.dev # the reference of this workload type's schema
-```
+The `ContainerizedWorkload` is a generic workload definition which could be referenced as the schema for long-running containerized workload types. 
 
-Below is the schematic of a containerized workload (defined in Kubernetes resource model). 
+> 
+Note: it's by design that `ContainerizedWorkload` schema is **NOT** equivalent to Kubernetes `PodSpec`. `ContainerizedWorkload` focuses only on developer facing primitives and exposes ports of containers **by default**.
+
+Below is the schematic specification for `ContainerizedWorkload`. 
 
 ### Top-Level Attributes of a containerized workload 
 

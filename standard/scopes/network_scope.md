@@ -23,7 +23,7 @@ As a core scope, the spec of network scope has already defined. So we don't need
 For example, a network scope instance can be like below:
 
 ```yaml
-apiVersion: core.oam.dev/v1alpha2
+apiVersion: standard.oam.dev/v1alpha2
 kind: NetworkScope
 metadata:
   name: example-vpc-network
