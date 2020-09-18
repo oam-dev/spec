@@ -21,16 +21,16 @@ Open Application Model defines a number of standard but extensible abstractions 
 
 ### Why Open Application Model?
 
-For application developers, operators or DevOps:
-- Build modern applications by default.
-- Think applications, not containers or orchestrators.
-- Operation is part of the application lifecycle.
+For platform builders who create the application platform:
+- Higher level abstractions - building developer facing platforms by default.
+- Highly extensible - bring your own abstractions or capabilities.
+- Clarity and manageability - leveraging modularized and re-usable building blocks.
+- No capability lock-in - decoupled abstractions and implementation.
 
-For platform builders:
-- Build developer facing platforms by default.
-- Clarity and manageability for operational capabilities.
-- Create modularized and re-usable components - no silos, highly extensible.
-- Decouple abstractions and implementation - no capability lock-in.
+For end users of the OAM based platform:
+- Think applications, not containers or orchestrators.
+- Build modern applications by default.
+- Operation is part of the application lifecycle.
 
 ### Team-centric and separation of concerns
 
