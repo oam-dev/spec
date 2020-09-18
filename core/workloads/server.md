@@ -23,7 +23,7 @@ A Server is a OAM core workload type to define long-running, scalable workloads 
 	    name: containerizedworkloads.core.oam.dev # the reference of schema for this workload type. In Kubernetes it should be a full name of API resource
 	```
 
-	As shown on the example above, [ContainerizedWorkload](core/workloads/schema/containerized_workload.md) is used as the schema for Server workload type.
+	As shown on the example above, [ContainerizedWorkload](schema/containerized_workload.md) is used as the schema for Server workload type.
 
 2. Define a component reference `Server` as workload:
 
