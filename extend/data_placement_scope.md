@@ -10,7 +10,7 @@ For those data defined in Edge, read/write and exclusive, the data will have an 
 
 For those data defined in Edge, read only, the data will have an instance in Edge near users if exclusive. It is also possible to have multiple instances for the same data entity spread among multiple edge sites if shared. We need to define the behavior of data migration according to storage usage and data expiration policy.
 
-In Open Application Model, we can define it as 'DataPlacement' scope. Users can bind 'DataPlacement' to different Components in their application. The implementation of DataPlacemento will handle the data migration detail based on the Scope kind.
+In Open Application Model, we can define it as 'DataPlacement' scope. Users can bind 'DataPlacement' to different Components in their application. The implementation of DataPlacement will handle the data migration detail based on the Scope kind.
 
 ## Schematic
 
