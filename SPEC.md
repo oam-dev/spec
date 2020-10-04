@@ -22,27 +22,34 @@ Learn more about versioning [below](#versioning).
 
 ## The Specification Components
 
+**Building Block Objects**
+
 |                                | Category      |         API Version            |
 | :----------------------------: | :-----------: | :----------------------------: |
 | **Workload Types**  |
 | Server | core | [v1alpha2](core/workloads/server.md) |
-| Task  | core | [v1alpha1-WD](core/workloads/task.md)   |
-| CronJob  | core |   v1alpha1-WD      |
-| WebService | standard |  v1alpha1-WD |
+| Task  | core | [WIP](core/workloads/task.md)   |
+| Cron Job  | core |   WIP      |
 |                               |
 | **Traits**  |
 | Manual Scaler  | core |  [v1alpha2](core/traits/manual_scaler_trait.md)          |
-| Route  | standard |  v1alpha1-WD      |
-| Domain  | standard |  v1alpha1-WD       |
-| Rollout  | standard |   v1alpha1-WD        |
-| Auto Scaler  | standard | v1alpha1-WD        |
-| Monitoring | standard | v1alpha1-WD        |
-| Logging | standard | v1alpha1-WD        |
-| Cert | standard | v1alpha1-WD        |
+| Route  | standard |  WIP      |
+| Rollout  | standard |   WIP        |
+| Auto Scaler  | standard | WIP        |
+| Monitoring | standard | WIP        |
 |                               |
 | **Scopes**  |
 | Network Scope  | standard |  [v1alpha2](standard/scopes/network_scope.md)          |
 | Health Scope  | core |  [v1alpha2](core/scopes/health_scope.md)          |
+
+
+**User Interface Objects**
+
+|                                | Category      |         API Version            |
+| :----------------------------: | :-----------: | :----------------------------: |
+| Application  | standard | [WIP](https://github.com/oam-dev/spec/issues/306)   |
+| Application Deployment | standard | [WIP](https://github.com/oam-dev/spec/issues/342) |
+
 
 ## Versioning
 

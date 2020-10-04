@@ -5,7 +5,7 @@
 [![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/oam-dev/spec)](https://www.tickgit.com/browse?repo=github.com/oam-dev/spec)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/oam_dev.svg?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=oam_dev)
 
-Open Application Model is a runtime-agnostic specification for building cloud native application platforms.
+Open Application Model (OAM) is a runtime-agnostic specification for building cloud native application platforms.
 
 Focused on **application** rather than container or orchestrator, _Open Application Model_ brings modular, extensible, and portable design for building application centric platforms on any runtime systems like Kubernetes, cloud, or IoT devices.
 
@@ -21,13 +21,13 @@ Open Application Model defines a number of standard but extensible abstractions 
 
 ### Why Open Application Model?
 
-For platform builders who create the application platform:
-- Higher level abstractions - building developer facing platforms by default.
-- Highly extensible - bring your own abstractions or capabilities.
+For platform builders who create the application platform, OAM provides _Building Block Objects_ with:
+- Application level abstractions - building developer facing platforms by default.
+- Extensibility - bring your own abstractions or capabilities.
 - Clarity and manageability - leveraging modularized and re-usable building blocks.
 - No capability lock-in - decoupled abstractions and implementation.
 
-For end users of the OAM based platform:
+For end users of the OAM based platform, OAM defines _User Interface Objects_ that enable users to:
 - Think applications, not containers or orchestrators.
 - Build modern applications by default.
 - Operation is part of the application lifecycle.
@@ -45,7 +45,7 @@ Open Application Model proposed a clear separation of concerns between the parts
 
 ## See it in action
 
-[OAM Kubernetes Runtime](https://github.com/crossplane/oam-kubernetes-runtime) is the officially maintained OAM plugin for Kubernetes.
+- [OAM Kubernetes Runtime](https://github.com/crossplane/oam-kubernetes-runtime) is the officially maintained OAM plugin for Kubernetes which implemented OAM building block objects.
 
 ## Community
 

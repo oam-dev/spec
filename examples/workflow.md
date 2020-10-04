@@ -19,24 +19,20 @@ metadata:
     version: v1.0.0
     description: "A simple webserver"
 spec:
-  workload:
-    apiVersion: core.oam.dev/v1alpha2
-    kind: ContainerizedWorkload
-    metadata:
-      name: sample-workload
-    spec:
-      osType: linux
-      containers:
-      - name: web
-        image: example/charybdis-single:latest@@sha256:verytrustworthyhash
-        resources:
-          cpu:
-            required: 1.0
-          memory:
-            required: 100MB
-        env:
-        - name: MESSAGE
-          value: default
+  type: Server
+  settings:
+    osType: linux
+    containers:
+    - name: web
+      image: example/charybdis-single:latest@@sha256:verytrustworthyhash
+      resources:
+        cpu:
+          required: 1.0
+        memory:
+          required: 100MB
+      env:
+      - name: MESSAGE
+        value: default
   parameters:
   - name: message
     description: The message to display in the web app.  
@@ -55,12 +51,10 @@ metadata:
     version: v1.0.0
     description: "Cassandra database"
 spec:
-  workload:
-    apiVersion: data.oam.dev/v1
-    kind: Cassandra
-    spec:
-      maxStalenessPrefix: 100000
-      defaultConsistencyLevel: Eventual
+  type: Cassandra
+  settings:
+    maxStalenessPrefix: 100000
+    defaultConsistencyLevel: Eventual
   parameters:
     - name: maxStalenessPrefix
       description: Max stale requests.
@@ -140,12 +134,10 @@ spec:
         - name: message
           value: "Well hello there"
       traits:
-        - trait:
-            apiVersion: standard.oam.dev/v1alpha2
-            kind: Ingress
-            spec:
-              host: "www.example.com"
-              path: "/"
+        - name: ingress
+          properties:
+            host: "www.example.com"
+            path: "/"
 ```
 
 This example attaches an `ingress` to route traffic from another network (public, perhaps) to the internal service. This configuration shows how the trait is both attached and configured.
@@ -192,12 +184,10 @@ spec:
         - name: message
           value: "Well hello there"
       traits:
-        - trait:
-            apiVersion: standard.oam.dev/v1alpha2
-            kind: Ingress
-            spec:
-              host: "www.example.com"
-              path: "/"
+        - name: ingress
+          properties:
+            host: "www.example.com"
+            path: "/"
       scopes:
         - scopeRef:
             apiVersion: core.oam.dev/v1alpha2
