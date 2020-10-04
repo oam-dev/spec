@@ -6,7 +6,7 @@ This doc gives an introduction of the personas of Open Application Model in a st
 
 - __Application operators__ deliver business value by configuring, installing, and managing components and/or applications such as updating, scaling, auto recovery, etc. Unlike developers and application composers, operators are concerned with _how_ a component or application's operational requirements are fulfilled. For instance, if a developer has declared that a component writes data to a specific path on a file system, an operator may concern themselves with mounting an appropriate volume to that path.
 
-- __Infrastructure operators/Platform builders__ deliver value by building the application centric platform and managing low-level infrastructural components. This may range from managing the physical hardware in an on-premises network to directly managing cloud service offerings in a public cloud. Infrastructure operators are less concerned with the particular configuration needs of _an application_, focusing instead on the big picture of how an enterprise's overall infrastructure is managed. For example, an infrastructure operator may manage the underlying storage offerings that are used for provisioning persistent storage.
+- __Infrastructure operators (also known as platform builders)__ deliver value by building the application centric platform and managing low-level infrastructural components. This may range from managing the physical hardware in an on-premises network to directly managing cloud service offerings in a public cloud. Infrastructure operators are less concerned with the particular configuration needs of _an application_, focusing instead on the big picture of how an enterprise's overall infrastructure is managed. For example, an infrastructure operator may manage the underlying storage offerings that are used for provisioning persistent storage.
 
 We will go through a story that describes an application delivery lifecycle with a OAM based platform. The storyline looks like this:
 
@@ -14,7 +14,7 @@ We will go through a story that describes an application delivery lifecycle with
 2. The _developer_ creates a web application, defines its characteristics;
 3. The _application operator_ or the platform itself instantiate that application, and configures it with operational traits, such as autoscaling;
 
-## Infrastructure operator: configure platform capabilities
+## Infrastructure operator: maintain platform capabilities
 
 The most power of the Open Application Model comes from the underlying platforms that implements the model, which can surface the capabilities that make the underlying platforms unique and useful through OAM in a way that is consistent across any platform that supports the model.
 
@@ -48,7 +48,7 @@ The following diagram demonstrates the workflow:
 
 As mentioned in above section, application operator could be the platform itself, i.e. the automated operation platforms will assign traits to components based on intention of application developers. In small organizations, the application operator and application developer could be the same person, but this person still follows the OAM workflow, assign traits in a self-serving approach, and clearly know he/she is configuring a deployable component or operational capability at any time.
 
-### But I don't really have an application operator role
+### But I don't really have an "application operator" role
 
 No worries, OAM even helps you better in this case.
 
@@ -56,5 +56,5 @@ It's common in many organizations that application operator role is not a thing.
 
 In DevOps workflow, clear definition of which piece is application component and which piece is its operational configuration is the key to avoid communications mishaps, bugs, or even service outages due to the mixed mindsets. For example, when rollouting my application component's version, I would choose to disable the autoscaling trait at the meantime.
 
-While in NoOps workflow, OAM is a more natural fit since the platform itself will play the role of application operators and configure traits to components automatically based on the characteristic of the application (e.g. if the component is exposed? if it's replicable?). 
+While in NoOps workflow, OAM is a natural fit since the platform itself will act the role of application operators and configure traits to components automatically based on the characteristic of the application (e.g. if the component is a exposed service? if it's replicable?). 
 

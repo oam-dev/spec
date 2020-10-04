@@ -8,4 +8,4 @@ A Task is a OAM core workload type to run code or a script to completion. Common
 
 ## How to use?
 
-TODO: the schema of Task is still under design.
+> PLACE HOLDER: the schema of Task is still under design.
