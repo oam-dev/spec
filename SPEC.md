@@ -36,7 +36,7 @@ Learn more about versioning [below](#versioning).
 | Route  | standard |  WIP      |
 | Rollout  | standard |   WIP        |
 | Auto Scaler  | standard | WIP        |
-| Monitoring | standard | WIP        |
+| Metrics | standard | WIP        |
 |                               |
 | **Scopes**  |
 | Network Scope  | standard |  [v1alpha2](standard/scopes/network_scope.md)          |

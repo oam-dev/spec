@@ -21,13 +21,13 @@ Open Application Model defines a number of standard but extensible abstractions 
 
 ### Why Open Application Model?
 
-For platform builders who create the application platform, OAM provides _Building Block Objects_ with:
+For platform builders who create application platforms:
 - Application level abstractions - building developer facing platforms by default.
 - Extensibility - bring your own abstractions or capabilities.
 - Clarity and manageability - leveraging modularized and re-usable building blocks.
 - No capability lock-in - decoupled abstractions and implementation.
 
-For end users of the OAM based platform, OAM defines _User Interface Objects_ that enable users to:
+For end users of those application platforms:
 - Think applications, not containers or orchestrators.
 - Build modern applications by default.
 - Operation is part of the application lifecycle.

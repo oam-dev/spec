@@ -1,9 +1,8 @@
 # Containerized Workload
 
-The `ContainerizedWorkload` is a generic workload definition which could be referenced as the schema for long-running containerized workload types. 
+The `ContainerizedWorkload` is a **Serverless Container** style workload definition that could be referenced as the schema for long-running containerized workload types for runtime platforms like Azure ACI, AWS Fargate or simple stateless workload of Kubernetes. 
 
-> 
-Note: it's by design that `ContainerizedWorkload` schema is **NOT** equivalent to Kubernetes `PodSpec`. `ContainerizedWorkload` focuses only on developer facing primitives and exposes ports of containers **by default**.
+> Note: it's by design that `ContainerizedWorkload` schema is **NOT** equivalent to Kubernetes Pod specification. As a schema for serverless style workload, `ContainerizedWorkload` intends to focus on developer facing primitives only and be self-contained so developers don't need to define objects like `ConfigMap` or `Secret`. Also, it exposes container ports by default. Thus, if you are looking for a generic workload schema for Kubernetes based PaaS, we'd recommend to check `PodSpecWorkload` specification instead.
 
 Below is the schematic specification for `ContainerizedWorkload`. 
 
@@ -279,4 +278,4 @@ Memory and disk space use the notation for bytes/kilo/mega/giga/tera/peta by jus
 If a `B` is appended after the unit letter, it MUST be ignored. Thus, `5M` and `5MB` are treated as identical. Case is unimportant. `15k` and `15K` MUST be treated as the same value.
 
 ## Containerized Workload JSON schema
-One can also use a [containerized workload schema](containerized_workload_schema.json) to generate a valid component workload.
+For non-Kubernetes runtime implementations, one could use [JSON schema](containerized_workload_schema.json) as valid containerized workload schema.

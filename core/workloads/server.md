@@ -33,21 +33,20 @@ A Server is a OAM core workload type to define long-running, scalable workloads 
 	metadata:
 	  name: frontend
 	spec:
-	  workload:
-	    type: Server # <--- type of this workload
-	    spec:        # <--- spec template of this workload
-	      osType: linux
-	      containers:
-	      - name: my-cool-workload
-	        image: example/very-cool-workload:0.1.2@sha256:verytrustworthyhash
-	        resources:
-	          cpu:
-	            required: 1.0
-	          memory:
-	            required: 100MB
-	        cmd:
-	        - "bash lscpu"
-	        ports:
-	        - name: http
-	          value: 8080
+	  type: Server # <--- type of this workload
+	  settings:        # <--- spec template of this workload
+	    osType: linux
+	    containers:
+	    - name: my-cool-workload
+	      image: example/very-cool-workload:0.1.2@sha256:verytrustworthyhash
+	      resources:
+	        cpu:
+	          required: 1.0
+	        memory:
+	          required: 100MB
+	      cmd:
+	      - "bash lscpu"
+	      ports:
+	      - name: http
+	        value: 8080
 	```
