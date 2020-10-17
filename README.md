@@ -5,32 +5,34 @@
 [![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/oam-dev/spec)](https://www.tickgit.com/browse?repo=github.com/oam-dev/spec)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/oam_dev.svg?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=oam_dev)
 
-Open Application Model (OAM) is a runtime-agnostic specification for building cloud native application platforms.
+Open Application Model (OAM) is a runtime-agnostic specification for defining cloud native applications and enable building application-centric platforms by natural.
 
 Focused on **application** rather than container or orchestrator, _Open Application Model_ brings modular, extensible, and portable design for building application centric platforms on any runtime systems like Kubernetes, cloud, or IoT devices.
+
+### Why Open Application Model?
+
+Building platforms without application context is hard:
+
+- Developers spend time on infrastructure details instead of applications - ingress, labels, iptables rules, DNS, etc, and learning how the platform is implemented.
+- Restricted platform capabilities - in-house APIs with opinionated abstractions and implementations, lack of interoperability.
+- Runtime lock-in - platform is tightly coupled with execution runtime, which heavily impact on how you configure, develop and operate your application.
+
+In Open Application Model, we propose an app-centric approach instead:
+
+- Application first - build the platform around a self-contained app model, where operational characteristics are also part of app definition, free of infrastructure here.
+- Clarity and extensibility - an open standard to modularize your platform capabilities into reusable pieces, with freedom to bring your own abstractions and implementations.
+- Runtime agnostic - a consistent experience to deploy and operate your apps across on-prem clusters, cloud providers or even edge devices.
 
 > **NOTICE:** The current working draft of OAM specification (0.2.x release) is under pre-beta release, which means the specification is still under development but will keep backward compatibility for any further change.
 
 ## Introduction
 
-Developers think in terms of application architecture, not of infrastructure.
+_"Developers think in terms of application architecture, not of infrastructure."_
 
-Open Application Model defines a number of standard but extensible abstractions to model micro-service applications by natural, with operation configurations as part of the application definition. This enables platform builders to create platforms around a unified model, with app-centric mindset by default, and essentially changes building platforms into developing modularized components and traits for the application. 
+Open Application Model defines a series of standard but extensible building blocks to model micro-service applications, with day 2 operations as part of the application definition. This enables platform builders to create platforms around a unified model, with app-centric mindset by default, and essentially changes building platforms into developing modularized components and traits for the application. 
 
 ![How it works](assets/how-it-works.png)
 
-### Why Open Application Model?
-
-For platform builders who create application platforms:
-- Application level abstractions - building developer facing platforms by default.
-- Extensibility - bring your own abstractions or capabilities.
-- Clarity and manageability - leveraging modularized and re-usable building blocks.
-- No capability lock-in - decoupled abstractions and implementation.
-
-For end users of those application platforms:
-- Think applications, not containers or orchestrators.
-- Build modern applications by default.
-- Operation is part of the application lifecycle.
 
 ### Team-centric and separation of concerns
 
