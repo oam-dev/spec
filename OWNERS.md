@@ -2,8 +2,7 @@
 
 This page lists all active maintainers:
 
-* [technosophos](https://github.com/technosophos)
-* [vturecek](https://github.com/vturecek)
+* [rynowak](https://github.com/rynowak)
 * [resouer](https://github.com/resouer)
 * [hongchaodeng](https://github.com/hongchaodeng)
 
