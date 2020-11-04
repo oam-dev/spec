@@ -1,11 +1,17 @@
 # Owners
 
-This page lists all active maintainers:
+## Maintainers
+
+This section lists all active maintainers:
+
+* [rynowak](https://github.com/rynowak)
+* [resouer](https://github.com/resouer)
+* [hongchaodeng](https://github.com/hongchaodeng)
+
+## Emeritus Maintainers
 
 * [technosophos](https://github.com/technosophos)
 * [vturecek](https://github.com/vturecek)
-* [resouer](https://github.com/resouer)
-* [hongchaodeng](https://github.com/hongchaodeng)
 
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for general contribution guidelines.
