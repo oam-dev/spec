@@ -22,7 +22,14 @@ Learn more about versioning [below](#versioning).
 
 ## The Specification Components
 
-**Building Block Objects**
+**User Interface Objects**
+
+|                                | Category      |         API Version            |
+| :----------------------------: | :-----------: | :----------------------------: |
+| Application  | standard | [WIP](https://github.com/oam-dev/spec/issues/306)   |
+| Application Deployment | standard | [WIP](https://github.com/oam-dev/spec/issues/342) |
+
+**Control Plane Objects**
 
 |                                | Category      |         API Version            |
 | :----------------------------: | :-----------: | :----------------------------: |
@@ -42,18 +49,9 @@ Learn more about versioning [below](#versioning).
 | Network Scope  | standard |  [v1alpha2](standard/scopes/network_scope.md)          |
 | Health Scope  | core |  [v1alpha2](core/scopes/health_scope.md)          |
 
-
-**User Interface Objects**
-
-|                                | Category      |         API Version            |
-| :----------------------------: | :-----------: | :----------------------------: |
-| Application  | standard | [WIP](https://github.com/oam-dev/spec/issues/306)   |
-| Application Deployment | standard | [WIP](https://github.com/oam-dev/spec/issues/342) |
-
-
 ## Versioning
 
-Open Application Model specification convention adopts [Kubernetes API resource convention](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/architecture/resource-management.md).
+For Control Plane Objects, Open Application Model specification convention adopts [Kubernetes API resource convention](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/architecture/resource-management.md).
 
 Releases of the specification are versioned according to [Semantic Versioning 2.0](https://semver.org/spec/v2.0.0.html) and described in [OAM release page](https://github.com/oam-dev/spec/releases). Implementations of the specification are required to specify which version they implement.
 

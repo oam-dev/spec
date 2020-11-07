@@ -7,11 +7,11 @@
 
 Open Application Model (OAM) is a runtime-agnostic specification for defining cloud native applications and enable building application-centric platforms by natural.
 
-Focused on **application** rather than container or orchestrator, _Open Application Model_ brings modular, extensible, and portable design for building application centric platforms on any runtime systems like Kubernetes, cloud, or IoT devices.
+Focused on **application** rather than container or orchestrator, _Open Application Model_ brings modular, extensible, and portable design for modeling cloud native applications and enable building application-centric platforms on any runtime infrastructure like Kubernetes, cloud, or IoT devices.
 
 ### Why Open Application Model?
 
-Building platforms without application context is hard:
+Platforms without application context is hard:
 
 - Developers spend time on infrastructure details instead of applications - ingress, labels, iptables rules, DNS, etc, and learning how the platform is implemented.
 - Restricted platform capabilities - in-house APIs with opinionated abstractions and implementations, lack of interoperability.
@@ -19,20 +19,19 @@ Building platforms without application context is hard:
 
 In Open Application Model, we propose an app-centric approach instead:
 
-- Application first - build the platform around a self-contained app model, where operational characteristics are also part of app definition, free of infrastructure here.
+- Application first - build the platform around a self-contained app model, where operational features as part of app definition, free of infrastructure here.
 - Clarity and extensibility - an open standard to modularize your platform capabilities into reusable pieces, with freedom to bring your own abstractions and implementations.
 - Runtime agnostic - a consistent experience to deploy and operate your apps across on-prem clusters, cloud providers or even edge devices.
 
-> **NOTICE:** The current working draft of OAM specification (0.2.x release) is under pre-beta release, which means the specification is still under development but will keep backward compatibility for any further change.
+> **NOTICE:** The current working draft of OAM specification (0.2.x release) is under pre-beta release, it's still under development but will keep backward compatibility for any further change.
 
 ## Introduction
 
 _"Developers think in terms of application architecture, not of infrastructure."_
 
-Open Application Model defines a series of standard but extensible building blocks to model micro-service applications, with day 2 operations as part of the application definition. This enables platform builders to create platforms around a unified model, with app-centric mindset by default, and essentially changes building platforms into developing modularized components and traits for the application. 
+Open Application Model defines a series of standard but extensible abstractions to model micro-service applications, with operation features as part of the application definition. This enables platform builders to create runtime-agnostic systems around a unified model, by developing modularized components and traits, and essentially serve their customers (e.g. developers) with app-centric mindset by default.
 
 ![How it works](assets/how-it-works.png)
-
 
 ### Team-centric and separation of concerns
 
@@ -47,7 +46,7 @@ Open Application Model proposed a clear separation of concerns between the parts
 
 ## See it in action
 
-- [OAM Kubernetes Runtime](https://github.com/crossplane/oam-kubernetes-runtime) is the officially maintained OAM plugin for Kubernetes which implemented OAM building block objects.
+- [KubeVela](https://github.com/oam-dev/kubevela): the highly extensible application platform based on Kubernetes and OAM.
 
 ## Community
 
