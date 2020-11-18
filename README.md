@@ -33,9 +33,9 @@ Open Application Model defines a series of standard but extensible abstractions 
 
 ![How it works](assets/how-it-works.png)
 
-### Team-centric and separation of concerns
+### Separation of Concerns
 
-Open Application Model proposed a clear separation of concerns between the parts that developers are responsible for, and the parts that operators and platform engineers are responsible for. For more details, see [introduction.md](./introduction.md).
+Open Application Model proposed a clear separation of concerns between the parts that developers are responsible for, and the parts that platform engineers are responsible for. For more details, see [introduction.md](./introduction.md).
 
 ## Read the specification
 
@@ -72,7 +72,7 @@ One of the easiest ways to contribute is to participate in discussions. There ar
 | APAC Friendly Community meeting | [Bi-weekly APAC (Starting May 19, 2020), Tuesdays 19:00PM GMT+8](https://calendar.google.com/calendar?cid=OGFhaDBxbjBqZDM0c25jamM5bmQ1OXZxajBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ) |
 | Meeting link APAC Friendly meeting | https://zoom.com.cn/j/2847572020 |
 | Meeting notes| [Notes and agenda](https://docs.google.com/document/d/1nqdFEyULekyksFHtFvgvFAYE-0AMHKoS3RMnaKsarjs) |
-| Meeting recordings| [Recordings](https://drive.google.com/drive/folders/1yr5LSB8NkEYxzBL-R9D-z-UwVYx4luLe) |
+| Meeting recordings| [OAM YouTue Channel](https://www.youtube.com/channel/UCSCTHhGI5XJ0SEhDHVakPAA/) |
 | IM Channel      | https://gitter.im/oam-dev/ |
 | Twitter      | [@oam_dev](https://twitter.com/oam_dev) |
 
