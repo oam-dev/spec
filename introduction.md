@@ -50,8 +50,6 @@ As mentioned in above section, application operator could be the platform itself
 
 ### But I don't really have an "application operator" role
 
-No worries, OAM even helps you better in this case.
-
 It's common in many organizations that application operator role is not a thing. In this context, either the application developers themselves are responsible for configuring traits and deploying the application (e.g. DevOps), or this platform actually goes to "serverless" style so the system will take over from here as long as application artifacts are ready (e.g. NoOps).
 
 In DevOps workflow, clear definition of which piece is application component and which piece is its operational configuration is the key to avoid communications mishaps, bugs, or even service outages due to the mixed mindsets. For example, when rollouting my application component's version, I would choose to disable the autoscaling trait at the meantime.
