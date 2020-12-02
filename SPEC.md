@@ -13,45 +13,30 @@ Learn more about versioning [below](#versioning).
   1. [Purpose and Goals](1.purpose_and_goals.md)
   1. [Overview and Terminology](2.overview_and_terminology.md)
   1. [Components](3.component.md)
-  1. [Workload Definition](4.workload_definitions.md)
+  1. [Workload Types](4.workload_types.md)
   1. [Application Scopes](5.application_scopes.md)
   1. [Traits](6.traits.md)
   1. [Application Configuration](7.application_configuration.md)
   1. [Practical Considerations](8.practical_considerations.md)
   1. [Design Principles](9.design_principles.md)
 
-## The Specification Components
-
-**User Interface Objects**
+## The Model Objects
 
 |                                | Category      |         API Version            |
 | :----------------------------: | :-----------: | :----------------------------: |
-| Application  | standard | [WIP](https://github.com/oam-dev/spec/issues/306)   |
-| Application Deployment | standard | [WIP](https://github.com/oam-dev/spec/issues/342) |
-
-**Control Plane Objects**
-
-|                                | Category      |         API Version            |
-| :----------------------------: | :-----------: | :----------------------------: |
-| **Workload Types**  |
-| Server | core | [v1alpha2](core/workloads/server.md) |
-| Task  | core | [WIP](core/workloads/task.md)   |
-| Cron Job  | core |   WIP      |
-|                               |
-| **Traits**  |
-| Manual Scaler  | core |  [v1alpha2](core/traits/manual_scaler_trait.md)          |
-| Route  | standard |  WIP      |
-| Rollout  | standard |   WIP        |
-| Auto Scaler  | standard | WIP        |
-| Metrics | standard | WIP        |
-|                               |
-| **Scopes**  |
-| Network Scope  | standard |  [v1alpha2](standard/scopes/network_scope.md)          |
-| Health Scope  | core |  [v1alpha2](core/scopes/health_scope.md)          |
+|      **Control Plane Objects**   |
+| Component | core | v1alpha2 |
+| Workload Type | core | v1alpha2 |
+| Trait | core | v1alpha2 |
+| Application Scope | core | v1alpha2 |
+| Application Configuration  | core | v1alpha2   |
+|      **User Interface Objects**    |
+| Application  | -- | [WIP](https://github.com/oam-dev/spec/issues/306)   |
+| Application Deployment | -- | [WIP](https://github.com/oam-dev/spec/issues/342) |
 
 ## Versioning
 
-For Control Plane Objects, Open Application Model specification convention adopts [Kubernetes API resource convention](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/architecture/resource-management.md).
+For the model objects, Open Application Model specification convention adopts [Kubernetes API resource convention](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/architecture/resource-management.md).
 
 Releases of the specification are versioned according to [Semantic Versioning 2.0](https://semver.org/spec/v2.0.0.html) and described in [OAM release page](https://github.com/oam-dev/spec/releases). Implementations of the specification are required to specify which version they implement.
 
