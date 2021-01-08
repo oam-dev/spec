@@ -11,7 +11,7 @@ Focused on **application** rather than container or orchestrator, _Open Applicat
 
 ### Why Open Application Model?
 
-Platforms without application context is hard:
+Platforms without application context are hard:
 
 - Developers spend time on infrastructure details instead of applications - ingress, labels, iptables rules, DNS, etc, and learning how the platform is implemented.
 - Restricted platform capabilities - in-house APIs with opinionated abstractions and implementations, lack of interoperability.
