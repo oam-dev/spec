@@ -68,9 +68,9 @@ One of the easiest ways to contribute is to participate in discussions. There ar
 |---------------------|---|
 | Mailing List | https://groups.google.com/forum/#!forum/oam-dev |
 | Community meeting info | [Bi-weekly (Starting Oct 22, 2019), Tuesdays 10:30AM PST](https://calendar.google.com/calendar?cid=dDk5YThyNGIwOWJyYTJxajNlbWI0a2FvdGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)  |
-| Meeting link | https://zoom.us/j/2847572020 |
+| Meeting link | [OAM Developer Meeting Link](https://us02web.zoom.us/j/2804785490?pwd=ZTN4ZU03UTlBZzlmVHIwTndINGM3UT09) |
 | APAC Friendly Community meeting | [Bi-weekly APAC (Starting May 19, 2020), Tuesdays 19:00PM GMT+8](https://calendar.google.com/calendar?cid=OGFhaDBxbjBqZDM0c25jamM5bmQ1OXZxajBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ) |
-| Meeting link APAC Friendly meeting | https://zoom.com.cn/j/2847572020 |
+| Meeting link APAC Friendly meeting | [OAM Developer Meeting Link](https://us02web.zoom.us/j/2804785490?pwd=ZTN4ZU03UTlBZzlmVHIwTndINGM3UT09) |
 | Meeting notes| [Notes and agenda](https://docs.google.com/document/d/1nqdFEyULekyksFHtFvgvFAYE-0AMHKoS3RMnaKsarjs) |
 | Meeting recordings| [OAM YouTue Channel](https://www.youtube.com/channel/UCSCTHhGI5XJ0SEhDHVakPAA/) |
 | IM Channel      | https://gitter.im/oam-dev/ |
