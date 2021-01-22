@@ -2,9 +2,13 @@
 
 This doc gives an introduction of the personas of Open Application Model in a story-based format. Note that these are extracted from a combination of user stories, research, and user input. While this is not an exhaustive list of possible roles, these are the roles identified as the primary targets for this specification.
 
+## End Users Role
+
 - __Developers__ deliver business value in the form of code. While they should understand the operational characteristics of the code they deliver, they are unconcerned with _how_ operational requirements are fulfilled. For instance, a developer may be aware that their code writes data to a specific path on a file system, but need not concern themselves with what kind of volume (disk) is mounted to that path or how that dependency is fulfilled.
 
 - __Application operators__ deliver business value by configuring, installing, and managing components and/or applications such as updating, scaling, auto recovery, etc. Unlike developers and application composers, operators are concerned with _how_ a component or application's operational requirements are fulfilled. For instance, if a developer has declared that a component writes data to a specific path on a file system, an operator may concern themselves with mounting an appropriate volume to that path.
+
+## Platform Team Role
 
 - __Infrastructure operators (also known as platform builders)__ deliver value by building the application centric platform and managing low-level infrastructural components. This may range from managing the physical hardware in an on-premises network to directly managing cloud service offerings in a public cloud. Infrastructure operators are less concerned with the particular configuration needs of _an application_, focusing instead on the big picture of how an enterprise's overall infrastructure is managed. For example, an infrastructure operator may manage the underlying storage offerings that are used for provisioning persistent storage.
 

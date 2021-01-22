@@ -12,10 +12,10 @@ Learn more about versioning [below](#versioning).
 
   1. [Purpose and Goals](1.purpose_and_goals.md)
   1. [Overview and Terminology](2.overview_and_terminology.md)
-  1. [Components](3.component.md)
-  1. [Workload Types](4.workload_types.md)
+  1. [Component Model](3.component.md)
+  1. [Workload Definition](4.workload_types.md)
   1. [Application Scopes](5.application_scopes.md)
-  1. [Traits](6.traits.md)
+  1. [Trait Definition](6.traits.md)
   1. [Application Configuration](7.application_configuration.md)
   1. [Practical Considerations](8.practical_considerations.md)
   1. [Design Principles](9.design_principles.md)
@@ -24,15 +24,11 @@ Learn more about versioning [below](#versioning).
 
 |                                | Category      |         API Version            |
 | :----------------------------: | :-----------: | :----------------------------: |
-|      **Control Plane Objects**   |
 | Component | core | v1alpha2 |
-| Workload Type | core | v1alpha2 |
-| Trait | core | v1alpha2 |
+| WorkloadDefiniton | core | v1alpha2 |
+| TraitDefinition | core | v1alpha2 |
 | Application Scope | core | v1alpha2 |
 | Application Configuration  | core | v1alpha2   |
-|      **User Interface Objects**    |
-| Application  | -- | [WIP](https://github.com/oam-dev/spec/issues/306)   |
-| Application Deployment | -- | [WIP](https://github.com/oam-dev/spec/issues/342) |
 
 ## Versioning
 

@@ -4,7 +4,7 @@ This section is non-normative. OAM compliant tooling need not implement this sec
 
 This section uses a fictional tool called `oamctl` to illustrate a workflow pattern for OAM app operations.
 
-## Deploying two components with parameter overrides
+## Deploying two components
 
 The following example shows two separate components:
  - a front-end web app in a container, run as a core containerized workload.
@@ -33,13 +33,6 @@ spec:
       env:
       - name: MESSAGE
         value: default
-  parameters:
-  - name: message
-    description: The message to display in the web app.  
-    required: true
-    type: string
-    fieldPaths:
-    - "spec.containers[0].env[0].value"
 ```
 
 ```yaml
@@ -55,22 +48,7 @@ spec:
   settings:
     maxStalenessPrefix: 100000
     defaultConsistencyLevel: Eventual
-  parameters:
-    - name: maxStalenessPrefix
-      description: Max stale requests.
-      type: int
-      fieldPaths:
-      - "spec.maxStalenessPrefix"
-    - name: defaultConsistencyLevel
-      description: The default consistency level
-      type: string
-      fieldPaths:
-      - "spec.defaultConsistencyLevel"
 ```
-
-Note that each component allows certain parameters to be overridden. For example, the `message` parameter is exposed for configuration in the frontend component. Within the component config, the parameter is piped to an environment variable where the component code can read the value.
-
-Components are designed for reuse by exposing parameters to be configured in different deployment scenarios.
 
 An application configuration combines any number of components and sets operational characteristics and configuration for a deployed _instance_ of each component.
 
@@ -85,14 +63,8 @@ metadata:
 spec:
   components:
     - componentName: frontend
-      parameterValues:
-        - name: message
-          value: "Well hello there"
-
     - componentName: backend
 ```
-
-In this example, the ops config allows a user to override only one of the parameters in the `frontend` component, and it does not allow the user to change any of the `backend` parameters. This allows the author of this ops config to control configuration options for the components therein.
 
 The operator can now deploy the components together with this configuration to create running instances of the components:
 
@@ -130,9 +102,6 @@ metadata:
 spec:
   components:
     - componentName: frontend
-      parameterValues:
-        - name: message
-          value: "Well hello there"
       traits:
         - name: ingress
           properties:
@@ -166,7 +135,7 @@ spec:
   internetGatewayType: nat
 ```
 
-Both components are then added to the same network scope for direct network connectivity and a shared set of network policies that can be defined by the infrastructure operator on the SDN itself. The SDN name is parameterized in the application configuration to allow an application operator to deploy this configuration into any SDN.
+Both components are then added to the same network scope for direct network connectivity and a shared set of network policies that can be defined by the infrastructure operator on the SDN itself.
 
 
 ```yaml
@@ -180,9 +149,6 @@ metadata:
 spec:
   components:
     - componentName: frontend
-      parameterValues:
-        - name: message
-          value: "Well hello there"
       traits:
         - name: ingress
           properties:
@@ -201,4 +167,4 @@ spec:
             name: my-vpc-network
 ```
 
-This example now shows a complete installation of the application configuration composed of two components, an ingress trait, and a network scope with parameters exposed to an application operator to customize the domain name, the network to deploy it to, and a custom message for the web front end to display.
+This example now shows a complete installation of the application configuration composed of two components, an ingress trait, and a network scope.
