@@ -19,7 +19,7 @@ Open Application Model defines a series of standard but extensible modules to mo
 
 ### Why Open Application Model?
 
-Platforms without application context is hard:
+Platforms without application context are hard:
 
 - Developers spend time on infrastructure details instead of applications - ingress, labels, iptables rules, DNS, etc, and learning how the platform is implemented.
 - Restricted platform capabilities - in-house APIs with opinionated abstractions and implementations, lack of interoperability.
