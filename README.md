@@ -5,37 +5,35 @@
 [![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/oam-dev/spec)](https://www.tickgit.com/browse?repo=github.com/oam-dev/spec)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/oam_dev.svg?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=oam_dev)
 
-Open Application Model (OAM) is a runtime-agnostic specification for defining cloud native applications and enable building application-centric platforms by natural.
+Open Application Model (OAM) is a runtime-agnostic specification for defining cloud native applications.
 
-Focused on **application** rather than container or orchestrator, _Open Application Model_ brings modular, extensible, and portable design for modeling cloud native applications and enable building application-centric platforms on any runtime infrastructure like Kubernetes, cloud, or IoT devices.
+Focused on **application** rather than container or orchestrator, _Open Application Model_ brings modular, extensible, and portable design for modeling cloud native applications and enable delivering applications to any runtimes like Kubernetes, cloud, or IoT devices in a unified approach.
 
 ## Introduction
 
 _"Developers think in terms of application architecture, not of infrastructure."_
 
-Open Application Model defines a series of standard but extensible modules to model micro-service applications, with operation features as part of the application definition. This enables platform builders to create application focused systems around a unified model, by developing modularized components and traits, and essentially serve their customers with app-centric mindset by default.
+Open Application Model defines a series of standard yet extensible specifications to model micro-service applications, with operational behaviors as part of the application definition. This enables unified application delivery across hybrid environments and naturally bring app-centric mindset to users of your platform.
 
 ![How it works](assets/how-it-works.png)
 
 ### Why Open Application Model?
 
-Platforms without application context are hard:
+Delivering applications without application context is hard:
 
-- Developers spend time on infrastructure details instead of applications - ingress, labels, iptables rules, DNS, etc, and learning how the platform is implemented.
-- Restricted platform capabilities - in-house APIs with opinionated abstractions and implementations, lack of interoperability.
+- Developers spend time on infrastructure details instead of applications - ingress, labels, DNS, etc, and learning how the infrastructure is implemented.
+- Restricted abstractions and capabilities - in-house APIs with opinionated abstractions have to be introduced, lack of interoperability across different components.
 - Runtime lock-in - platform is tightly coupled with execution runtime, which heavily impact on how you configure, develop and operate your application.
 
 In Open Application Model, we propose an app-centric approach instead:
 
-- Application first - build the platform around a self-contained app model, where operational features as part of app definition, free of infrastructure here.
-- Clarity and extensibility - an open standard to modularize your platform capabilities into reusable pieces, with freedom to bring your own abstractions and implementations.
+- Application first - define the application a self-contained model, where operational behaviors as part of app definition, free of infrastructure here.
+- Clarity and extensibility - an open standard to modularize your platform capabilities into reusable pieces, with full freedom to define or bring your own abstractions.
 - Runtime agnostic - a consistent experience to deploy and operate your apps across on-prem clusters, cloud providers or even edge devices.
-
-> **NOTICE:** The current working draft of OAM specification (0.2.x release) is under pre-beta release, it's still under development but will keep backward compatibility for any further change.
 
 ### Separation of Concerns
 
-Open Application Model proposed a clear separation of concerns between different roles in software delivery lifecycle. For more details, see [introduction.md](./introduction.md).
+Open Application Model proposed a clear separation of concerns between different roles in application delivery lifecycle. For more details, see [introduction.md](./introduction.md).
 
 ## Read the specification
 

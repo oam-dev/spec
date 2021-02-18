@@ -28,6 +28,7 @@ spec:
   appliesToWorkloads:
     - webservice
     - worker
+    - workload.oam.dev/replicable=true
   extension:
     template: |-
       patch: {
@@ -39,20 +40,21 @@ spec:
       }
 ```
 
-This `TraitDefinition` uses [CUE](https://github.com/cuelang/cue) as templating tool and exposes one configurable properties (i.e. `replicas` and `cmd`) to end users. Note that OAM doesn't have enforcement on the specific tool for templating.
+This `TraitDefinition` uses [CUE](https://github.com/cuelang/cue) as templating module and exposes one configurable properties (i.e. `replicas`) to end users. Note that OAM doesn't have enforcement on the specific tool for templating.
 
 ## Usage examples
 
-The following snippet from an application configuration shows how the manual scaler trait is applied and configured for a component.
+The following snippet from an application shows how the manual scaler trait is applied and configured for a component.
 
 ```yaml
 apiVersion: core.oam.dev/v1alpha2
-kind: ApplicationConfiguration
+kind: Application
 metadata:
   name: custom-single-app
 spec:
   components:
-    - componentName: frontend
+    - name: frontend
+        ...
       traits:
         - name: scaler
           properties:
