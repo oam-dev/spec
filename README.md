@@ -35,7 +35,7 @@ In Open Application Model, we propose an app-centric approach instead:
 
 ### Separation of Concerns
 
-Open Application Model proposed a clear separation of concerns between the parts that developers are responsible for, and the parts that platform engineers are responsible for. For more details, see [introduction.md](./introduction.md).
+Open Application Model proposed a clear separation of concerns between different roles in software delivery lifecycle. For more details, see [introduction.md](./introduction.md).
 
 ## Read the specification
 
