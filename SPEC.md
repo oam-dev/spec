@@ -12,7 +12,7 @@ Learn more about versioning [below](#versioning).
 
   1. [Purpose and Goals](1.purpose_and_goals.md)
   1. [Overview and Terminology](2.overview_and_terminology.md)
-  1. [Component Model](3.component.md)
+  1. [Components](3.component.md)
   1. [Workload Definition](4.workload_types.md)
   1. [Application Scopes](5.application_scopes.md)
   1. [Trait Definition](6.traits.md)
