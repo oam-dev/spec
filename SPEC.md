@@ -16,7 +16,7 @@ Learn more about versioning [below](#versioning).
   1. [Workload Definition](4.workload_types.md)
   1. [Application Scopes](5.application_scopes.md)
   1. [Trait Definition](6.traits.md)
-  1. [Application Configuration](7.application_configuration.md)
+  1. [Application](7.application.md)
   1. [Practical Considerations](8.practical_considerations.md)
   1. [Design Principles](9.design_principles.md)
 
