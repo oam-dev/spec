@@ -3,7 +3,7 @@
 
 ## Version
 
-This is OAM **spec** working draft version **v0.2.2-WD (Working Draft)**.
+This is OAM **spec** working draft version **v0.3.0-WD (Working Draft)**.
 Learn more about versioning [below](#versioning).
 
 ## The Specification
@@ -24,10 +24,11 @@ Learn more about versioning [below](#versioning).
 
 |                                | Category      |         API Version            |
 | :----------------------------: | :-----------: | :----------------------------: |
-| WorkloadDefiniton | core | v1alpha2 |
-| TraitDefinition | core | v1alpha2 |
+| ComponentDefiniton | core | v1beta1 |
+| WorkloadDefiniton | core | v1beta1 |
+| TraitDefinition | core | v1beta1 |
 | Application Scope | core | v1alpha2 |
-| Application  | core | v1alpha2   |
+| Application  | core | v1beta1   |
 
 ## Versioning
 
