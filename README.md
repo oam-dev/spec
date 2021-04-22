@@ -7,13 +7,11 @@
 
 Open Application Model (OAM) is a runtime-agnostic specification for defining cloud native applications.
 
-Focused on **application** rather than container or orchestrator, Open Application Model brings modular, extensible, and portable design to enable application deployment across hybrid environments including Kubernetes, cloud, or IoT devices.
+Focused on **application** rather than container or orchestrator, Open Application Model brings modular, extensible, and portable design for modeling application deployment with consistent higher level API. This is the key to enable simple yet robust application delivery workflow across hybrid environments including Kubernetes, cloud, or even IoT devices.
 
 ## Introduction
 
 _"Developers think in terms of application architecture, not of infrastructure."_
-
-Open Application Model defines a series of standard yet extensible abstractions to model micro-service applications, with operational behaviors as part of the application definition. This enables unified application delivery across hybrid environments and naturally bring app-centric mindset to users of your platform.
 
 ![How it works](assets/how-it-works.png)
 
