@@ -14,10 +14,10 @@ A Server is a OAM core workload type to define long-running, scalable workloads 
 1. Install below workload definition in your OAM based platform:
 
 	```yaml
-	apiVersion: core.oam.dev/v1alpha2
+	apiVersion: core.oam.dev/v1beta1
 	kind: WorkloadDefinition
 	metadata:
-	  name: Server # the workload type
+	  name: Server
 	spec:
 	  definitionRef:
 	    name: containerizedworkloads.core.oam.dev # the reference of schema for this workload type. In Kubernetes it should be a full name of API resource
@@ -28,13 +28,13 @@ A Server is a OAM core workload type to define long-running, scalable workloads 
 2. Define a component reference `Server` as workload:
 
 	```yaml
-	apiVersion: core.oam.dev/v1alpha2
+	apiVersion: core.oam.dev/v1beta1
 	kind: Component
 	metadata:
 	  name: frontend
 	spec:
 	  type: Server # <--- type of this workload
-	  settings:        # <--- spec template of this workload
+	  properties:        # <--- spec template of this workload
 	    osType: linux
 	    containers:
 	    - name: my-cool-workload
