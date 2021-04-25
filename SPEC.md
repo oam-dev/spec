@@ -12,8 +12,8 @@ Learn more about versioning [below](#versioning).
 
   1. [Purpose and Goals](1.purpose_and_goals.md)
   1. [Overview and Terminology](2.overview_and_terminology.md)
-  1. [Component Model](3.component.md)
-  1. [Workload Type](4.workload_types.md)
+  1. [Component Model](3.component_model.md)
+  1. [Workload Types](4.workload_types.md)
   1. [Application Scopes](5.application_scopes.md)
   1. [Traits](6.traits.md)
   1. [Application](7.application_configuration.md)
@@ -27,7 +27,7 @@ Learn more about versioning [below](#versioning).
 | ComponentDefiniton | core | v1beta1 |
 | WorkloadDefiniton | core | v1beta1 |
 | TraitDefinition | core | v1beta1 |
-| Application Scope | core | v1alpha2 |
+| Application Scope | core | v1beta1 |
 | Application  | core | v1beta1   |
 
 ## Versioning
