@@ -15,13 +15,8 @@ Learn more about versioning [below](#versioning).
   1. [Component Model](3.component_model.md)
   1. [Workload Types](4.workload_types.md)
   1. [Application Scopes](5.application_scopes.md)
-<<<<<<< HEAD
-  1. [Trait Definition](6.traits.md)
-  1. [Application](7.application.md)
-=======
   1. [Traits](6.traits.md)
-  1. [Application](7.application_configuration.md)
->>>>>>> master
+  1. [Application](7.application.md)
   1. [Practical Considerations](8.practical_considerations.md)
   1. [Design Principles](9.design_principles.md)
 
