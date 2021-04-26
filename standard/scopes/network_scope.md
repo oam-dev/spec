@@ -23,9 +23,6 @@ apiVersion: standard.oam.dev/v1alpha2
 kind: NetworkScope
 metadata:
   name: example-vpc-network
-  labels:
-    region: us-west
-    environment: production
 spec:
   allowComponentOverlap: true # can be skipped
   networkId: cool-vpc-network
@@ -41,8 +38,7 @@ spec:
 An application could reference above scope instance as below:
 
 ```yaml
-apiVersion: core.oam.dev/v1alpha2
-kind: ApplicationConfiguration
+kind: Application
 metadata:
   name: example-appconfig
 spec:
@@ -51,8 +47,5 @@ spec:
       traits:
         ...
       scopes:
-        - scopeRef:
-            apiVersion: standard.oam.dev/v1alpha2
-            kind: NetworkScope
-            name: example-vpc-network
+        networkscppes.standard.oam.dev: example-vpc-network
 ```

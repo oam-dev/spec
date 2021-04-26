@@ -7,28 +7,26 @@
 
 Open Application Model (OAM) is a runtime-agnostic specification for defining cloud native applications.
 
-Focused on **application** rather than container or orchestrator, _Open Application Model_ brings modular, extensible, and portable design for modeling cloud native applications and enable delivering applications to any runtimes like Kubernetes, cloud, or IoT devices in a unified approach.
+Focused on **application** rather than container or orchestrator, Open Application Model brings modular, extensible, and portable design for modeling application deployment with consistent higher level API. This is the key to enable simple yet robust application delivery workflow across hybrid environments including Kubernetes, cloud, or even IoT devices.
 
 ## Introduction
 
 _"Developers think in terms of application architecture, not of infrastructure."_
 
-Open Application Model defines a series of standard yet extensible specifications to model micro-service applications, with operational behaviors as part of the application definition. This enables unified application delivery across hybrid environments and naturally bring app-centric mindset to users of your platform.
-
 ![How it works](assets/how-it-works.png)
 
 ### Why Open Application Model?
 
-Delivering applications without application context is hard:
+Managing applications without application context is hard:
 
-- Developers spend time on infrastructure details instead of applications - ingress, labels, DNS, etc, and learning how the infrastructure is implemented.
-- Restricted abstractions and capabilities - in-house APIs with opinionated abstractions have to be introduced, lack of interoperability across different components.
-- Runtime lock-in - platform is tightly coupled with execution runtime, which heavily impact on how you configure, develop and operate your application.
+- Developers spend time on infrastructure details instead of apps - ingress, labels, DNS, etc, and learning how the infrastructure is implemented.
+- Inextensible - upper layer platform may be introduced, but it's almost certain that the needs of your app will outgrow the capabilities of that platform soon.
+- Runtime lock-in - app description is tightly coupled with the runtime infrastructure, which heavily impact on how you configure, develop and operate the app across hybrid environments.
 
 In Open Application Model, we propose an app-centric approach instead:
 
-- Application first - define the application a self-contained model, where operational behaviors as part of app definition, free of infrastructure here.
-- Clarity and extensibility - an open standard to modularize your platform capabilities into reusable pieces, with full freedom to define or bring your own abstractions.
+- Application first - define the app with a self-contained model, where operational behaviors as part of app definition, free of infrastructure here.
+- Clarity and extensibility - an open standard to modularize infrastructure capabilities into reusable pieces that adapts to your needs, not the other way around.
 - Runtime agnostic - a consistent experience to deploy and operate your apps across on-prem clusters, cloud providers or even edge devices.
 
 ### Separation of Concerns
@@ -40,12 +38,12 @@ Open Application Model proposed a clear separation of concerns between different
 |                                | Last Stable Release | Latest Release |    Working Draft                  |
 | :----------------------------: | :-----------------: | :------------: |:--------------------------------: |
 | **Core Specification:**        |                                                                          |
-| OAM Specification              | [v0.1.0](https://github.com/oam-dev/spec/releases/tag/v0.1.0) | [v0.2.1](https://github.com/oam-dev/spec/blob/v0.2.1/SPEC_LATEST_STABLE.md) |  [v0.2.2-WD](SPEC.md)  |
+| OAM Specification              | [v0.1.0](https://github.com/oam-dev/spec/releases/tag/v0.1.0) | [v0.2.1](https://github.com/oam-dev/spec/blob/v0.2.1/SPEC_LATEST_STABLE.md) |  [v0.3.0](SPEC.md)  |
 
 ## See it in action
 
-For `v0.2.x` releases (recommend version):
-- [KubeVela](https://github.com/oam-dev/kubevela): the highly extensible application platform based on Kubernetes and OAM.
+For `v0.2.x` and above releases (recommend version):
+- [KubeVela](https://github.com/oam-dev/kubevela): the modern application deployment system based on Kubernetes and OAM.
 
 For `v0.1.x` releases:
 - [Rudr](https://github.com/oam-dev/rudr): the reference implementation of OAM on Kubernetes.

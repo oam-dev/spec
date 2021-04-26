@@ -33,8 +33,7 @@ spec:
 An application could reference above scope instance as below:
 
 ```yaml
-apiVersion: core.oam.dev/v1alpha2
-kind: ApplicationConfiguration
+kind: Application
 metadata:
   name: example-appconfig
 spec:
@@ -43,8 +42,5 @@ spec:
       traits:
         ...
       scopes:
-        - scopeRef:
-            apiVersion: core.oam.dev/v1alpha2
-            kind: HealthScope
-            name: example-health-scope
+        healthscopes.core.oam.dev: example-health-scope
 ```
