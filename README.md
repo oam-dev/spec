@@ -29,21 +29,16 @@ In Open Application Model, we propose an app-centric approach instead:
 - Clarity and extensibility - an open standard to modularize infrastructure capabilities into reusable pieces that adapts to your needs, not the other way around.
 - Runtime agnostic - a consistent experience to deploy and operate your apps across on-prem clusters, cloud providers or even edge devices.
 
-### Separation of Concerns
-
-Open Application Model proposed a clear separation of concerns between different roles in application delivery lifecycle. For more details, see [introduction.md](./introduction.md).
-
 ## Read the specification
 
-|                                | Last Stable Release | Latest Release |    Working Draft                  |
+|                                | Previous Stable Release | Latest Release |    Working Draft                  |
 | :----------------------------: | :-----------------: | :------------: |:--------------------------------: |
-| **Core Specification:**        |                                                                          |
-| OAM Specification              | [v0.1.0](https://github.com/oam-dev/spec/releases/tag/v0.1.0) | [v0.2.1](https://github.com/oam-dev/spec/blob/v0.2.1/SPEC_LATEST_STABLE.md) |  [v0.3.0](SPEC.md)  |
+| OAM Specification              | [v0.1.0](https://github.com/oam-dev/spec/releases/tag/v0.1.0) | [v0.3.0](SPEC.md) |  --  |
 
 ## See it in action
 
-For `v0.2.x` and above releases (recommend version):
-- [KubeVela](https://github.com/oam-dev/kubevela): the modern application deployment system based on Kubernetes and OAM.
+For latest releases (recommend):
+- [KubeVela](https://github.com/oam-dev/kubevela): the modern application deployment system based on OAM, with Kubernetes as control plane.
 
 For `v0.1.x` releases:
 - [Rudr](https://github.com/oam-dev/rudr): the reference implementation of OAM on Kubernetes.
@@ -57,11 +52,6 @@ To get an overview of the milestones and their description please visit the [Mil
 ### Triaging 
 
 Triaging of items into milestones will occur during the bi-weekly community call. During this call, issues might be brought into milestones, removed from milestones or moved between milestones. 
-
-### Copyright
-
-Open Application Model specification is created under the [Open Web Foundation (OWF)](https://cloudblogs.microsoft.com/opensource/2019/10/16/announcing-open-application-model/), a neutral home for community-driven specifications.
-
 
 ### Contributing
 

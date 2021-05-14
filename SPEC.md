@@ -3,7 +3,7 @@
 
 ## Version
 
-This is OAM **spec** working draft version **v0.3.0-WD (Working Draft)**.
+This is OAM **spec** version **v0.3.0**.
 Learn more about versioning [below](#versioning).
 
 ## The Specification
