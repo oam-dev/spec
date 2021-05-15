@@ -31,9 +31,9 @@ In Open Application Model, we propose an app-centric approach instead:
 
 ## Read the specification
 
-|                                | Previous Stable Release | Latest Release |    Working Draft                  |
+|                                | Previous Releases | Latest Release |    Working Draft                  |
 | :----------------------------: | :-----------------: | :------------: |:--------------------------------: |
-| OAM Specification              | [v0.1.0](https://github.com/oam-dev/spec/releases/tag/v0.1.0) | [v0.3.0](SPEC.md) |  --  |
+| OAM Specification              | [v0.1.0](https://github.com/oam-dev/spec/releases/tag/v0.1.0), [v0.2.1](https://github.com/oam-dev/spec/releases/tag/v0.2.1) | [v0.3.0](SPEC.md) |  --  |
 
 ## See it in action
 
