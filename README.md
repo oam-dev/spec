@@ -62,12 +62,8 @@ One of the easiest ways to contribute is to participate in discussions. There ar
 | Item        | Value  |
 |---------------------|---|
 | Mailing List | https://groups.google.com/forum/#!forum/oam-dev |
-| Community meeting info | [Bi-weekly, Tuesdays 10:30AM PST](https://calendar.google.com/event?action=TEMPLATE&tmeid=NWVmbHNlajY2cHVrcjcwc3Bnamw5NHZraWdfMjAyMTAxMjZUMTgzMDAwWiBvYW1kZXYyMDIwQG0&tmsrc=oamdev2020%40gmail.com&scp=ALL) |
-| Meeting link | [OAM Community Call](https://us02web.zoom.us/j/88638962723?pwd=MVhCZnNub2t0R3BmMUNEWE9vendLUT09) |
-| APAC Friendly Community meeting | Bi-weekly APAC, Tuesdays 19:00PM GMT+8 |
-| Meeting link APAC Friendly meeting | [OAM Community Call](https://us02web.zoom.us/j/2804785490?pwd=ZTN4ZU03UTlBZzlmVHIwTndINGM3UT09) |
-| Meeting notes| [Notes and agenda](https://docs.google.com/document/d/1nqdFEyULekyksFHtFvgvFAYE-0AMHKoS3RMnaKsarjs) |
-| Meeting recordings| [OAM YouTue Channel](https://www.youtube.com/channel/UCSCTHhGI5XJ0SEhDHVakPAA/) |
+| Bi-weekly OAM Community Call (English) | [Zoom](https://us02web.zoom.us/j/88638962723?pwd=MVhCZnNub2t0R3BmMUNEWE9vendLUT09), [Meeting Notes](https://docs.google.com/document/d/1nqdFEyULekyksFHtFvgvFAYE-0AMHKoS3RMnaKsarjs), [Records (YouTube)](https://www.youtube.com/channel/UCSCTHhGI5XJ0SEhDHVakPAA/)  |
+| Bi-weekly APAC Friendly Meeting (Chinese)| [Zoom](https://us02web.zoom.us/j/2804785490?pwd=ZTN4ZU03UTlBZzlmVHIwTndINGM3UT09), [Meeting Notes](https://shimo.im/docs/w8CgdyYGWjtYJ3XP), [Records (BiliBili)](https://space.bilibili.com/180074935?spm_id_from=333.788.b_765f7570696e666f.2) |
 | IM Channel      | https://gitter.im/oam-dev/ |
 | Twitter      | [@oam_dev](https://twitter.com/oam_dev) |
 
