@@ -15,14 +15,16 @@ _"Developers think in terms of application architecture, not of infrastructure."
 
 ![How it works](assets/how-it-works.png)
 
-Open Application Model is essentially the theoretical model behind [KubeVela](https://github.com/oam-dev/kubevela) project - a modern application deployment platform that makes delivering and managing applications across today's hybrid, multi-cloud environments easier and faster. 
+Open Application Model is the theoretical model behind [KubeVela](https://github.com/oam-dev/kubevela) project - a modern application deployment platform that intends to make delivering and managing applications across today's hybrid, multi-cloud environments easier and faster. KubeVela, as its name implies, requires a Kubernetes cluster as control plane (though it's agnostic to runtime plane).
 
-### Why Open Application Model?
+Hence, although Open Application Model is driven by KubeVela, we intentionally maintain the model itself as a set of API specifications in this repository. This enables some corner cases where Kubernetes as control plane is impossible but users still want to adopt this model.
 
-Managing applications without application context is hard:
+## Why Open Application Model?
+
+In today's hybrid deployment environments, managing applications without application context is hard:
 
 - Developers spend time on infrastructure details instead of apps - ingress, labels, DNS, etc, and learning how the infrastructure is implemented.
-- Inextensible - upper layer platform may be introduced, but it's almost certain that the needs of your app will outgrow the capabilities of that platform soon.
+- Inextensible - upper layer abstraction may be introduced, but it's almost certain that the needs of your app will outgrow the capabilities of that abstraction soon.
 - Runtime lock-in - app description is tightly coupled with the runtime infrastructure, which heavily impact on how you configure, develop and operate the app across hybrid environments.
 
 In Open Application Model, we propose an app-centric approach instead:
@@ -33,14 +35,12 @@ In Open Application Model, we propose an app-centric approach instead:
 
 ## Learn the model
 
-The developing and releasing of Open Application Model are all driven by KubeVela. Though the model itself is maintained as a set of API specifications in this repository. This enables some user cases where Kubernetes as control plane (required by KubeVela) is impossible but still want to adopt OAM.
-
 |                                | Previous Releases | Latest Release |    Working Draft                  |
 | :----------------------------: | :-----------------: | :------------: |:--------------------------------: |
 | OAM releases              | [v0.2.1](https://github.com/oam-dev/spec/releases/tag/v0.2.1) | [v0.3.0](SPEC.md) |  --  |
 | KubeVela releases              | v0.3.x |v1.x |  --  |
 
-For [v0.1.0](https://github.com/oam-dev/spec/releases/tag/v0.1.0) release of OAM, it is an experimental version only supported in [Rudr](https://github.com/oam-dev/rudr) and now archived.
+For [v0.1.0](https://github.com/oam-dev/spec/releases/tag/v0.1.0) release of OAM, it is only supported in [Rudr](https://github.com/oam-dev/rudr) and now archived.
 
 ## Community
 
