@@ -1,5 +1,9 @@
 # Owners
 
+## Introduction
+
+Maintainers of Open Application Model will be inherited directly in KubeVela project as KubeVela API maintainers.
+
 ## Maintainers
 
 This section lists all active maintainers:

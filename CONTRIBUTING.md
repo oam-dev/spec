@@ -1,21 +1,12 @@
 # Contributing
 
+## Introduction
+
+The developing of Open Application Model is driven by KubeVela, in most cases, you should use KubeVela repository for contribution. This repository mainly accepts issues and PRs for API specification release planning and maintenance purposes.
+
 ## Proposing Changes and LGTM Policy
 
 To propose a change or ask a question, please open an issue in the issue queue before submitting a pull request (PR). All PRs must be reviewed and approved (LGTMed) by 2 maintainers before being merged. Maintainers are specified in the [OWNERS](OWNERS.md) file. Refer to to the contribution guidelines in this document for more details on the process for issues and PRs.
-
-## CLA Requirement
-
-This project welcomes contributions and suggestions. All contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant the community the rights to use your contribution. 
-
-## Specification subject to the Open Web Foundation Agreements
-
-In addition, by making a contribution to specifications in this repository, you, on behalf of yourself, your employer, and its affiliates, are making those contributions subject to the obligations set forth in the [OWF Contributor License Agreement 1.0 - Copyright and Patent](http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owf-contributor-license-agreement-1-0---copyright-and-patent).  
-Final specifications developed in this repository will be subject to the [Open Web Foundation Final Specification Agreement (“OWFa 1.0”)](http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0).  OWFa 1.0 will be applied as follows:
-
--	The maintainer will notify all contributors to a designated specification in writing via provided contact information of the start of a 30 day review period, after which the specification will be subject to the OWFa 1.0.
--	During that 30 day period, contributors may provide written notice to the maintainer that the contributor is not making the forgoing commitment under OWFa 1.0 for the designated specification (“Exclusion”).
--	Upon the end of that 30 day notice period, those contributors who have not issued an Exclusion, on behalf of themselves, their employer, and its affiliates, will, without further action, be subject to the obligations set forth in the OWFa 1.0 for the designated specification.
 
 ## Code of Conduct
 
@@ -24,30 +15,15 @@ Please maintain respectful communication in the issue queue, PR queue, and all o
 
 ## Contribution guidelines
 
-The Open Application Model specification project accepts contributions via GitHub pull requests. The following section outlines the process for merging contributions to the spec.
+This repository accepts contributions via GitHub pull requests. The following section outlines the process for merging contributions to the spec.
 
 ### Issues
 
-Issues are used as the primary method for tracking anything to do with the Open Application Model specification project.
-
-#### Issue Types
-
-There are three types of issues (each with their own corresponding [label](#labels)):
-
-- **Discussion**: These are support or functionality inquiries that we want to have a record of for
-future reference. Depending on the discussion, these can turn into "Spec Change" issues.
-- **Proposal**: Used for items that propose a new ideas or functionality that require
-a larger discussion. This allows for feedback from others before a
-spec change is actually written. All issues that are proposals should
-both have a label and an issue title of "Proposal: [the rest of the title]." A proposal can become
-a "Spec Change" and does not require a milestone.
-- **Spec Change**: These track specific spec changes and ideas until they are complete. They can evolve
-from "Proposal" and "Discussion" items, or can be submitted individually depending on the size. Each spec change should be placed into a milestone.
+Issues are used as the primary method for tracking anything to do with the Open Application Model project.
 
 #### Issue Lifecycle
 
-The issue lifecycle is mainly driven by the core maintainers, but is good information for those
-contributing to the Open Application Model specification. All issue types follow the same general lifecycle. Differences are noted below.
+All issue types follow the same general lifecycle. Differences are noted below.
 
 1. Issue creation
 2. Triage
@@ -65,9 +41,9 @@ contributing to the Open Application Model specification. All issue types follow
 
 ### How to Contribute a Patch
 
-Like any good open source project, we use Pull Requests (PRs) to track code changes. To submit a change to the specification:
+We use Pull Requests (PRs) to track code changes. To submit a change to the project:
 
-1. Fork the repo, modify the specification to address the issue.
+1. Fork the repo, modify the project to address the issue.
 2. Pick an open issue from the [issue list](https://github.com/oam-dev/spec/issues) and claim it in the comments. After approval fix the issue and send us a pull request (PR).
 3. Or you can create a new issue. A community member will get back to you and, if approved, you can fix the issue and send a pull request.
 4. Please go through our issue list first (open as well as closed) and make sure the issue you are reporting does not replicate an issue already reported. If you have issues on multiple pages, report them separately. Do not combine them into a single issue.
