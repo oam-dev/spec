@@ -15,11 +15,7 @@ _"Developers think in terms of application architecture, not of infrastructure."
 
 ![How it works](assets/how-it-works.png)
 
-Open Application Model is the theoretical model behind [KubeVela](https://github.com/oam-dev/kubevela) project - a modern application deployment platform that intends to make delivering and managing applications across today's hybrid, multi-cloud environments easier and faster. KubeVela, as its name implies, requires a Kubernetes cluster as control plane (though it's agnostic to runtime plane).
-
-Hence, although Open Application Model is driven by KubeVela, we intentionally maintain the model itself as a set of API specifications in this repository. This enables some corner cases where Kubernetes as control plane is impossible but users still want to adopt this model.
-
-## Why Open Application Model?
+### Why Open Application Model?
 
 In today's hybrid deployment environments, managing applications without application context is hard:
 
@@ -33,34 +29,25 @@ In Open Application Model, we propose an app-centric approach instead:
 - Clarity and extensibility - an open standard to modularize infrastructure capabilities into reusable pieces that adapts to your needs, not the other way around.
 - Runtime agnostic - a consistent experience to deploy and operate your apps across on-prem clusters, cloud providers or even edge devices.
 
-## Learn the model
+In real world, Open Application Model is the theoretical model behind [KubeVela](https://github.com/oam-dev/kubevela) project - a modern application deployment platform that intends to make delivering and managing applications across today's hybrid, multi-cloud environments easier and faster. 
+
+## Learn the Model
+
+The model itself is driven by KubeVela project and maintained as a set of versioned API specifications as shown below.
 
 |                                | Previous Releases | Latest Release |    Working Draft                  |
 | :----------------------------: | :-----------------: | :------------: |:--------------------------------: |
-| OAM releases              | [v0.2.1](https://github.com/oam-dev/spec/releases/tag/v0.2.1) | [v0.3.0](SPEC.md) |  --  |
-| KubeVela releases              | v0.3.x |v1.x |  --  |
+| OAM Release Versions              | [v0.2.1](https://github.com/oam-dev/spec/releases/tag/v0.2.1) (KubeVela v0.3.x) | [v0.3.0](SPEC.md) (KubeVela v1.x) |  --  |
 
-For [v0.1.0](https://github.com/oam-dev/spec/releases/tag/v0.1.0) release of OAM, it is only supported in [Rudr](https://github.com/oam-dev/rudr) and now archived.
+For OAM release [v0.1.0](https://github.com/oam-dev/spec/releases/tag/v0.1.0),  it is only supported in [Rudr](https://github.com/oam-dev/rudr) and now archived.
 
 ## Community
 
-### Copyrights
-
-The Open Application Model and KubeVela projects are hosted in [Cloud Native Computing Foundation (CNCF)](https://cncf.io). All copyrights belong to CNCF.
-
-### Milestones
-
-To get an overview of the milestones and their description please visit the [Milestones](https://github.com/oam-dev/spec/milestones) page. 
-
-### Triaging 
-
-Triaging of items into milestones will occur during the bi-weekly community call. During this call, issues might be brought into milestones, removed from milestones or moved between milestones. 
-
 ### Contributing
 
-See the [CONTRIBUTING](CONTRIBUTING.md) guide for more information about submitting changes to the spec.
+See the [CONTRIBUTING](CONTRIBUTING.md) guide for detailed information.
 
-One of the easiest ways to contribute is to participate in discussions. There are several ways to get involved.
+### Meeting Hours
 
 | Item        | Value  |
 |---------------------|---|
@@ -69,3 +56,8 @@ One of the easiest ways to contribute is to participate in discussions. There ar
 | Bi-weekly APAC Friendly Meeting (Chinese)| [Zoom](https://us02web.zoom.us/j/2804785490?pwd=ZTN4ZU03UTlBZzlmVHIwTndINGM3UT09), [Meeting Notes](https://shimo.im/docs/w8CgdyYGWjtYJ3XP), [Records (BiliBili)](https://space.bilibili.com/180074935?spm_id_from=333.788.b_765f7570696e666f.2) |
 | IM Channel      | https://gitter.im/oam-dev/ |
 | Twitter      | [@oam_dev](https://twitter.com/oam_dev) |
+
+
+## Copyrights
+
+The Open Application Model including KubeVela projects are hosted in [Cloud Native Computing Foundation (CNCF)](https://cncf.io), all copyrights belong to CNCF.
