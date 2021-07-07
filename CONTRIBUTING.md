@@ -2,11 +2,13 @@
 
 ## Introduction
 
-The developing of Open Application Model is driven by KubeVela, in most cases, you should use KubeVela repository for contribution. This repository mainly accepts issues and PRs for API specification release planning and maintenance purposes.
+In most cases, you may want to use KubeVela repository for feature discussions or code contributions. This repository is mainly for release planning and high level discussion (e.g. proposing a significant change to the model).
 
 ## Proposing Changes and LGTM Policy
 
-To propose a change or ask a question, please open an issue in the issue queue before submitting a pull request (PR). All PRs must be reviewed and approved (LGTMed) by 2 maintainers before being merged. Maintainers are specified in the [OWNERS](OWNERS.md) file. Refer to to the contribution guidelines in this document for more details on the process for issues and PRs.
+Proposing a change to Open Application Model means proposing a API change to KubeVela project. Please always discuss the change in KubeVela repository first and move the discussion here only when the change is fundamental and significant. 
+
+Please then open an issue in the issue queue before submitting a pull request (PR). All PRs must be reviewed and approved (LGTMed) by 2 maintainers before being merged. Maintainers are specified in the [OWNERS](OWNERS.md) file. Refer to to the contribution guidelines in this document for more details on the process for issues and PRs.
 
 ## Code of Conduct
 
