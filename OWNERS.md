@@ -11,6 +11,7 @@ This section lists all active maintainers:
 * [rynowak](https://github.com/rynowak)
 * [resouer](https://github.com/resouer)
 * [hongchaodeng](https://github.com/hongchaodeng)
+* [dhiguero](https://github.com/dhiguero)
 
 ## Emeritus Maintainers
 
