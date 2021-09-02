@@ -13,40 +13,30 @@ A Server is a OAM core workload type to define long-running, scalable workloads 
 
 1. Install below workload definition in your OAM based platform:
 
-	```yaml
-	apiVersion: core.oam.dev/v1beta1
-	kind: WorkloadDefinition
-	metadata:
-	  name: Server
-	spec:
-	  definitionRef:
-	    name: containerizedworkloads.core.oam.dev # the reference of schema for this workload type. In Kubernetes it should be a full name of API resource
-	```
+    ```yaml
+    apiVersion: core.oam.dev/v1beta1
+    kind: WorkloadDefinition
+    metadata:
+      name: Server
+    spec:
+      definitionRef:
+        name: containerizedworkloads.core.oam.dev # the reference of schema for this workload type. In Kubernetes it should be a full name of API resource
+    ```
 
-	As shown on the example above, [ContainerizedWorkload](schema/containerized_workload.md) is used as the schema for Server workload type.
+    > Note: this workload references [ContainerizedWorkload](schema/containerized_workload.md) as schema.
 
-2. Define a component reference `Server` as workload:
+2. Define a component references `Server` as workloads:
 
-	```yaml
-	apiVersion: core.oam.dev/v1beta1
-	kind: Component
-	metadata:
-	  name: frontend
-	spec:
-	  type: Server # <--- type of this workload
-	  properties:        # <--- spec template of this workload
-	    osType: linux
-	    containers:
-	    - name: my-cool-workload
-	      image: example/very-cool-workload:0.1.2@sha256:verytrustworthyhash
-	      resources:
-	        cpu:
-	          required: 1.0
-	        memory:
-	          required: 100MB
-	      cmd:
-	      - "bash lscpu"
-	      ports:
-	      - name: http
-	        value: 8080
-	```
+    ```yaml
+    apiVersion: core.oam.dev/v1beta1
+    kind: ComponentDefinition
+    metadata:
+      name: webserver
+      annotations:
+        definition.oam.dev/description: "webserver is a combo of Deployment + Service"
+    spec:
+      workload:
+        type: Server # reference above workload definition by name.
+      schematic:
+        ... # CUE code to define user schematic.
+    ```
