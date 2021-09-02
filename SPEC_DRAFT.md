@@ -3,32 +3,13 @@
 
 ## Version
 
-This is Open Application Model **documentation** version **v0.3.0**.
+This is Open Application Model **draft proposal** version **v0.3.1**.
 Learn more about versioning [below](#versioning).
 
-## The Documentations
+## Proposed Changes
 
-[Notational Conventions](notational_convention.md)
-
-  1. [Purpose and Goals](1.purpose_and_goals.md)
-  1. [Overview and Terminology](2.overview_and_terminology.md)
-  1. [Component Model](3.component_model.md)
-  1. [Workload Types](4.workload_types.md)
-  1. [Application Scopes](5.application_scopes.md)
-  1. [Traits](6.traits.md)
-  1. [Application](7.application.md)
-  1. [Practical Considerations](8.practical_considerations.md)
-  1. [Design Principles](9.design_principles.md)
-
-## The Model Entities
-
-|                                | Category      |         API Version            |
-| :----------------------------: | :-----------: | :----------------------------: |
-| ComponentDefiniton | core | v1beta1 |
-| WorkloadDefiniton | core | v1beta1 |
-| TraitDefinition | core | v1beta1 |
-| Application Scope | core | v1beta1 |
-| Application  | core | v1beta1   |
+- [Policy](https://github.com/oam-dev/kubevela/blob/master/design/vela-core/workflow_policy.md#proposal) system to replace Application Scope.
+- [Workflow](https://github.com/oam-dev/kubevela/blob/master/design/vela-core/workflow_policy.md#cue-based-workflow-task) system to model modern deployment procedure (blue-green deployment, traffic splitting, multi-cloud rollout etc).
 
 ## Versioning
 

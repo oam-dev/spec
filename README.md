@@ -5,9 +5,9 @@
 [![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/oam-dev/spec)](https://www.tickgit.com/browse?repo=github.com/oam-dev/spec)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/oam_dev.svg?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=oam_dev)
 
-Open Application Model (OAM) is a runtime-agnostic model for defining cloud native applications.
+The official documentation site for Open Application Model (OAM).
 
-Focused on **application** rather than container or orchestrator, Open Application Model brings modular, extensible, and portable design for modeling application deployment with consistent higher level API. This is the key to enable simple yet robust application delivery workflow across hybrid environments including Kubernetes, cloud, or even IoT devices.
+Open Application Model (OAM) is a runtime-agnostic model for defining cloud native applications. Focused on **application** rather than container or orchestrator, Open Application Model brings modular, extensible, and portable design for modeling application deployment with consistent higher level API. This is the key to enable simple yet robust application delivery workflow across hybrid environments including Kubernetes, cloud, or even IoT devices.
 
 ## Introduction
 
@@ -33,11 +33,11 @@ In real world, Open Application Model is the theoretical model behind [KubeVela]
 
 ## Learn the Model
 
-The model itself is driven by KubeVela project and maintained as a set of versioned API specifications as shown below.
+The model itself is driven by KubeVela project and maintained as a set of versioned API documentations as shown below.
 
 |                                | Previous Releases | Latest Release |    Working Draft                  |
 | :----------------------------: | :-----------------: | :------------: |:--------------------------------: |
-| OAM Release Versions              | [v0.2.1](https://github.com/oam-dev/spec/releases/tag/v0.2.1) (KubeVela v0.3.x) | [v0.3.0](SPEC.md) (KubeVela v1.x) |  --  |
+| OAM Release Versions              | [v0.2.1](https://github.com/oam-dev/spec/releases/tag/v0.2.1) (KubeVela v0.3.x) | [v0.3.0](SPEC.md) (KubeVela v1.x) |  [v0.3.1](SPEC_DRAFT.md) (KubeVela v1.x)   |
 
 For OAM release [v0.1.0](https://github.com/oam-dev/spec/releases/tag/v0.1.0),  it is only supported in [Rudr](https://github.com/oam-dev/rudr) and now archived.
 
@@ -60,4 +60,4 @@ See the [CONTRIBUTING](CONTRIBUTING.md) guide for detailed information.
 
 ## Copyrights
 
-The Open Application Model including KubeVela projects are hosted in [Cloud Native Computing Foundation (CNCF)](https://cncf.io), all copyrights belong to CNCF.
+Both Open Application Model and KubeVela projects are hosted in [Cloud Native Computing Foundation (CNCF)](https://cncf.io), all copyrights belong to CNCF.
