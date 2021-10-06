@@ -5,9 +5,9 @@
 [![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/oam-dev/spec)](https://www.tickgit.com/browse?repo=github.com/oam-dev/spec)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/oam_dev.svg?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=oam_dev)
 
-The official documentation site for Open Application Model (OAM).
+Open Application Model (OAM) is a set of standard yet higher level abstractions for modeling cloud native applications on top of today's hybrid and multi-cloud environments.
 
-Open Application Model (OAM) is a runtime-agnostic model for defining cloud native applications. Focused on **application** rather than container or orchestrator, Open Application Model brings modular, extensible, and portable design for modeling application deployment with consistent higher level API. This is the key to enable simple yet robust application delivery workflow across hybrid environments including Kubernetes, cloud, or even IoT devices.
+Focused on **application** rather than container or orchestrator, Open Application Model brings modular, extensible, and portable design for defining application deployment with higher level API. This is the key to enable simple, consistent yet robust application delivery across hybrid environments including Kubernetes, cloud, or even IoT devices.
 
 ## Introduction
 
@@ -17,23 +17,23 @@ _"Developers think in terms of application architecture, not of infrastructure."
 
 ### Why Open Application Model?
 
-In today's hybrid deployment environments, managing applications without application context is hard:
+In today's hybrid deployment environments, delivering applications without application context is hard:
 
-- Developers spend time on infrastructure details instead of apps - ingress, labels, DNS, etc, and learning how the infrastructure is implemented.
-- Inextensible - upper layer abstraction may be introduced, but it's almost certain that the needs of your app will outgrow the capabilities of that abstraction soon.
-- Runtime lock-in - app description is tightly coupled with the runtime infrastructure, which heavily impact on how you configure, develop and operate the app across hybrid environments.
+- Developers spend time on infrastructure details instead of apps - clusters, ingresses, labels, DNS, etc, and learning how the infrastructure is implemented in different environments
+- Inextensible - upper layer platform may be introduced, but it's almost certain that the needs of your app will outgrow the capabilities of that platform soon.
+- Vendor lock-in - app deployment is tightly coupled with service provider and infrastructure, which heavily impact on how you configure, develop and operate the app across hybrid environments.
 
 In Open Application Model, we propose an app-centric approach instead:
 
-- Application first - define the app with a self-contained model, where operational behaviors as part of app definition, free of infrastructure here.
-- Clarity and extensibility - an open standard to modularize infrastructure capabilities into reusable pieces that adapts to your needs, not the other way around.
-- Runtime agnostic - a consistent experience to deploy and operate your apps across on-prem clusters, cloud providers or even edge devices.
+- Application first - define the app deployment with a self-contained model, where operational behaviors as part of app definition, free of infrastructure, simply deploy.
+- Clarity and extensibility - an open standard to modularize app delivery into reusable pieces, assemble them into a deployment plan per your own needs, fully self-service.
+- Vendor agnostic - a consistent yet higher level abstraction to model app delivery across on-prem clusters, cloud providers or even edge devices. Zero lock-in.
 
-In real world, Open Application Model is the theoretical model behind [KubeVela](https://github.com/oam-dev/kubevela) project - a modern application deployment platform that intends to make delivering and managing applications across today's hybrid, multi-cloud environments easier and faster. 
+The design of Open Application Model is driven by [KubeVela](https://github.com/oam-dev/kubevela) project - a modern application deployment platform that intends to make delivering and managing applications across today's hybrid, multi-cloud environments easier and faster. 
 
 ## Learn the Model
 
-The model itself is driven by KubeVela project and maintained as a set of versioned API documentations as shown below.
+The model is maintained as a set of versioned API documentations as shown below.
 
 |                                | Previous Releases | Latest Release |    Working Draft                  |
 | :----------------------------: | :-----------------: | :------------: |:--------------------------------: |

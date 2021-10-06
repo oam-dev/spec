@@ -1,7 +1,7 @@
 # Governance
 
 ## Project Maintainers
-[Project maintainers](OWNERS.md) are responsible for activities around maintaining and updating the Open Application Model (OAM) specification. Final decisions on the spec reside with the project maintainers.
+[Project maintainers](OWNERS.md) are responsible for activities around maintaining and updating the Open Application Model (OAM) documentations.
 
 Maintainers MUST remain active. If they are unresponsive for >3 months, they will be automatically removed unless a [super-majority](https://en.wikipedia.org/wiki/Supermajority#Two-thirds_vote) of the other project maintainers agrees to extend the period to be greater than 3 months.
 
