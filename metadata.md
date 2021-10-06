@@ -108,7 +108,7 @@ Group is a namespace for collecting several related kinds. Groups use a DNS nami
 - functions.azure.com
 - my.dev
 
-All of the groups under the `oam.dev` domain are considered reserved for the specification. And all of the objects specified herein belong to groups in that domain.
+All of the groups under the `oam.dev` domain are considered reserved for OAM objects. And all of the objects specified herein belong to groups in that domain.
 
 Group MUST be globally unique.
 
@@ -167,4 +167,4 @@ In rare cases, it is necessary to link a group and a kind, but without specifyin
 Proxies.local.dev # allowed but discouraged
 ```
 
-This form is not accepted as an alternative for the fully qualified version. It is only accepted in cases where it is explicitly stated by the specification that this form is accepted.
+This form is not accepted as an alternative for the fully qualified version. It is only accepted in cases where it is explicitly stated by the model that this form is accepted.

@@ -1,14 +1,9 @@
 # Owners
 
-## Introduction
-
-Maintainers of Open Application Model will be inherited directly in KubeVela project as KubeVela API maintainers.
-
 ## Maintainers
 
 This section lists all active maintainers:
 
-* [rynowak](https://github.com/rynowak)
 * [resouer](https://github.com/resouer)
 * [hongchaodeng](https://github.com/hongchaodeng)
 * [dhiguero](https://github.com/dhiguero)
@@ -17,7 +12,7 @@ This section lists all active maintainers:
 
 * [technosophos](https://github.com/technosophos)
 * [vturecek](https://github.com/vturecek)
-
+* [rynowak](https://github.com/rynowak)
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for general contribution guidelines.
 

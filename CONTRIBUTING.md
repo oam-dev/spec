@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In most cases, you may want to use KubeVela repository for feature discussions or code contributions. This repository is mainly for release planning and high level discussion (e.g. proposing a significant change to the model).
+In most cases, we use KubeVela repository for feature discussions or code contributions. The model repository is mostly for release planning and high level discussion (e.g. proposing a new entity to the model).
 
 ## Proposing Changes and LGTM Policy
 
