@@ -47,5 +47,5 @@ spec:
       traits:
         ...
       scopes:
-        networkscppes.standard.oam.dev: example-vpc-network
+        networkscopes.standard.oam.dev: example-vpc-network
 ```
