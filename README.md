@@ -47,6 +47,10 @@ For OAM release [v0.1.0](https://github.com/oam-dev/spec/releases/tag/v0.1.0),  
 
 See the [CONTRIBUTING](CONTRIBUTING.md) guide for detailed information.
 
+### Security
+
+Security concerns should be tracked as [issues](https://github.com/oam-dev/spec/issues) on this repository. See [here](https://github.com/oam-dev/spec/blob/master/CONTRIBUTING.md#issues) for more information about our issue lifecycle.
+
 ### Meeting Hours
 
 | Item        | Value  |
