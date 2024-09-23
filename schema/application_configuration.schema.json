@@ -55,25 +55,27 @@
     "additionalProperties": false,
     "definitions": {
         "operationalConfigurationSpec": {
-            "variables": {
-                "type": "array",
-                "description": "Variables that can be referenced in parameter values and properties.",
-                "items": {
-                    "$ref": "#/definitions/opconfigVariable"
-                }
-            },
-            "scopes": {
-                "type": "array",
-                "description": "Application scope definitions.",
-                "items": {
-                    "$ref": "#/definitions/applicationScope"
-                }
-            },
-            "components": {
-                "type": "array",
-                "description": "Component instance definitions.",
-                "items": {
-                    "$ref": "#/definitions/componentInstance"
+            "properties": {
+                "variables": {
+                    "type": "array",
+                    "description": "Variables that can be referenced in parameter values and properties.",
+                    "items": {
+                        "$ref": "#/definitions/opconfigVariable"
+                    }
+                },
+                "scopes": {
+                    "type": "array",
+                    "description": "Application scope definitions.",
+                    "items": {
+                        "$ref": "#/definitions/applicationScope"
+                    }
+                },
+                "components": {
+                    "type": "array",
+                    "description": "Component instance definitions.",
+                    "items": {
+                        "$ref": "#/definitions/componentInstance"
+                    }
                 }
             },
             "required": [],
