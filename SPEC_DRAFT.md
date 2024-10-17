@@ -13,7 +13,8 @@ Learn more about versioning [below](#versioning).
 
 ## Versioning
 
-For the model objects, Open Application Model adopts [Kubernetes API resource convention](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/architecture/resource-management.md).
+For the model objects, Open Application Model adopts [Kubernetes API resource convention](https://github.com/kubernetes/design-proposals-archive/blob/main/architecture/resource-management.md).
+
 
 Releases of the model are versioned according to [Semantic Versioning 2.0](https://semver.org/spec/v2.0.0.html) and described in [OAM release page](https://github.com/oam-dev/spec/releases). Implementations of the model are required to specify which version they implement.
 
