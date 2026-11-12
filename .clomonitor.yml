@@ -1,0 +1,8 @@
+# CLOMonitor metadata (https://clomonitor.io/docs/topics/checks/).
+#
+# This repository's homepage points at https://oam.dev, a single-page
+# landing site. The project's actual documentation lives at
+# https://kubevela.io/docs/, so agent readiness checks should analyse
+# that site instead.
+agentReadiness:
+  url: https://kubevela.io/docs/
