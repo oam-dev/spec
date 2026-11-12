@@ -41,6 +41,19 @@ The model is maintained as a set of versioned API documentations as shown below.
 
 For OAM release [v0.1.0](https://github.com/oam-dev/spec/releases/tag/v0.1.0),  it is only supported in [Rudr](https://github.com/oam-dev/rudr) and now archived.
 
+## Adopters
+
+Open Application Model is adopted in production through KubeVela, its
+reference implementation. Organizations using the model are listed in the
+[KubeVela adopters list](https://github.com/kubevela/community/blob/main/ADOPTERS.md).
+
+## Roadmap
+
+The model evolves together with its implementation: planned work is tracked
+in the [KubeVela roadmap](https://kubevela.io/docs/roadmap/), and changes to
+the specification itself are proposed through the working draft (see the
+table above) and issues on this repository.
+
 ## Community
 
 ### Contributing
