@@ -1,6 +1,6 @@
 # Open Application Model
 
-[![Gitter](https://badges.gitter.im/oam-dev/community.svg)](https://gitter.im/oam-devcommunity?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Slack](https://img.shields.io/badge/slack-%23kubevela-blueviolet?logo=slack)](https://cloud-native.slack.com/archives/C01BLQ3HTJA)
 [![License: MIT](https://img.shields.io/badge/License-OWF-yellow)](https://github.com/oam-dev/spec/blob/master/LICENSE)
 [![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/oam-dev/spec)](https://www.tickgit.com/browse?repo=github.com/oam-dev/spec)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/oam_dev.svg?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=oam_dev)
@@ -71,7 +71,7 @@ Security concerns should be tracked as [issues](https://github.com/oam-dev/spec/
 | Mailing List | https://groups.google.com/forum/#!forum/oam-dev |
 | Bi-weekly OAM Community Call (English) | [Zoom](https://us02web.zoom.us/j/88638962723?pwd=MVhCZnNub2t0R3BmMUNEWE9vendLUT09), [Meeting Notes](https://docs.google.com/document/d/1nqdFEyULekyksFHtFvgvFAYE-0AMHKoS3RMnaKsarjs), [Records (YouTube)](https://www.youtube.com/channel/UCSCTHhGI5XJ0SEhDHVakPAA/)  |
 | Bi-weekly APAC Friendly Meeting (Chinese)| [Zoom](https://us02web.zoom.us/j/2804785490?pwd=ZTN4ZU03UTlBZzlmVHIwTndINGM3UT09), [Meeting Notes](https://shimo.im/docs/w8CgdyYGWjtYJ3XP), [Records (BiliBili)](https://space.bilibili.com/180074935?spm_id_from=333.788.b_765f7570696e666f.2) |
-| IM Channel      | https://gitter.im/oam-dev/ |
+| IM Channel      | [#kubevela on CNCF Slack](https://cloud-native.slack.com/archives/C01BLQ3HTJA) (get an invite at https://slack.cncf.io) |
 | Twitter      | [@oam_dev](https://twitter.com/oam_dev) |
 
 
